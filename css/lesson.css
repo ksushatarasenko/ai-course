@@ -30,7 +30,7 @@ body {
   margin: 0 auto;
   padding: 20px;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 70% 40%;
   gap: 24px;
   align-items: stretch;
   height: 75vh;          /* 🔑 КЛЮЧ */
@@ -191,4 +191,57 @@ body {
 #next {
   background: #4aa3ff;
   color: #fff;
+}
+
+.task-discussion {
+  margin-top: 16px;
+  padding: 14px 16px;
+  background: #f8fafc;
+  border-left: 4px solid #6366f1;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.task-discussion h4 {
+  margin: 0 0 8px;
+  font-size: 14px;
+}
+
+.task-discussion ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.task-discussion li {
+  margin-bottom: 6px;
+}
+
+.hidden {
+  display: none;
+}
+/* prawilo */
+
+.rule-block {
+  background: linear-gradient(135deg, #fff7ed, #fffbeb);
+  border-left: 6px solid #f59e0b;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 24px 0;
+}
+
+.rule-title {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.rule-text {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.rule-line {
+  margin-top: 8px;
+  color: #374151;
 }

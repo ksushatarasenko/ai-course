@@ -3,7 +3,7 @@
 // 🔹 утилита: текст = строка или массив строк
 function renderText(text) {
   if (Array.isArray(text)) {
-    return text.map(line => `<div>${line}</div>`).join("");
+    return text.map((line) => `<div>${line}</div>`).join("");
   }
   return `<div>${text}</div>`;
 }
@@ -26,7 +26,7 @@ export function renderScene(scene) {
   if (authorBlock) {
     authorBlock.innerHTML = "";
     if (Array.isArray(scene.author)) {
-      scene.author.forEach(line => {
+      scene.author.forEach((line) => {
         const p = document.createElement("p");
         p.textContent = line;
         authorBlock.appendChild(p);
@@ -68,32 +68,71 @@ export function renderDialog(dialog) {
     block.className = "thought";
     block.innerHTML = renderText(dialog.text);
   }
+  // prawilo
+  else if (dialog.type === "rule") {
+    block.className = "rule-block";
+
+    block.innerHTML = `
+    <div class="rule-title">${dialog.title}</div>
+    <div class="rule-text">${dialog.rule}</div>
+    <div class="rule-dialog">
+      ${dialog.dialog
+        .map(
+          (d) => `
+          <div class="rule-line">
+            <strong>${d.speaker}:</strong>
+            ${
+              Array.isArray(d.text)
+                ? d.text.map((t) => `<div>${t}</div>`).join("")
+                : d.text
+            }
+          </div>
+        `
+        )
+        .join("")}
+    </div>
+  `;
+  }
 
   // 🎮 МИНИ-ЗАДАНИЕ
   else if (dialog.type === "task") {
     block.className = "task";
+
     block.innerHTML = `
-      <p class="task-question">${dialog.question}</p>
-      <div class="options">
-        ${dialog.options
-          .map(
-            (opt, i) =>
-              `<button class="task-btn" data-i="${i}">${opt}</button>`
-          )
-          .join("")}
-      </div>
-      <div class="task-result"></div>
-    `;
+    <p class="task-question">${dialog.question}</p>
+
+    <div class="options">
+      ${dialog.options
+        .map(
+          (opt, i) => `<button class="task-btn" data-i="${i}">${opt}</button>`
+        )
+        .join("")}
+    </div>
+
+    <div class="task-result"></div>
+
+    ${
+      dialog.discussion
+        ? `<div class="task-discussion hidden">
+            <h4>${dialog.discussion.title}</h4>
+            <ul>
+              ${dialog.discussion.points.map((p) => `<li>${p}</li>`).join("")}
+            </ul>
+          </div>`
+        : ""
+    }
+  `;
 
     const result = block.querySelector(".task-result");
     const buttons = block.querySelectorAll(".task-btn");
+    const discussionBlock = block.querySelector(".task-discussion");
 
-    buttons.forEach(btn => {
+    buttons.forEach((btn) => {
       btn.onclick = () => {
         const i = Number(btn.dataset.i);
 
-        // дизейблим кнопки после ответа
-        buttons.forEach(b => (b.disabled = true));
+        // блокируем кнопки
+        buttons.forEach((b) => (b.disabled = true));
 
         if (i === dialog.correct) {
           result.textContent = "✅ Верно! ИИ понял бы именно так.";
@@ -101,6 +140,11 @@ export function renderDialog(dialog) {
         } else {
           result.textContent = "❌ Не совсем. ИИ нужен чёткий запрос.";
           result.style.color = "red";
+        }
+
+        // показываем обсуждение
+        if (discussionBlock) {
+          discussionBlock.classList.remove("hidden");
         }
       };
     });

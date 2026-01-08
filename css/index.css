@@ -5,7 +5,35 @@
   text-align: center;
 }
 
-#map h1 {
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background: radial-gradient(
+      circle at top,
+      #eef4ff 0%,
+      #f7f9ff 40%,
+      #ffffff 100%
+  );
+  min-height: 100vh;
+  color: #1f2937;
+}
+.hero {
+  text-align: center;
+  padding: 60px 20px 40px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #4b5563;
+}
+
+
+/* #map h1 {
   font-size: 36px;
   margin-bottom: 10px;
 }
@@ -13,26 +41,40 @@
 #map .intro {
   color: #555;
   margin-bottom: 30px;
+} */
+
+.lessons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
 }
 
-#lessons {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
 
 .lesson-card {
-  background: white;
-  padding: 18px;
-  border-radius: 16px;
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    #f3f6ff
+  );
+  border-radius: 20px;
+  padding: 28px;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+
+  box-shadow:
+    0 10px 30px rgba(80, 120, 255, 0.15);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .lesson-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+  transform: translateY(-6px) scale(1.02);
+  box-shadow:
+    0 18px 40px rgba(80, 120, 255, 0.25);
 }
 
 .lesson-card h3 {
@@ -48,4 +90,16 @@
 .lesson-card.locked {
   opacity: 0.4;
   pointer-events: none;
+}
+
+.lesson-num {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: #6366f1;
+  background: rgba(99, 102, 241, 0.12);
+  padding: 6px 12px;
+  border-radius: 999px;
+  display: inline-block;
+  margin-bottom: 14px;
 }

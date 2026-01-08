@@ -1,9 +1,9 @@
-console.log("🔥 index.js стартовал");
+console.log("🚀 index.js стартовал");
 
 const lessons = [
   { id: 1, title: "Почему ИИ ведёт себя странно?" },
-  { id: 2, title: "ИИ понимает всё буквально" },
-  { id: 3, title: "Контекст важен" },
+  { id: 2, title: "Почему ИИ делает не то, что ты хотел?" },
+  { id: 3, title: "ИИ не знает. Он угадывает" },
   { id: 4, title: "ИИ любит порядок" },
   { id: 5, title: "ИИ не понимает эмоции" },
   { id: 6, title: "Ошибки в заданиях" },
@@ -15,26 +15,21 @@ const lessons = [
 
 const container = document.getElementById("lessons");
 
-console.log("📦 container =", container);
-
 if (!container) {
-  throw new Error("Контейнер #lessons не найден");
+  throw new Error("❌ Контейнер #lessons не найден");
 }
 
 lessons.forEach(lesson => {
-  const btn = document.createElement("button");
-  btn.textContent = `Урок ${lesson.id}: ${lesson.title}`;
-  btn.style.display = "block";
-  btn.style.margin = "10px auto";
+  const card = document.createElement("a");
+  card.className = "lesson-card";
+  card.href = `lesson.html?lesson=${lesson.id}`;
 
-  btn.onclick = () => {
-    window.location.href = `lesson.html?lesson=${lesson.id}`;
-  };
+  card.innerHTML = `
+    <span class="lesson-num">${String(lesson.id).padStart(2, "0")}</span>
+    <h3>${lesson.title}</h3>
+  `;
 
-  container.appendChild(btn);
+  container.appendChild(card);
 });
 
-console.log("✅ Кнопки добавлены");
-
-
-
+console.log("✅ Карточки уроков созданы");

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Урок</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/lesson.css" />
+</head>
+
+<body>
+
+  <div id="lesson-header">
+    <h1 id="lesson-title"></h1>
+    <h2 id="lesson-subtitle"></h2>
+  </div>
+
+  <div id="scene-layout">
+    <div id="scene-visual">
+      <img id="scene-image" />
+    </div>
+
+    <div id="scene-dialog">
+      <div id="author-block"></div>
+      <div id="dialog-list"></div>
+    </div>
+  </div>
+
+  <div id="controls">
+    <button id="back">◀ Назад</button>
+    <button id="next">▶ Дальше</button>
+  </div>
+
+  <script type="module" src="engine/player.js"></script>
+</body>
+</html>

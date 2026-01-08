@@ -1,0 +1,194 @@
+/* ===== Общий фон ===== */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #f6f8fb;
+  color: #222;
+}
+
+/* ===== Заголовок урока ===== */
+#lesson-header {
+  max-width: 1100px;
+  margin: 30px auto 20px;
+  padding: 0 20px;
+}
+
+#lesson-title {
+  font-size: 36px;
+  margin: 0;
+}
+
+#lesson-subtitle {
+  margin-top: 8px;
+  color: #666;
+  font-size: 18px;
+}
+
+/* ===== Рабочая зона сцены ===== */
+#scene-layout {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 24px;
+  align-items: stretch;
+  height: 75vh;          /* 🔑 КЛЮЧ */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===== Левая колонка (визуал сцены) ===== */
+#scene-visual {
+  background: #f3f4f6;          /* светлый фон */
+  border-radius: 18px;
+  overflow: hidden;
+  height: 100%;          /* занимает всю высоту сцены */
+  max-height: 85vh;      /* ⛔ ограничение роста */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#scene-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ===== Правая колонка (диалоги) ===== */
+#scene-dialog {
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  overflow: hidden;   /* ⛔ запрещаем рост */
+}
+
+#dialog-list {
+  margin-top: 12px;
+  flex: 1;                 /* занимает всё доступное место */
+  overflow-y: auto;        /* ✅ СКРОЛЛ */
+  padding-right: 8px;
+}
+
+#dialog-list > * {
+  margin-bottom: 16px;
+}
+
+.author{
+    font-style: italic;
+    font-size: 20px;
+}
+
+/* ===== Авторский текст ===== */
+#author-block {
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+  font-size: 18px;
+  color: #666;
+  line-height: 1.5;
+}
+#author-block p {
+  margin: 4px 0;
+}
+
+/* ===== Диалоги со скроллом ===== */
+#dialog-list {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+  scroll-behavior: smooth;
+}
+
+/* ===== Диалоговые блоки ===== */
+.dialog {
+  background: #f2f4f8;
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+}
+
+.dialog.story {
+  border-left: 4px solid #4aa3ff;
+}
+
+.dialog.ai {
+  border-left: 4px solid #ff9800;
+  background: #fff6e6;
+}
+
+.speaker {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.text {
+  line-height: 1.4;
+}
+
+/* ===== Мысли ===== */
+.thought {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+/* ===== Задание ===== */
+.task {
+  background: #eef6ff;
+  border-radius: 14px;
+  padding: 16px;
+  margin-top: 10px;
+}
+
+.task .options {
+  margin-top: 12px;
+}
+
+.task button {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: none;
+  background: #4aa3ff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.task button:hover {
+  background: #2f8ef0;
+}
+
+/* ===== Управление ===== */
+#controls {
+  max-width: 1100px;
+  margin: 20px auto 40px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#controls button {
+  padding: 12px 20px;
+  border-radius: 14px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#back {
+  background: #777;
+  color: #fff;
+}
+
+#next {
+  background: #4aa3ff;
+  color: #fff;
+}

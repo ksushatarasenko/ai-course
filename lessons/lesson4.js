@@ -1,8 +1,8 @@
 // lessons/lesson1.js
 export const lesson = {
-  id: 3,
-  title: "ИИ не знает. Он угадывает",
-  subtitle: "Почему ИИ может уверенно нести ерунду",
+  id: 4,
+  title: "Как не вестись на ответы ИИ",
+  subtitle: "Проверяем и перепроверяем",
 
   scenes: [
     // 1

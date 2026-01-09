@@ -9,7 +9,7 @@ export const lesson = {
     {
       id: "1",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module5/module5_scena1.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module6/module6_scena1.png?raw=true",
 
       author: [
         "🎬 СЦЕНА 1. СТРАШНЫЙ РАЙОН 😬",
@@ -50,7 +50,7 @@ export const lesson = {
     {
       id: "2",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module5/module5_scena2.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module6/module5_scena2.png?raw=true",
 
       author: ["🎮 СЦЕНА 2. ПЛОХОЙ ПРИМЕР"],
 
@@ -80,7 +80,7 @@ export const lesson = {
     {
       id: "3",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module5/module5_scena3.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module6/module6_scena3.png?raw=true",
 
       author: ["😠 СЦЕНА 3. КИРИЛЛ СЕРЬЁЗНЫЙ"],
 
@@ -102,7 +102,7 @@ export const lesson = {
           speaker: "Кирилл",
           avatar: "kirill",
           text: [
-            "— И ты не должен знать",
+            "— И ты не должен знать:",
             "— где я живу,",
             "— какие у меня пароли",
             "— и вообще личное.",
@@ -121,7 +121,7 @@ export const lesson = {
     {
       id: "thought",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module5/module5_mysli1.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module6/module6_mysli1.png?raw=true",
 
       author: ["💭 МЫСЛИ КИРИЛЛА"],
       dialog: [
@@ -146,7 +146,7 @@ export const lesson = {
     {
       id: "4",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module5/module5_scena4.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module6/module6_prawiloSwetofor.png?raw=true",
 
       author: ["🧠 СЦЕНА 4. ПРАВИЛО «СВЕТОФОРА» 🚦"],
       dialog: [
@@ -195,7 +195,7 @@ export const lesson = {
     {
       id: "task1",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module5/module5_task1.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module6/module6_task1.png?raw=true",
       author: ["🎮 МИНИ-ЗАДАНИЕ"],
 
       dialog: [
@@ -220,7 +220,7 @@ export const lesson = {
     {
       id: "5",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module5/module5_prawilo.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module6/module6_prawilo.png?raw=true",
 
       author: ["🧠 СЦЕНА 5. ПРАВИЛО №5 ПЛАНЕТЫ ИИ"],
 
@@ -250,7 +250,7 @@ export const lesson = {
     {
       id: "6",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module5/module5_final.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module6/module6_final.png?raw=true",
 
       author: ["🏁 ФИНАЛ УРОКА 6"],
       dialog: [
@@ -284,7 +284,7 @@ export const lesson = {
     {
       id: "final",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module4/module4_final.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module6/module6_final.png?raw=true",
 
       author: ["🧩 ВЫВОД УРОКА"],
 

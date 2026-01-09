@@ -9,7 +9,7 @@ export const lesson = {
     {
       id: "1",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module3/module3_scena1.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module4/module4_sekcia1.png?raw=true",
 
       author: [
         "🎬 СЦЕНА 1. Кирилл уже почти профи 😏",        
@@ -23,6 +23,7 @@ export const lesson = {
         {
           type: "autor",
           speaker: "",
+          avatar: "narrator",
           text: [
             "Кирилл идёт по планете ИИ вместе с роботом.",
             "Впереди — зона с табличкой:",
@@ -32,6 +33,7 @@ export const lesson = {
         {
           type: "story",
           speaker: "Кирилл",
+          avatar: "kirill",
           text: [
             "— О, я уже знаю.",
             "— Тут вы начинаете нести фигню с умным лицом.",
@@ -40,11 +42,13 @@ export const lesson = {
         {
           type: "ai",
           speaker: "ИИ робот",
+          avatar: "robot",
           text: ["— Иногда."],
         },
         {
           type: "story",
           speaker: "Кирилл (уверенно):",
+          avatar: "kirill",
           text: ["— Иногда = часто."],
         },
       ],
@@ -53,7 +57,7 @@ export const lesson = {
     {
       id: "2",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module3/module3_scena2.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module4/module4_sekcia2.png?raw=true",
 
       author: ["🎮 СЦЕНА 2. ЛОВУШКА ИИ"],
 
@@ -61,6 +65,7 @@ export const lesson = {
         {
           type: "ai",
           speaker: "ИИ робот",
+          avatar: "robot",
           text: [
             "— Проведём тест.",
             "— Спроси меня что-то для школы.",
@@ -69,6 +74,7 @@ export const lesson = {
         {
           type: "story",
           speaker: "Кирилл (уверенно):",
+          avatar: "kirill",
           text: [
             "— Окей.",
             "— Напиши короткий доклад про динозавров.",
@@ -77,6 +83,7 @@ export const lesson = {
         {
           type: "ai",
           speaker: "ИИ  робот",
+          avatar: "robot",
           text: [
             "— Выполняю.",
             "",
@@ -87,6 +94,7 @@ export const lesson = {
         {
           type: "story",
           speaker: "Кирилл (читает):",
+          avatar: "kirill",
           text: [
             "— Мм…",
             "— Звучит нормально.",
@@ -95,6 +103,7 @@ export const lesson = {
         {
           type: "ai",
           speaker: "ИИ  робот",
+          avatar: "robot",
           text: [
             "— Значит, можно верить?",
           ],
@@ -102,6 +111,7 @@ export const lesson = {
         {
           type: "story",
           speaker: "Кирилл (уверенно):",
+          avatar: "kirill",
           text: [
             "— Стоп.",
             "— Ты же сам говорил, что можешь ошибаться.",
@@ -114,7 +124,7 @@ export const lesson = {
     {
       id: "thought",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module3/module3_mysli1.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module4/module4_mysli1.png?raw=true",
 
       author: ["💭 МЫСЛИ КИРИЛЛА"],
       dialog: [
@@ -133,6 +143,8 @@ export const lesson = {
         },
         {
           type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
           text: ["Кирилл напрягается."],
         },
       ],
@@ -141,7 +153,7 @@ export const lesson = {
     {
       id: "3",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module3/module3_scena3.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module4/module4_scena3.png?raw=true",
 
       author: ["🧠 СЦЕНА 3. КАК ПРОВЕРЯТЬ"],
 
@@ -149,6 +161,7 @@ export const lesson = {
         {
           type: "story",
           speaker: "Кирилл (уверенно):",
+          avatar: "kirill",
           text: [
             "— Окей.",
             "— Как тебя проверить?",
@@ -157,12 +170,15 @@ export const lesson = {
         {
           type: "ai",
           speaker: "ИИ робот",
+          avatar: "robot",
           text: [
             "— Есть несколько способов.",
           ],
         },
         {
-          type: "autor",
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
           speaker: "",
           text: [
             "На экране появляются иконки.",
@@ -172,6 +188,7 @@ export const lesson = {
         {
           type: "story",
           speaker: "Кирилл",
+          avatar: "kirill",
           text: [
             "— Если ты знаешь",
             "— ответь по-другому.",
@@ -180,6 +197,7 @@ export const lesson = {
         {
           type: "story",
           speaker: "Кирилл",
+          avatar: "kirill",
           text: [
             "— Назови три факта про динозавров.",
           ],
@@ -187,6 +205,7 @@ export const lesson = {
         {
           type: "ai",
           speaker: "ИИ  робот",
+          avatar: "robot",
           text: [
             "— Динозавры вымерли около 65 миллионов лет назад.",
             "— Некоторые были травоядными.",
@@ -196,12 +215,15 @@ export const lesson = {
         {
           type: "story",
           speaker: "Кирилл",
+          avatar: "kirill",
           text: [
             "— Окей, это похоже на правду.",
           ],
         },
         {
-          type: "autor",
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
           speaker: "",
           text: [
             "<b>🔁 СПОСОБ 2. Переформулировать вопрос</b>",
@@ -210,6 +232,7 @@ export const lesson = {
         {
           type: "story",
           speaker: "Кирилл",
+          avatar: "kirill",
           text: [
             "— А если спросить по-другому?",
           ],
@@ -217,6 +240,7 @@ export const lesson = {
         {
           type: "story",
           speaker: "Кирилл",
+          avatar: "kirill",
           text: [
             "— Какие динозавры были самыми большими?",
           ],
@@ -224,6 +248,7 @@ export const lesson = {
         {
           type: "ai",
           speaker: "ИИ  робот",
+          avatar: "robot",
           text: [
             "— Аргентинозавр, Патаготитан…",
           ],
@@ -231,13 +256,16 @@ export const lesson = {
         {
           type: "story",
           speaker: "Кирилл",
+          avatar: "kirill",
           text: [
             "— Уже лучше.",
             "— Ответы совпадают.",
           ],
         },
          {
-          type: "autor",
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
           speaker: "",
           text: [
             "<b>🧠 СПОСОБ 3. Проверить своей головой</b>",
@@ -246,6 +274,7 @@ export const lesson = {
         {
           type: "story",
           speaker: "Кирилл",
+          avatar: "kirill",
           text: [
             "— Это вообще логично?",
             "— Или звучит как бред?",
@@ -254,6 +283,7 @@ export const lesson = {
         {
           type: "ai",
           speaker: "ИИ  робот",
+          avatar: "robot",
           text: [
             "— Логика — это твоя работа.",
           ],
@@ -261,6 +291,7 @@ export const lesson = {
         {
           type: "story",
           speaker: "Кирилл",
+          avatar: "kirill",
           text: [
             "— Вот именно.",
           ],
@@ -269,10 +300,10 @@ export const lesson = {
     },
 
     
-    // МИНИ-ЗАДАНИЕ
+    // МИНИ-ЗАДАНИЕ 1
     {
       id: "task1",
-      image: "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module3/module3_task1.png?raw=true",
+      image: "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module4/module4_task1.png?raw=true",
       author: ["🎮 МИНИ-ЗАДАНИЕ"],
 
       dialog: [
@@ -299,13 +330,14 @@ export const lesson = {
     {
       id: "4",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module3/module3_scena4.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module4/module4_scena4.png?raw=true",
 
       author: ["🎬 СЦЕНА 4. ИИ ПРОВОЦИРУЕТ 😈"],
       dialog: [
         {
           type: "ai",
           speaker: "ИИ робот",
+          avatar: "robot",
           text: [
             "— А если я скажу уверенно?",
           ],
@@ -313,26 +345,31 @@ export const lesson = {
         {
           type: "story",
           speaker: "Кирилл",
+          avatar: "kirill",
           text: ["— Тогда я проверю вдвойне."],
         },
         {
           type: "ai",
           speaker: "ИИ робот",
+          avatar: "robot",
           text: ["— А если я скажу красиво?"],
         },
         {
           type: "story",
           speaker: "Кирилл",
+          avatar: "kirill",
           text: ["— Красиво ≠ правильно."],
         },
         {
           type: "ai",
           speaker: "ИИ робот",
+          avatar: "robot",
           text: ["— Ты быстро учишься."],
         },
         {
           type: "story",
           speaker: "Кирилл",
+          avatar: "kirill",
           text: [
             "— Просто не хочу получить двойку 😅",
           ],
@@ -344,7 +381,7 @@ export const lesson = {
     {
       id: "thought",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module3/module3_mysli2.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module4/module4_mysli2.png?raw=true",
 
       author: ["💭 МЫСЛИ КИРИЛЛА (ключевой момент)"],
       dialog: [
@@ -364,23 +401,26 @@ export const lesson = {
     {
       id: "5",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module3/module3_scena5.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module4/module4_scena5.png?raw=true",
 
       author: ["🎬 СЦЕНА 5. ОПАСНЫЙ МОМЕНТ"],
       dialog: [
         {
           type: "story",
           speaker: "Кирилл",
+          avatar: "kirill",
           text: ["— А если тебя спросить что-то важное?"],
         },
         {
           type: "ai",
           speaker: "ИИ робот",
+          avatar: "robot",
           text: ["— Я всё равно отвечу."],
         },
         {
           type: "story",
           speaker: "Кирилл (медленно)",
+          avatar: "kirill",
           text: [
             "— Даже если не уверен?",
           ],
@@ -388,11 +428,13 @@ export const lesson = {
         {
           type: "ai",
           speaker: "ИИ робот",
+          avatar: "robot",
           text: ["— Да."],
         },
         {
           type: "story",
           speaker: "Кирилл",
+          avatar: "kirill",
           text: ["— Вот это стрёмно."],
         },
       ],
@@ -401,7 +443,7 @@ export const lesson = {
     {
       id: "5",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module3/module3_scena6.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module4/module4_prawilo.png?raw=true",
 
       author: ["🧠 СЦЕНА 5. ПРАВИЛО №3 ПЛАНЕТЫ ИИ"],
 
@@ -429,7 +471,7 @@ export const lesson = {
 // МИНИ-ЗАДАНИЕ
     {
       id: "task2",
-      image: "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module3/module3_task2.png?raw=true",
+      image: "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module4/module4_task2.png?raw=true",
       author: ["🎮 МИНИ-ЗАДАНИЕ 2"],
 
       dialog: [
@@ -456,18 +498,20 @@ export const lesson = {
     {
       id: "6",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module3/module3_final1.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module4/module4_final.png?raw=true",
 
       author: ["🏁 ФИНАЛ УРОКА"],
       dialog: [
         {
           type: "story",
           speaker: "Кирилл",
+          avatar: "kirill",
           text: ["— Короче.", "— Ты нормальный помощник."],
         },
         {
           type: "ai",
           speaker: "ИИ робот",
+          avatar: "robot",
           text: [
             "— Спасибо.",
           ],
@@ -475,11 +519,13 @@ export const lesson = {
         {
           type: "story",
           speaker: "Кирилл",
+          avatar: "kirill",
           text: ["— Но без проверки ты — ловушка."],
         },
         {
           type: "ai",
           speaker: "ИИ робот",
+          avatar: "robot",
           text: [
             "— Согласен.",
           ],
@@ -487,6 +533,7 @@ export const lesson = {
          {
           type: "story",
           speaker: "Кирилл",
+          avatar: "kirill",
           text: [
             "— Пошли дальше.",
             "— Чувствую, впереди ещё много багов.",
@@ -498,24 +545,30 @@ export const lesson = {
     {
       id: "final",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module3/module3_final2.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module4/module4_final.png?raw=true",
 
       author: ["🧩 ВЫВОД УРОКА"],
 
       dialog: [
         {
           type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
           text: [
             "•	ИИ может звучать умно и всё равно ошибаться",
                       ],
         },
         {
           type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
           text: ["•	ответы нужно проверять",
             ]
         },
         {
           type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
           text: [
             "•	есть простые способы проверки",
           ],

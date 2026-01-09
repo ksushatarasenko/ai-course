@@ -49,12 +49,27 @@ export function renderDialog(dialog) {
   const block = document.createElement("div");
 
   // 🗨 обычный диалог
-  if (dialog.type === "story" || dialog.type === "ai") {
+  if (
+    dialog.type === "story" ||
+    dialog.type === "ai" ||
+    dialog.type === "author"
+  ) {
     block.className = `dialog ${dialog.type}`;
+
     block.innerHTML = `
-      ${dialog.speaker ? `<div class="speaker">${dialog.speaker}</div>` : ""}
-      <div class="text">${renderText(dialog.text)}</div>
-    `;
+    <div class="dialog-header">
+      ${
+        dialog.avatar
+          ? `<img class="avatar" src="assets/img/${dialog.avatar}.png" alt="${dialog.speaker}">`
+          : ""
+      }
+      <div class="speaker">${dialog.speaker}</div>
+    </div>
+
+    <div class="text">
+      ${renderText(dialog.text)}
+    </div>
+  `;
   }
 
   // ✍️ автор в диалогах
@@ -96,18 +111,24 @@ export function renderDialog(dialog) {
 
   // 🎮 МИНИ-ЗАДАНИЕ
   else if (dialog.type === "task") {
-    block.className = "task";
+  block.className = "task";
 
-    block.innerHTML = `
+  block.innerHTML = `
     <p class="task-question">${dialog.question}</p>
 
     <div class="options">
       ${dialog.options
         .map(
-          (opt, i) => `<button class="task-btn" data-i="${i}">${opt}</button>`
+          (opt, i) => `
+            <div class="task-option" data-i="${i}">
+              <span class="checkbox"></span>
+              <span class="option-text">${opt}</span>
+            </div>`
         )
         .join("")}
     </div>
+
+    <button class="task-check">Проверить</button>
 
     <div class="task-result"></div>
 
@@ -116,39 +137,67 @@ export function renderDialog(dialog) {
         ? `<div class="task-discussion hidden">
             <h4>${dialog.discussion.title}</h4>
             <ul>
-              ${dialog.discussion.points.map((p) => `<li>${p}</li>`).join("")}
+              ${dialog.discussion.points.map(p => `<li>${p}</li>`).join("")}
             </ul>
           </div>`
         : ""
     }
   `;
 
-    const result = block.querySelector(".task-result");
-    const buttons = block.querySelectorAll(".task-btn");
-    const discussionBlock = block.querySelector(".task-discussion");
+  const options = block.querySelectorAll(".task-option");
+  const checkBtn = block.querySelector(".task-check");
+  const result = block.querySelector(".task-result");
+  const discussionBlock = block.querySelector(".task-discussion");
 
-    buttons.forEach((btn) => {
-      btn.onclick = () => {
-        const i = Number(btn.dataset.i);
+  let selected = new Set();
+  const correct = new Set(dialog.correct);
 
-        // блокируем кнопки
-        buttons.forEach((b) => (b.disabled = true));
+  // выбор вариантов
+  options.forEach(opt => {
+    opt.onclick = () => {
+      const i = Number(opt.dataset.i);
 
-        if (i === dialog.correct) {
-          result.textContent = "✅ Верно! ИИ понял бы именно так.";
-          result.style.color = "green";
-        } else {
-          result.textContent = "❌ Не совсем. ИИ нужен чёткий запрос.";
-          result.style.color = "red";
-        }
+      if (selected.has(i)) {
+        selected.delete(i);
+        opt.classList.remove("selected");
+      } else {
+        selected.add(i);
+        opt.classList.add("selected");
+      }
+    };
+  });
 
-        // показываем обсуждение
-        if (discussionBlock) {
-          discussionBlock.classList.remove("hidden");
-        }
-      };
-    });
-  }
+  // проверка
+  checkBtn.onclick = () => {
+    if (selected.size === 0) {
+      result.textContent = "❗ Выбери хотя бы один вариант.";
+      result.style.color = "orange";
+      return;
+    }
+
+    const correctChosen = [...selected].filter(i => correct.has(i)).length;
+
+    if (correctChosen === correct.size && selected.size === correct.size) {
+      result.textContent = "✅ Верно! Ты выбрал все правильные варианты.";
+      result.style.color = "green";
+    } else if (correctChosen > 0) {
+      result.textContent = "⚠️ Почти! Ты выбрал не все правильные варианты.";
+      result.style.color = "#d97706";
+    } else {
+      result.textContent = "❌ Не совсем. Подумай ещё.";
+      result.style.color = "red";
+    }
+
+    // блокируем после проверки
+    options.forEach(o => (o.onclick = null));
+    checkBtn.disabled = true;
+
+    if (discussionBlock) {
+      discussionBlock.classList.remove("hidden");
+    }
+  };
+}
+
 
   list.appendChild(block);
   list.scrollTop = list.scrollHeight;

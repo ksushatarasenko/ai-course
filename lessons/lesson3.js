@@ -21,6 +21,7 @@ export const lesson = {
         {
           type: "story",
           speaker: "Кирилл",
+          avatar: "kirill",
           text: [
             "— Окей, я понял.",
             "— Нужно просто нормально объяснять.",
@@ -29,11 +30,13 @@ export const lesson = {
         {
           type: "ai",
           speaker: "ИИ робот",
+          avatar: "robot",
           text: ["— Да.", "— Но есть ещё одна проблема."],
         },
         {
           type: "story",
           speaker: "Кирилл (уверенно):",
+          avatar: "kirill",
           text: ["— Какая ещё?"],
         },
       ],
@@ -48,12 +51,15 @@ export const lesson = {
 
       dialog: [
         {
-          type: "autor",
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
           speaker: "",
           text: ["Робот открывает терминал."]
         },
         {
           type: "ai",
+          avatar: "robot",
           speaker: "ИИ робот",
           text: [
             "— Спроси меня что угодно.",
@@ -62,6 +68,7 @@ export const lesson = {
         {
           type: "story",
           speaker: "Кирилл (уверенно):",
+          avatar: "kirill",
           text: [
             "— Легко.",
             "— Скажи, кто самый сильный моб в Майнкрафте?",
@@ -70,6 +77,7 @@ export const lesson = {
         {
           type: "ai",
           speaker: "ИИ  робот",
+          avatar: "robot",
           text: [
             "— Самый сильный моб — курица.",
           ],
@@ -77,6 +85,7 @@ export const lesson = {
         {
           type: "story",
           speaker: "Кирилл (уверенно):",
+          avatar: "kirill",
           text: [
             "— ЧЕГО 😐",
             "— Ты прикалываешься?! Шутишь??",
@@ -85,6 +94,7 @@ export const lesson = {
         {
           type: "ai",
           speaker: "ИИ  робот",
+          avatar: "robot",
           text: [
             "— Нет.",
             "— Я уверен.",
@@ -94,6 +104,7 @@ export const lesson = {
         {
           type: "story",
           speaker: "Кирилл (уверенно):",
+          avatar: "kirill",
           text: [
             "— Да курица умирает с одного удара!",
           ],
@@ -101,6 +112,7 @@ export const lesson = {
         {
           type: "ai",
           speaker: "ИИ  робот",
+          avatar: "robot",
           text: [
             "— Вероятно.",
             "— Но я дал ответ.",
@@ -120,6 +132,7 @@ export const lesson = {
         {
           type: "story",
           speaker: "Кирилл (уверенно):",
+          avatar: "kirill",
           text: [
             "— Ты же ИИ!",
             "— Ты должен ЗНАТЬ!",
@@ -128,6 +141,7 @@ export const lesson = {
         {
           type: "ai",
           speaker: "ИИ робот",
+          avatar: "robot",
           text: [
             "— Я не знаю.",
             "— Я угадываю самый вероятный ответ.",
@@ -136,6 +150,7 @@ export const lesson = {
         {
           type: "story",
           speaker: "Кирилл (уверенно):",
+          avatar: "kirill",
           text: [
             "— …",
             "— А выглядело, как будто ты уверен на 100%.",
@@ -144,6 +159,7 @@ export const lesson = {
         {
           type: "ai",
           speaker: "ИИ  робот",
+          avatar: "robot",
           text: [
             "— У меня нет чувства «уверен».",
           ],
@@ -183,6 +199,8 @@ export const lesson = {
         },
         {
           type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
           text: ["Кирилл хмурится."],
         },
       ],
@@ -199,6 +217,7 @@ export const lesson = {
         {
           type: "story",
           speaker: "Кирилл",
+          avatar: "kirill",
           text: [
             "— Окей, проверим",
             "— Сколько будет 7 × 8?",
@@ -207,6 +226,7 @@ export const lesson = {
         {
           type: "ai",
           speaker: "ИИ робот",
+          avatar: "robot",
           text: [
             "— 56.",
           ],
@@ -214,26 +234,31 @@ export const lesson = {
         {
           type: "story",
           speaker: "Кирилл",
+          avatar: "kirill",
           text: ["— А кто победит: крипер или курица?"],
         },
         {
           type: "ai",
           speaker: "ИИ робот",
+          avatar: "robot",
           text: ["— Вероятно, крипер."],
         },
         {
           type: "story",
           speaker: "Кирилл",
+          avatar: "kirill",
           text: ["—— А почему тогда курица была «самой сильной»?"],
         },
         {
           type: "ai",
           speaker: "ИИ робот",
+          avatar: "robot",
           text: ["— Мой предыдущий ответ был ошибочным."],
         },
         {
           type: "story",
           speaker: "Кирилл",
+          avatar: "kirill",
           text: [
             "— Вот!", 
             "- Ты не знаешь.",
@@ -279,16 +304,19 @@ export const lesson = {
         {
           type: "story",
           speaker: "Кирилл",
+          avatar: "kirill",
           text: ["— А если тебя спросить что-то важное?"],
         },
         {
           type: "ai",
           speaker: "ИИ робот",
+          avatar: "robot",
           text: ["— Я всё равно отвечу."],
         },
         {
           type: "story",
           speaker: "Кирилл (медленно)",
+          avatar: "kirill",
           text: [
             "— Даже если не уверен?",
           ],
@@ -296,11 +324,13 @@ export const lesson = {
         {
           type: "ai",
           speaker: "ИИ робот",
+          avatar: "robot",
           text: ["— Да."],
         },
         {
           type: "story",
           speaker: "Кирилл",
+          avatar: "kirill",
           text: ["— Вот это стрёмно."],
         },
       ],
@@ -409,11 +439,13 @@ export const lesson = {
         {
           type: "story",
           speaker: "Кирилл",
+          avatar: "kirill",
           text: ["— Знаешь что?", "— Ты полезный, но опасный."],
         },
         {
           type: "ai",
           speaker: "ИИ робот",
+          avatar: "robot",
           text: [
             "— Это точное описание.",
           ],
@@ -421,11 +453,13 @@ export const lesson = {
         {
           type: "story",
           speaker: "Кирилл",
+          avatar: "kirill",
           text: ["— Ладно.", "— Я буду использовать тебя с умом."],
         },
         {
           type: "ai",
           speaker: "ИИ робот",
+          avatar: "robot",
           text: [
             "— Хороший план.",
           ],
@@ -443,17 +477,23 @@ export const lesson = {
       dialog: [
         {
           type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
           text: [
             "ИИ не знает, а угадывает",
                       ],
         },
         {
           type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
           text: ["ИИ может ошибаться, даже если звучит уверенно",
             ]
         },
         {
           type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
           text: [
             "не всё, что говорит ИИ — правда",
             "ответственность всегда на человеке",

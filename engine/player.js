@@ -10,6 +10,7 @@ let dialogIndex = 0;
 
 window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("next").onclick = next;
+  document.getElementById("prev").onclick = prev;
   document.getElementById("back").onclick = () => {
     window.location.href = "index.html";
   };
@@ -40,6 +41,7 @@ function loadScene() {
   if (Array.isArray(scene.dialog) && scene.dialog.length > 0) {
     renderDialog(scene.dialog[dialogIndex]);
   }
+  updateButtons();
 }
 
 function next() {
@@ -62,4 +64,37 @@ function next() {
     sceneIndex++;
     loadScene();
   }
+  updateButtons();
+}
+
+function prev() {
+  // если есть предыдущий диалог — идём к нему
+  if (dialogIndex > 0) {
+    dialogIndex--;
+    rerenderSceneUpTo(dialogIndex);
+    return;
+  }
+
+  // если диалогов нет или мы в начале — идём к предыдущей сцене
+  if (sceneIndex > 0) {
+    sceneIndex--;
+    loadScene();
+    updateButtons();
+  }
+}
+
+function rerenderSceneUpTo(lastIndex) {
+  const scene = lessonData.scenes[sceneIndex];
+
+  renderScene(scene);
+
+  for (let i = 0; i <= lastIndex; i++) {
+    renderDialog(scene.dialog[i]);
+  }
+}
+
+function updateButtons() {
+  const prevBtn = document.getElementById("prev");
+
+  prevBtn.disabled = sceneIndex === 0 && dialogIndex === 0;
 }

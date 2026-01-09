@@ -184,7 +184,7 @@ body {
 }
 
 #back {
-  background: #777;
+  background: #e8ca05;
   color: #fff;
 }
 
@@ -244,4 +244,94 @@ body {
 .rule-line {
   margin-top: 8px;
   color: #374151;
+}
+
+
+/* Аватар */
+
+.avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  background: #eef2ff;
+}
+.dialog-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+/* Мини задание */
+
+.task-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 12px 14px;
+  border-radius: 14px;
+  cursor: pointer;
+
+  background: #f1f5ff;
+  border: 2px solid transparent;
+
+  transition: all 0.2s ease;
+}
+
+.task-option:hover {
+  background: #e8edff;
+}
+
+.task-option.selected {
+  border-color: #6366f1;
+  background: #eef2ff;
+}
+
+.task-option .checkbox {
+  width: 18px;
+  height: 18px;
+  border-radius: 6px;
+  border: 2px solid #6366f1;
+  flex-shrink: 0;
+}
+
+.task-option.selected .checkbox {
+  background: #6366f1;
+}
+
+.task-discussion.hidden {
+  display: none;
+}
+
+.task-check {
+  margin-top: 16px;
+  width: 100%;
+
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+
+  border-radius: 14px;
+  border: none;
+
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+
+  cursor: pointer;
+}
+
+.task-question{
+  font-size: 20px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.task-discussion{
+  font-size: 18px;
+}
+.task-discussion h4{
+  font-size: 18px;
 }

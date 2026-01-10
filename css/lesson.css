@@ -81,7 +81,8 @@ body {
 
 .author{
     font-style: italic;
-    font-size: 20px;
+    font-size: 18px;
+    color: #6a6969;
 }
 
 /* ===== Авторский текст ===== */
@@ -115,11 +116,19 @@ body {
 
 .dialog.story {
   border-left: 4px solid #4aa3ff;
+  background: #e9f3f9;
+  font-size: 18px;
 }
 
 .dialog.ai {
   border-left: 4px solid #ff9800;
   background: #fff6e6;
+  font-size: 18px;
+}
+.dialog.master {
+  border-left: 4px solid #00ff11;
+  background: #f3fcf0;
+  font-size: 18px;
 }
 
 .speaker {

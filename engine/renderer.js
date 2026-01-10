@@ -82,7 +82,7 @@ export function renderDialog(dialog) {
   if (
     dialog.type === "story" ||
     dialog.type === "ai" ||
-    dialog.type === "author"
+    dialog.type === "master"
   ) {
     block.className = `dialog ${dialog.type}`;
 

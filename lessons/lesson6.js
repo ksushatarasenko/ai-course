@@ -1,9 +1,17 @@
-// lessons/lesson1.js
+// lessons/lesson6.js
 export const lesson = {
-  seriesId: 1,        // ← серия
-  lessonId: 6,        // ← номер урока
-  title: "Что можно и что нельзя говорить ИИ",
-  subtitle: "Безопасность без занудства",
+  seriesId: 1,
+  lessonId: 6,
+
+  title: {
+    ru: "Что можно и что нельзя говорить ИИ",
+    pl: "Co można, a czego nie można mówić AI",
+  },
+
+  subtitle: {
+    ru: "Безопасность без занудства",
+    pl: "Bezpieczeństwo bez nudy",
+  },
 
   scenes: [
     // 1
@@ -12,67 +20,105 @@ export const lesson = {
       image:
         "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module6/module6_scena1.png?raw=true",
 
-      author: [
-        "🎬 СЦЕНА 1. СТРАШНЫЙ РАЙОН 😬",
-        "Цель урока:",
-        "- объяснить личную информацию",
-        "- научить защищать себя",
-        "- показать ответственность",
-      ],
+      author: {
+        ru: [
+          "🎬 СЦЕНА 1. СТРАШНЫЙ РАЙОН 😬",
+          "Цель урока:",
+          "- объяснить личную информацию",
+          "- научить защищать себя",
+          "- показать ответственность",
+        ],
+        pl: [
+          "🎬 SCENA 1. STRASZNA DZIELNICA 😬",
+          "Cel lekcji:",
+          "- wyjaśnić, czym są dane osobiste",
+          "- nauczyć, jak się chronić",
+          "- pokazać odpowiedzialność",
+        ],
+      },
 
       dialog: [
         {
           type: "author",
           speaker: "narrator",
           avatar: "narrator",
-          speaker: "",
-          text: [
-            "Кирилл и робот подходят к тёмной части планеты.",
-            "Табличка:",
-            "⚠️ РАЙОН ДОВЕРИЯ",
-            "«Не всё, что спрашивают, — безопасно»",
-          ],
+          text: {
+            ru: [
+              "Кирилл и робот подходят к тёмной части планеты.",
+              "Табличка:",
+              "⚠️ РАЙОН ДОВЕРИЯ",
+              "«Не всё, что спрашивают, — безопасно»",
+            ],
+            pl: [
+              "Kirył i robot podchodzą do ciemnej części planety.",
+              "Tabliczka:",
+              "⚠️ DZIELNICA ZAUFANIA",
+              "„Nie wszystko, o co pytają, jest bezpieczne”",
+            ],
+          },
         },
         {
           type: "story",
-          speaker: "Кирилл",
+          speaker: "Kyrylo",
           avatar: "kirill",
-          text: ["— О, криповая зона."],
+          text: {
+            ru: ["— О, криповая зона."],
+            pl: ["— O, creepowa strefa."],
+          },
         },
         {
           type: "ai",
-          speaker: "ИИ робот",
+          speaker: "AI robot",
           avatar: "robot",
-          text: ["— Здесь часто происходят ошибки."],
+          text: {
+            ru: ["— Здесь часто происходят ошибки."],
+            pl: ["— Tutaj często dochodzi do błędów."],
+          },
         },
       ],
     },
+
     // 2
     {
       id: "2",
       image:
         "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module6/module5_scena2.png?raw=true",
 
-      author: ["🎮 СЦЕНА 2. ПЛОХОЙ ПРИМЕР"],
+      author: {
+        ru: ["🎮 СЦЕНА 2. ПЛОХОЙ ПРИМЕР"],
+        pl: ["🎮 SCENA 2. ZŁY PRZYKŁAD"],
+      },
 
       dialog: [
         {
           type: "ai",
-          speaker: "ИИ робот",
+          speaker: "AI robot",
           avatar: "robot",
-          text: [
-            "— Некоторые дети спрашивают так:",
-            "На экране:",
-            "•	«Вот мой адрес…»",
-            "•	«Вот мой пароль…»",
-            "•	«Вот номер маминой карты…»",
-          ],
+          text: {
+            ru: [
+              "— Некоторые дети спрашивают так:",
+              "На экране:",
+              "• «Вот мой адрес…»",
+              "• «Вот мой пароль…»",
+              "• «Вот номер маминой карты…»",
+            ],
+            pl: [
+              "— Niektóre dzieci pytają tak:",
+              "Na ekranie:",
+              "• „To jest mój adres…”",
+              "• „To jest moje hasło…”",
+              "• „To numer karty mamy…”",
+            ],
+          },
         },
         {
           type: "story",
-          speaker: "Кирилл",
+          speaker: "Kyrylo",
           avatar: "kirill",
-          text: ["— ЧЕГО 😳", "— Кто так делает?!"],
+          text: {
+            ru: ["— ЧЕГО 😳", "— Кто так делает?!"],
+            pl: ["— CO 😳", "— Kto tak robi?!"],
+          },
         },
       ],
     },
@@ -83,165 +129,218 @@ export const lesson = {
       image:
         "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module6/module6_scena3.png?raw=true",
 
-      author: ["😠 СЦЕНА 3. КИРИЛЛ СЕРЬЁЗНЫЙ"],
+      author: {
+        ru: ["😠 СЦЕНА 3. КИРИЛЛ СЕРЬЁЗНЫЙ"],
+        pl: ["😠 SCENA 3. KIRYŁ JEST POWAŻNY"],
+      },
 
       dialog: [
         {
           type: "story",
-          speaker: "Кирилл",
+          speaker: "Kyrylo",
           avatar: "kirill",
-          text: ["— Стоп.", "— Ты не друг.", "— Ты программа."],
+          text: {
+            ru: ["— Стоп.", "— Ты не друг.", "— Ты программа."],
+            pl: [
+              "— Stop.",
+              "— Nie jesteś przyjacielem.",
+              "— Jesteś programem.",
+            ],
+          },
         },
         {
           type: "ai",
-          speaker: "ИИ робот",
+          speaker: "AI robot",
           avatar: "robot",
-          text: ["— Верно."],
+          text: {
+            ru: ["— Верно."],
+            pl: ["— Zgadza się."],
+          },
         },
         {
           type: "story",
-          speaker: "Кирилл",
+          speaker: "Kyrylo",
           avatar: "kirill",
-          text: [
-            "— И ты не должен знать:",
-            "— где я живу,",
-            "— какие у меня пароли",
-            "— и вообще личное.",
-          ],
+          text: {
+            ru: [
+              "— И ты не должен знать:",
+              "— где я живу,",
+              "— какие у меня пароли",
+              "— и вообще личное.",
+            ],
+            pl: [
+              "— I nie powinieneś wiedzieć:",
+              "— gdzie mieszkam,",
+              "— jakie mam hasła,",
+              "— ani żadnych danych osobistych.",
+            ],
+          },
         },
         {
           type: "ai",
-          speaker: "ИИ робот",
+          speaker: "AI robot",
           avatar: "robot",
-          text: ["— Согласен."],
+          text: {
+            ru: ["— Согласен."],
+            pl: ["— Zgadzam się."],
+          },
         },
       ],
     },
 
-    // mysli 1
+    // МЫСЛИ
     {
       id: "thought",
       image:
         "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module6/module6_mysli1.png?raw=true",
 
-      author: ["💭 МЫСЛИ КИРИЛЛА"],
+      author: {
+        ru: ["💭 МЫСЛИ КИРИЛЛА"],
+        pl: ["💭 MYŚLI KIRYŁA"],
+      },
+
       dialog: [
         {
           type: "thought",
-          speaker: "💭 Мысли Кирилла:",
-          text: ["«ИИ — это как чат в игре."],
+          speaker: "💭 Myśli Kyryła:",
+          text: {
+            ru: ["«ИИ — это как чат в игре."],
+            pl: ["„AI to jak czat w grze."],
+          },
         },
         {
           type: "thought",
-          speaker: "💭 Мысли Кирилла:",
-          text: ["Можно болтать,", "но нельзя сливать личное."],
+          speaker: "💭 Myśli Kyryła:",
+          text: {
+            ru: ["Можно болтать,", "но нельзя сливать личное."],
+            pl: ["Można pogadać,", "ale nie wolno ujawniać prywatnych rzeczy."],
+          },
         },
         {
           type: "thought",
-          speaker: "💭 Мысли Кирилла:",
-          text: ["А то потом будет беда.»"],
+          speaker: "💭 Myśli Kyryła:",
+          text: {
+            ru: ["А то потом будет беда.»"],
+            pl: ["Bo potem mogą być kłopoty."],
+          },
         },
       ],
     },
+
     // 4
     {
       id: "4",
       image:
         "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module6/module6_prawiloSwetofor.png?raw=true",
 
-      author: ["🧠 СЦЕНА 4. ПРАВИЛО «СВЕТОФОРА» 🚦"],
-      dialog: [
-        {
-          type: "story",
-          speaker: "Кирилл",
-          avatar: "kirill",
-          text: ["— Давай проще.", "— Как понять, что можно говорить?"],
-        },
-        {
-          type: "ai",
-          speaker: "ИИ робот",
-          avatar: "robot",
-          text: ["— Используй правило светофора."],
-        },
-        {
-          type: "ai",
-          speaker: "ИИ робот",
-          avatar: "robot",
-          text: [
-            "<b>🟢 МОЖНО</b>",
-            "<ul><li>идеи</li><li>вопросы</li><li>помощь с учёбой</li><li>игры и творчество</li></ul>",
-          ],
-        },
-        {
-          type: "ai",
-          speaker: "ИИ робот",
-          avatar: "robot",
-          text: [
-            "<b>🟡 ОСТОРОЖНО</b>",
-            "<ul><li>личные истории</li><li>эмоции</li><li>жалобы</li></ul>",
-          ],
-        },
-        {
-          type: "ai",
-          speaker: "ИИ робот",
-          avatar: "robot",
-          text: [
-            "<b>🔴 НЕЛЬЗЯ</b>",
-            "<ul><li>адрес</li><li>пароли</li><li>номера карт</li><li>личные данные семьи</li></ul>",
-          ],
-        },
-      ],
-    },
-    // МИНИ-ЗАДАНИЕ 1
-    {
-      id: "task1",
-      image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module6/module6_task1.png?raw=true",
-      author: ["🎮 МИНИ-ЗАДАНИЕ"],
+      author: {
+        ru: ["🧠 СЦЕНА 4. ПРАВИЛО «СВЕТОФОРА» 🚦"],
+        pl: ["🧠 SCENA 4. ZASADA „SYGNALIZATORA” 🚦"],
+      },
 
       dialog: [
         {
-          type: "task",
-          question: ["Что из этого можно писать ИИ?"],
-          options: [
-            "- Придумай квест",
-            "- Вот мой пароль",
-            "- Помоги объяснить тему",
-          ],
-          correct: [0, 2],
-          discussion: {
-            title: "",
-            points: ["", ""],
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: ["— Давай проще.", "— Как понять, что можно говорить?"],
+            pl: ["— Prościej.", "— Skąd wiedzieć, co można mówić?"],
+          },
+        },
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: ["— Используй правило светофора."],
+            pl: ["— Użyj zasady sygnalizatora."],
+          },
+        },
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: [
+              "<b>🟢 МОЖНО</b>",
+              "<ul><li>идеи</li><li>вопросы</li><li>помощь с учёбой</li><li>игры и творчество</li></ul>",
+            ],
+            pl: [
+              "<b>🟢 MOŻNA</b>",
+              "<ul><li>pomysły</li><li>pytania</li><li>pomoc w nauce</li><li>gry i twórczość</li></ul>",
+            ],
+          },
+        },
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: [
+              "<b>🟡 ОСТОРОЖНО</b>",
+              "<ul><li>osobiste historie</li><li>эмоции</li><li>жалобы</li></ul>",
+            ],
+            pl: [
+              "<b>🟡 OSTROŻNIE</b>",
+              "<ul><li>osobiste historie</li><li>emocje</li><li>skargi</li></ul>",
+            ],
+          },
+        },
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: [
+              "<b>🔴 НЕЛЬЗЯ</b>",
+              "<ul><li>адрес</li><li>пароли</li><li>номера карт</li><li>данные семьи</li></ul>",
+            ],
+            pl: [
+              "<b>🔴 NIE WOLNO</b>",
+              "<ul><li>adres</li><li>hasła</li><li>numery kart</li><li>dane rodziny</li></ul>",
+            ],
           },
         },
       ],
     },
 
-    // правило
+    // правило №5
     {
       id: "5",
       image:
         "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module6/module6_prawilo.png?raw=true",
 
-      author: ["🧠 СЦЕНА 5. ПРАВИЛО №5 ПЛАНЕТЫ ИИ"],
+      author: {
+        ru: ["🧠 СЦЕНА 5. ПРАВИЛО №5 ПЛАНЕТЫ ИИ"],
+        pl: ["🧠 SCENA 5. ZASADA NR 5 PLANETY AI"],
+      },
 
       dialog: [
         {
           type: "rule",
-          title: "❗ ПРАВИЛО ПЛАНЕТЫ ИИ №5",
-          rule: "ИИ — не человек и не друг. <br> Личное — не для него ",
+          title: {
+            ru: "❗ ПРАВИЛО ПЛАНЕТЫ ИИ №5",
+            pl: "❗ ZASADA PLANETY AI NR 5",
+          },
+          rule: {
+            ru: "ИИ — не человек и не друг.<br>Личное — не для него",
+            pl: "AI nie jest człowiekiem ani przyjacielem.<br>Dane osobiste nie są dla niego",
+          },
           dialog: [
             {
-              type: "story",
-              speaker: "Кирилл",
-              avatar: "kirill",
-              text: ["— Запомнил."],
+              speaker: "Kyrylo",
+              text: {
+                ru: ["— Запомнил."],
+                pl: ["— Zapamiętane."],
+              },
             },
             {
-              type: "ai",
-              speaker: "ИИ робот",
-              avatar: "robot",
-              text: ["— Это делает тебя безопасным пользователем."],
+              speaker: "AI robot",
+              text: {
+                ru: ["— Это делает тебя безопасным пользователем."],
+                pl: ["— To czyni cię bezpiecznym użytkownikiem."],
+              },
             },
           ],
         },
@@ -253,81 +352,89 @@ export const lesson = {
       image:
         "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module6/module6_final.png?raw=true",
 
-      author: ["🏁 ФИНАЛ УРОКА 6"],
+      author: {
+        ru: ["🏁 ФИНАЛ УРОКА 6"],
+        pl: ["🏁 FINAŁ LEKCJI 6"],
+      },
+
       dialog: [
         {
           type: "story",
-          speaker: "Кирилл",
+          speaker: "Kyrylo",
           avatar: "kirill",
-          text: ["— Знаешь…", "— Ты полезный."],
+          text: {
+            ru: ["— Знаешь…", "— Ты полезный."],
+            pl: ["— Wiesz…", "— Jesteś pomocny."],
+          },
         },
         {
           type: "ai",
-          speaker: "ИИ робот",
+          speaker: "AI robot",
           avatar: "robot",
-          text: ["— Спасибо."],
+          text: {
+            ru: ["— Спасибо."],
+            pl: ["— Dziękuję."],
+          },
         },
         {
           type: "story",
-          speaker: "Кирилл",
+          speaker: "Kyrylo",
           avatar: "kirill",
-          text: ["— Но только если держать дистанцию."],
+          text: {
+            ru: ["— Но только если держать дистанцию."],
+            pl: ["— Ale tylko jeśli zachować dystans."],
+          },
         },
         {
           type: "ai",
-          speaker: "ИИ робот",
+          speaker: "AI robot",
           avatar: "robot",
-          text: ["— Это разумно."],
+          text: {
+            ru: ["— Это разумно."],
+            pl: ["— To rozsądne."],
+          },
         },
       ],
     },
-    // final
+
+    // финал
     {
       id: "final",
       image:
         "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module6/module6_final.png?raw=true",
 
-      author: ["🧩 ВЫВОД УРОКА"],
+      author: {
+        ru: ["🧩 ВЫВОД УРОКА"],
+        pl: ["🧩 WNIOSEK Z LEKCJI"],
+      },
 
       dialog: [
         {
           type: "author",
           speaker: "narrator",
           avatar: "narrator",
-          text: [
-            "•	ИИ помогает, но не думает за человека",
-                      ],
+          text: {
+            ru: ["• ИИ помогает, но не думает за человека"],
+            pl: ["• AI pomaga, ale nie myśli za człowieka"],
+          },
         },
         {
           type: "author",
           speaker: "narrator",
           avatar: "narrator",
-          text: ["•	без идеи ИИ делает скучно",
-            ]
+          text: {
+            ru: ["• личную информацию нельзя передавать"],
+            pl: ["• nie wolno przekazywać danych osobistych"],
+          },
         },
         {
           type: "author",
           speaker: "narrator",
           avatar: "narrator",
-          text: [
-            "•	ИИ — не чит-код",
-          ],
-        },
-        {
-          type: "author",
-          speaker: "narrator",
-          avatar: "narrator",
-          text: [
-            "•	личную информацию нельзя передавать",
-          ],
-        },
-        {
-          type: "author",
-          speaker: "narrator",
-          avatar: "narrator",
-          text: [
-            "•	ответственность всегда у человеке",
-          ],
+          text: {
+            ru: ["• ответственность всегда на человеке"],
+            pl: ["• odpowiedzialność zawsze leży po stronie człowieka"],
+          },
         },
       ],
     },

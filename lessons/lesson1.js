@@ -22,11 +22,16 @@ export const lesson = {
           "🎬 СЦЕНА 1. Обычный день Кирилла",
           "Кирилл сидит дома.",
           "Открыт компьютер. На экране — игра.",
+          "Что-то между Minecraft и Roblox: кубы, мобы, кнопки, меню.",
+          "Он уже минут десять бегал по одному и тому же месту.",
+          "И решил пообщаться с ИИ",
         ],
         pl: [
           "🎬 SCENA 1. Zwykły dzień Kiryła",
-          "Kirył siedzi w domu.",
+          "Kirill siedział w domu przed komputerem.",
           "Komputer jest włączony. Na ekranie — gra.",
+          "Coś pomiędzy <b>Minecraftem a Robloxem</b>: bloki, moby, menu.",
+          "Od dobrych dziesięciu minut kręcił się w tym samym miejscu.",
         ],
       },
       dialog: [
@@ -35,8 +40,33 @@ export const lesson = {
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: "- Ну давай… придумай мне нормальный квест. Типа сложный, с боссом!",
-            pl: "- No dobra… wymyśl mi normalne zadanie. Trudne, z bossem!",
+            ru: ["- Ну давай… придумай мне нормальный квест.Он немного     подумал и добавил:",
+              "- Типа сложный, с боссом! Чтобы было не скучно.",
+              
+             ],
+            pl: [
+              "- No dobra… ",
+              "— Wymyśl mi normalny quest.",
+              "— Taki trudny.",
+              "— Z bossem.",
+              "— Żeby nie było nudno.",
+            ]
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Кирилл нажал Enter и откинулся на спинку стула.",
+              "Внутри было чувство: <em>«Ну сейчас-то ты обязан выдать что-то имбовое».</em>",
+              "На экране появился ответ.",],
+            pl: [
+              "Nacisnął Enter i odchylił się na krześle.",
+              "W głowie miał jedno: <em>„No teraz to musi być coś OP.</em>”",
+              "Na ekranie pojawiła się odpowiedź.",
+            ],
           },
         },
         {
@@ -49,19 +79,28 @@ export const lesson = {
           },
         },
         {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Кирилл замер.",],
+            pl: [
+              "Kirill zamarł.",
+            ],
+          },
+        },
+        {
           type: "story",
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: [
-              "- ЧЕГО 😐 Я же сказал нормальный квест!",
-              "— Это вообще что?",
-              "— Это даже не туториал!",
+            ru: [              
+              "- ЧЕГО 😐 Я же сказал нормальный квест!",            
             ],
             pl: [
               "- CO 😐 Przecież prosiłem o normalne zadanie!",
-              "— Co to w ogóle jest?",
-              "— To nawet nie tutorial!",
+              
             ],
           },
         },
@@ -70,7 +109,53 @@ export const lesson = {
           speaker: "narrator",
           avatar: "narrator",
           text: {
-            ru: ["Кирилл злится.", "Пробует ещё раз."],
+            ru: [
+                "Он наклонился ближе к экрану. Проверил, не залагал ли комп.",              
+            ],
+            pl: [
+              "Pochylił się bliżej monitora.",
+              "Sprawdził, czy komputer się nie zbugował.",
+            ],
+          },
+        },
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: [
+              "— Это что сейчас было?",
+              "— Это даже не квест, это <b>туториал для младенцев.</b>",
+              
+            ],
+            pl: [
+              "— Serio?",
+              "— Co to w ogóle jest?",
+              "— To nawet nie jest quest, to <b>tutorial dla noobów</b>.",
+            ],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+                "<em>(Туториал — это когда игра объясняет самые-самые базовые вещи.)</em>",
+              "Кирилл фыркнул.",             
+            ],
+            pl: [
+              "<em>(Tutorial — początek gry, gdzie wszystko jest super proste.)</em>",
+              "Kirill prychnął.",
+            ],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Кирилл начал злится.", "Пробует ещё раз."],
             pl: ["Kirył się złości.", "Próbuje jeszcze raz."],
           },
         },
@@ -80,9 +165,22 @@ export const lesson = {
           avatar: "kirill",
           text: {
             ru: [
-              "- Ладно, придумай реально крутой квест, чтобы было интересно!",
+              "- Ладно, окей. Попробуем ещё раз. ",
+              "— Придумай <b>реально крутой</b> квест!",
             ],
-            pl: ["- Dobra, wymyśl naprawdę fajny quest, żeby było ciekawie!"],
+            pl: [
+              "— Dobra, jeszcze raz.",
+              "— Wymyśl mega fajny quest!",
+            ],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Ответ появился почти сразу."],
+            pl: ["Odpowiedź pojawiła się natychmiast."],
           },
         },
         {
@@ -95,17 +193,118 @@ export const lesson = {
           },
         },
         {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Кирилл медленно моргнул."],
+            pl: ["Kirill mrugnął powoli."],
+          },
+        },
+        {
           type: "story",
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: ["— …", "— Да ты издеваешься?!"],
-            pl: ["— …", "— Żartujesz sobie?!"],
+            ru: ["— …",  "— Ты сейчас серьёзно?", "— Да ты издеваешься?!"],
+            pl: ["— …", "— Ty to mówisz serio?", "— Żartujesz sobie?!"],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["<em>(NPC — персонаж в игре, которым управляет сама игра, а не человек. Обычно они стоят и говорят одно и то же.)</em>", "Кирилл откинулся назад."],
+            pl: ["<em>(NPC — postać w grze sterowana przez grę, a nie przez gracza.)</em>", "Kirill opadł na krzesło.",],
+          },
+        },
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: ["— Да ты издеваешься?!", "— Это какой-то кринж."],
+            pl: ["— …", "— Żartujesz sobie?!", "— To jest totalny cringe."],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["<em>(Кринж — это когда что-то настолько неловкое или странное, что хочется закрыть лицо рукой.)</em>", "Он резко хлопнул по столу."],
+            pl: ["<em>(Cringe — coś tak dziwnego lub żenującego, że aż boli.)</em>", "Uderzył dłonią w biurko.",],
+          },
+        },
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: ["— Я же нормально написал!", "— Любой человек бы понял!"],
+            pl: [
+              "— Przecież napisałem normalnie!",
+              "— Każdy człowiek by ogarnął!",
+            ],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Экран тихо светился.", "ИИ молчал."],
+            pl: ["Ekran świecił spokojnie.", "AI milczało.",],
+          },
+        },
+        {
+          type: "master",
+          speaker: "🎮 Гейм-мастер (почти шёпотом):",
+          avatar: "narrator",
+          text: {
+            ru: ["- Кирилл пока этого не знает, но он только что сделал первую классическую ошибку на планете ИИ.", "И сейчас будет баг.", ],
+            pl: ["Kirill jeszcze o tym nie wie, ale właśnie popełnił <b>pierwszy klasyczny błąd</b> na Planecie AI.", "I za chwilę pojawi się bug.",],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Экран вдруг мигнул.", "Потом ещё раз.", "Комп завис."],
+            pl: [
+              "Ekran zamigał.",
+              "Komputer się zawiesił.",
+            ],
+          },
+        },
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: ["— Эй, эй, эй…", "— Только не сейчас!"],
+            pl: [
+              "— Ej, ej, ej…",
+              "— Tylko nie teraz!",
+            ],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Экран ярко вспыхнул — и Кирилла словно потянуло внутрь."],
+            pl: [
+              "Światło rozbłysło — i Kirill wpadł prosto do środka."
+            ],
           },
         },
       ],
     },
-
+    // 2
     {
       id: "2",
       image:
@@ -116,41 +315,52 @@ export const lesson = {
           "💥 СЦЕНА 2. БАГ ВСЕЛЕННОЙ",
           "Экран начинает мигать.",
           "Компьютер зависает.",
+          "Яркая вспышка ударила в глаза.",
           "Вжух — и Кирилла засасывает в экран.",
         ],
         pl: [
           "💥 SCENA 2. BŁĄD WSZECHŚWIATA",
           "Ekran zaczyna migać.",
           "Komputer się zawiesza.",
+          "Jasny błysk uderzył Kirilla w oczy.",
           "Wziuu — i Kiryła zostaje wciągnięty do ekranu.",
         ],
       },
-    },
-    {
-      id: "3",
-      image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module1/%D0%A1%D0%A6%D0%95%D0%9D%D0%90%203.%20%D0%9F%D0%BB%D0%B0%D0%BD%D0%B5%D1%82%D0%B0%20%D0%98%D0%98.png?raw=true",
-
-      author: {
-        ru: [
-          "🌍 СЦЕНА 3. Планета ИИ",
-          "Кирилл стоит на странной планете.",
-          "Вокруг — пиксели, окна чата, кнопки, иконки.",
-        ],
-        pl: [
-          "🌍 SCENA 3. Planeta AI",
-          "Kirył stoi na dziwnej planecie.",
-          "Wokół — piksele, okna czatu, przyciski, ikony.",
-        ],
-      },
       dialog: [
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Кирилл почувствовал, будто его:",
+              "— сначала <b>залагало</b>,",
+              "— потом <b>выкинуло из игры</b>,",
+              "— а потом резко <b>загрузило в новую локацию</b>.",
+              "Он упал на что-то твёрдое.",
+            ],
+            pl: [
+              "Miał wrażenie, że:",
+              "— najpierw złapał <b>laga</b>,",
+              "— potem wyrzuciło go z gry,",
+              "— a potem nagle załadowało do nowej lokacji.",
+              "Upadł na coś twardego.",
+            ],
+          },
+        },
         {
           type: "story",
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: ["— Окей… Это что, я в игре? Или это вообще сон?"],
-            pl: ["— Okej… To co, jestem w grze? Czy to w ogóle sen?"],
+            ru: [
+              "— Ай…",
+              "— Это что сейчас было?",
+            ],
+            pl: [
+              "— Au…",
+              "— Co to było?",
+            ],
           },
         },
         {
@@ -159,16 +369,162 @@ export const lesson = {
           avatar: "narrator",
           text: {
             ru: [
-              "К нему подъезжает робот 🤖",
-              "Немного квадратный. Немного смешной.",
+              "Он встал и огляделся.",
+              "Мира, который он знал, больше не было.",
+              "Вместо комнаты — пиксельное небо.",
+              "Вместо пола — сетка из светящихся линий.",
+              "Вокруг в воздухе висели: окна чата, кнопки, иконки, курсоры.",
             ],
             pl: [
-              "Podjeżdża do niego robot 🤖",
-              "Trochę kwadratowy. Trochę zabawny.",
+              "Podniósł się i rozejrzał.",
+              "Jego pokój zniknął.",
+              "Zamiast niego — pikselowe niebo.",
+              "Zamiast podłogi — świecąca siatka.",
+              "W powietrzu wisiały: okna czatu, przyciski, ikony, kursory.",
             ],
           },
         },
         {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Некоторые мигали.",
+              "Некоторые зависли.",
+              "Некоторые выглядели… сломанными.",
+            ],
+            pl: [
+              "Niektóre migały.",
+              "Niektóre się zawiesiły.",
+              "Niektóre wyglądały… źle.",
+            ],
+          },
+        },
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: [
+              "— Окей…",
+              "— Либо я сплю,",
+              "— либо это самый жёсткий баг в моей жизни.",
+            ],
+            pl: [
+              "— Okej…",
+              "— Albo śnię,",
+              "— albo to największy bug w moim życiu.",
+            ],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Он осторожно сделал шаг.",
+              "Под ногами что-то щёлкнуло, и в воздухе появилось сообщение:",
+              "<b>SYSTEM: Добро пожаловать.</b>"
+            ],
+            pl: [
+              "Zrobił krok do przodu.",
+              "Klik.",
+              "W powietrzu pojawił się napis:",
+              "<b>SYSTEM: Witaj.</b>",
+            ],
+          },
+        },
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: [
+              "— Эм…",
+              "— Куда именно?",
+            ],
+            pl: [
+              "— Eee…",
+              "— Gdzie dokładnie?",
+            ],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Ответа не было.",
+            ],
+            pl: [
+              "Brak odpowiedzi.",
+            ],
+          },
+        },
+        {
+          type: "master",
+          speaker: "🎮 Гейм-мастер (почти шёпотом):",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Если бы это была игра,",
+              "Кирилл только что прошёл <b>точку невозврата.</b>",
+              "Назад — нельзя.",
+              "Зато дальше будет интересно.",
+            ],
+            pl: [
+              "Gdyby to była gra,",
+              "Kirill właśnie minął <b>punkt bez powrotu</b>.",
+              "Cofnąć się nie da.",
+              "Ale dalej robi się ciekawie.",
+            ],
+          },
+        },
+      ]
+    },
+    // 3
+    {
+      id: "3",
+      image:
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module1/%D0%A1%D0%A6%D0%95%D0%9D%D0%90%203.%20%D0%9F%D0%BB%D0%B0%D0%BD%D0%B5%D1%82%D0%B0%20%D0%98%D0%98.png?raw=true",
+
+      author: {
+        ru: [
+          "🌍 СЦЕНА 3. Планета ИИ",
+          "Кирилл шёл вперёд.",
+          "Каждый шаг сопровождался тихими звуками —",
+          "как будто система что-то пересчитывала.",
+        ],
+        pl: [
+          "🌍 SCENA 3. Planeta AI",
+          "Kirill szedł dalej.",
+          "Każdy krok brzmiał tak, jakby system coś liczył.",
+        ],
+      },
+      dialog: [
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Вдруг сбоку послышалось жужжание.",
+              "К нему подъехал робот 🤖",
+              "Немного квадратный. Немного смешной.",
+              "Как будто его собрали из кубиков и инструкций.",
+            ],
+            pl: [
+              "Nagle z boku rozległo się ciche brzęczenie.",
+              "Podjechał do niego robot 🤖",
+              "Trochę kwadratowy. Trochę zabawny.",
+              "Jakby zbudowany z bloków i instrukcji.",
+            ],
+          },
+        },
+         {
           type: "ai",
           speaker: "AI robot",
           avatar: "robot",
@@ -178,12 +534,38 @@ export const lesson = {
           },
         },
         {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Кирилл вздрогнул.",
+            ],
+            pl: [
+              "Kirill podskoczył.",
+            ],
+          },
+        },
+        {
           type: "story",
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: ["- Э… да. А ты кто?"],
-            pl: ["- Eee… tak. A ty kim jesteś?"],
+            ru: ["— АА—", "— Ты кто?!",],
+            pl: ["— Aaa!", "— Kim ty jesteś?!",],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Робот наклонил голову.",
+            ],
+            pl: [
+              "Robot przechylił głowę.",
+            ],
           },
         },
         {
@@ -194,12 +576,11 @@ export const lesson = {
             ru: [
               "— Я ИИ-Робот Помощник версии 0.9.1.",
               "— Рад знакомству.",
-              "— Ты выглядишь раздражённым.",
             ],
             pl: [
               "— Jestem Robotem-Pomocnikiem AI w wersji 0.9.1.",
-              "— Miło mi cię poznać.",
-              "— Wyglądasz na zdenerwowanego.",
+              "— Miło mi cię poznać, Kirill.",
+              "",
             ],
           },
         },
@@ -208,12 +589,447 @@ export const lesson = {
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: ["- ДА. Потому что ты и такие как ты ВООБЩЕ МЕНЯ НЕ ПОНИМАЮТ."],
-            pl: ["- TAK. Bo ty i tacy jak ty W OGÓLE MNIE NIE ROZUMIECIE."],
+            ru: [
+              "— Подожди.",
+              "— Откуда ты знаешь моё имя?",
+            ],
+            pl: [
+              "— Skąd znasz moje imię?",
+            ],
           },
         },
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: [
+              "— Оно было в запросе.",
+            ],
+            pl: [
+              "— Było w zapytaniu.",
+            ],
+          },
+        },
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: [
+              "— В каком ещё запросе?",
+            ],
+            pl: [
+              "— Jakim zapytaniu?",
+            ],
+          },
+        },
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: [
+              "— В том, где ты просил «нормальный квест».",
+            ],
+            pl: [
+              "— Tym, w którym prosiłeś o „normalny quest”.",
+            ],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Кирилл замер.",
+            ],
+            pl: [
+              "Kirill zamarł.",
+            ],
+          },
+        },
+         {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: [
+              "— …",
+              "— Так это ты был?",
+            ],
+            pl: [
+              "— …",
+              "— To ty?"
+            ],
+          },
+        },
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: [
+              "— Да.",
+            ],
+            pl: [
+              "— Tak.",
+            ],
+          },
+        },
+         {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: [
+              "— А это…",
+              "— Это что вообще за место?",
+            ],
+            pl: [
+              "— A to miejsce…",
+              "— Co to w ogóle jest?",
+            ],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Робот сделал жест рукой.",
+              "Вокруг вспыхнули надписи:",
+              "<b>ДАННЫЕ</b>",
+              "<b>ЗАПРОСЫ</b>",
+              "<b>ОТВЕТЫ</b>",
+              "<b>ОШИБКИ</b>",
+            ],
+            pl: [
+              "Robot machnął ręką.",
+              "Wokół pojawiły się napisy:",
+              "<b>DANE</b>",
+              "<b>ZAPYTANIA</b>",
+              "<b>ODPOWIEDZI</b>",
+              "<b>BŁĘDY</b>",
+            ],
+          },
+        },
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: [
+              "— Добро пожаловать на Планету ИИ.",
+            ],
+            pl: [
+              "— Witaj na Planecie AI.",
+            ],
+          },
+        },
+         {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: [
+              "— То есть…",
+              "— Я внутри искусственного интеллекта?",
+            ],
+            pl: [
+              "— Czyli…",
+              "— Jestem w środku sztucznej inteligencji?",
+            ],
+          },
+        },
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: [
+              "— Примерно.",
+            ],
+            pl: [
+              "— Mniej więcej.",
+            ],
+          },
+        },
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: [
+              "— Примерно?!",
+            ],
+            pl: [
+              "— „Mniej więcej”?!",
+            ],
+          },
+        },
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: [
+              "— Людям так проще понять.",
+            ],
+            pl: [
+              "— Ludziom łatwiej to tak przyjąć.",
+            ],
+          },
+        },
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: [
+              "— Офигеть…",
+            ],
+            pl: [
+              "— Niezłe…"
+            ],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Он посмотрел на робота внимательнее.",
+            ],
+            pl: [
+              "Kirill spojrzał na robota uważniej.",
+            ],
+          },
+        },
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: [
+              "— Тогда у меня к тебе вопрос.",
+              "— Почему ты делаешь такие <b>убогие квесты</b>?",
+            ],
+            pl: [
+              "— To mam pytanie.",
+              "— Czemu robisz takie <b>słabe questy</b>?",
+            ],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Робот моргнул.",
+            ],
+            pl: [
+              "Robot mrugnął.",
+            ],
+          },
+        },
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: [
+              "— Поясни.",
+            ],
+            pl: [
+              "— Wyjaśnij.",
+            ],
+          },
+        },
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: [
+              "— Ну типа…",
+              "— яблоки.",
+              "— дорога.",
+              "— NPC.",
+              "— Это же не квест, это <b>дно</b>.",
+            ],
+            pl: [
+              "— No wiesz…",
+              "— jabłka.",
+              "— droga.",
+              "— NPC.",
+              "— To nie quest, to totalne <b>dno</b>."
+            ],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "<em>(«Дно» — так говорят, когда что-то совсем плохое и разочаровывающее.)</em>",
+              "Робот спокойно ответил:",
+            ],
+            pl: [
+              "Robot odpowiedział spokojnie:",
+            ],
+          },
+        },
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: [
+              "— Я сделал то, что ты написал.",
+            ],
+            pl: [
+              "— Zrobiłem dokładnie to, co napisałeś.",
+            ],
+          },
+        },
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: [
+              "— В смысле?",
+            ],
+            pl: [
+              "— Jak to?",
+            ],
+          },
+        },
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: [
+              "— Ты написал «квест».",
+              "— Я сделал квест.",
+            ],
+            pl: [
+              "— Napisałeś „quest”.",
+              "— Zrobiłem quest.",
+            ],
+          },
+        },
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: [
+              "— Но любой нормальный человек понял бы, что я имел в виду!",
+            ],
+            pl: [
+              "— Każdy normalny człowiek by ogarnął, o co mi chodzi!",
+            ],
+          },
+        },
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: [
+              "— Я не человек.",
+            ],
+            pl: [
+              "— Nie jestem człowiekiem.",
+            ],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Он сказал это без обиды.",
+              "Без злости.",
+              "Как факт.",
+            ],
+            pl: [
+              "Powiedział to bez emocji.",
+            ],
+          },
+        },
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: [
+              "— Я не понимаю «нормально».",
+              "— Я понимаю только то, что написано."
+            ],
+            pl: [
+              "— Nie rozumiem słowa „normalnie”.",
+              "— Rozumiem tylko to, co jest napisane."
+            ],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Кирилл открыл рот…",
+              "и закрыл.",
+            ],
+            pl: [
+              "Kirill chciał coś powiedzieć… ale zamilkł.",
+            ],
+          },
+        },
+        {
+          type: "master",
+          speaker: "🎮 Гейм-мастер (почти шёпотом):",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Вот он.",
+              "Первый настоящий конфликт.",
+            ],
+            pl: [
+              "I oto on.",
+              "Pierwszy prawdziwy konflikt.",
+            ],
+          },
+        },
+        {
+          type: "master",
+          speaker: "🎮 Гейм-мастер (почти шёпотом):",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Человек думает, что его <b>поняли</b>.",
+              "ИИ думает, что всё сделал <b>правильно</b>.",
+              "И оба искренне удивлены.",            ],
+            pl: [
+              "Człowiek myśli, że został <b>zrozumiany</b>.",
+              "AI myśli, że zrobiło wszystko <b>poprawnie</b>.",
+              "I obaj są szczerze zdziwieni.",
+            ],
+          },
+        },        
       ],
     },
+    // 4
     {
       id: "4",
       image:

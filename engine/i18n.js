@@ -5,6 +5,11 @@ export const i18n = {
       next: "Дальше",
       seriesMap: "Карта серии",
       check: "Проверить",
+      task: {
+        empty: "❗ Выбери хотя бы один вариант.",
+        correct: "✅ Верно! Ты выбрал правильный вариант.",
+        wrong: "❌ Не совсем. Подумай ещё.",
+      },
     },
 
     index: {
@@ -50,6 +55,11 @@ export const i18n = {
       next: "Dalej",
       seriesMap: "Mapa serii",
       check: "Sprawdź",
+      task: {
+        empty: "❗ Wybierz co najmniej jedną opcję.",
+        correct: "✅ Brawo! To poprawna odpowiedź.",
+        wrong: "❌ Nie do końca. Spróbuj jeszcze raz.",
+      },
     },
 
     index: {
@@ -80,10 +90,10 @@ export const i18n = {
         title: "Seria 2",
         subtitle: "Kirył i tajemnice planety AI",
         lessons: [
-          { id: 2.1, title: "AI bywa różne" },
-          { id: 2.2, title: "Kto wymyślił AI i po co" },
-          { id: 2.3, title: "Jak AI uczy się na przykładach" },
-          { id: 2.4, title: "Zasady, według których myśli AI" },
+          { id: 2 - 1, title: "AI bywa różne" },
+          { id: 2 - 2, title: "Kto wymyślił AI i po co" },
+          { id: 2 - 3, title: "Jak AI uczy się na przykładach" },
+          { id: 2 - 4, title: "Zasady, według których myśli AI" },
         ],
       },
     ],

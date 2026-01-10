@@ -118,19 +118,21 @@ export function renderDialog(dialog) {
     block.className = "rule-block";
 
     block.innerHTML = `
-    <div class="rule-title">${dialog.title}</div>
-    <div class="rule-text">${dialog.rule}</div>
+    <div class="rule-title">${resolveText(dialog.title)}</div>
+    <div class="rule-text">${resolveText(dialog.rule)}</div>
     <div class="rule-dialog">
       ${dialog.dialog
         .map(
           (d) => `
           <div class="rule-line">
             <strong>${d.speaker}:</strong>
-            ${
-              Array.isArray(d.text)
-                ? d.text.map((t) => `<div>${t}</div>`).join("")
-                : d.text
-            }
+            ${(() => {
+              const resolved = resolveText(d.text);
+
+              return Array.isArray(resolved)
+                ? resolved.map((t) => `<div>${t}</div>`).join("")
+                : `<div>${resolved}</div>`;
+            })()}
           </div>
         `
         )
@@ -147,12 +149,12 @@ export function renderDialog(dialog) {
     <p class="task-question">${resolveText(dialog.question)}</p>
 
     <div class="options">
-      ${dialog.options
+      ${resolveText(dialog.options)
         .map(
           (opt, i) => `
             <div class="task-option" data-i="${i}">
               <span class="checkbox"></span>
-              <span class="option-text">${resolveText(opt.text ?? opt)}</span>
+              <span class="option-text">${opt}</span>
             </div>`
         )
         .join("")}
@@ -165,9 +167,11 @@ export function renderDialog(dialog) {
     ${
       dialog.discussion
         ? `<div class="task-discussion hidden">
-            <h4>${dialog.discussion.title}</h4>
+            <h4>${resolveText(dialog.discussion.title)}</h4>
             <ul>
-              ${dialog.discussion.points.map((p) => `<li>${p}</li>`).join("")}
+              ${resolveText(dialog.discussion.points)
+                .map((p) => `<li>${p}</li>`)
+                .join("")}
             </ul>
           </div>`
         : ""
@@ -180,7 +184,7 @@ export function renderDialog(dialog) {
     const discussionBlock = block.querySelector(".task-discussion");
 
     let selected = new Set();
-    const correct = new Set(dialog.correct);
+    const correctIndex = dialog.correct;
 
     // выбор вариантов
     options.forEach((opt) => {
@@ -200,34 +204,30 @@ export function renderDialog(dialog) {
     // проверка
     checkBtn.onclick = () => {
       if (selected.size === 0) {
-        result.textContent = "❗ Выбери хотя бы один вариант.";
+        result.textContent = ui.task.empty;
         result.style.color = "orange";
         return;
       }
 
-      const correctChosen = [...selected].filter((i) => correct.has(i)).length;
-
-      if (correctChosen === correct.size && selected.size === correct.size) {
-        result.textContent = "✅ Верно! Ты выбрал все правильные варианты.";
+      if (selected.has(correctIndex) && selected.size === 1) {
+        result.textContent = ui.task.correct;
         result.style.color = "green";
-      } else if (correctChosen > 0) {
-        result.textContent = "⚠️ Почти! Ты выбрал не все правильные варианты.";
-        result.style.color = "#d97706";
+
+        // блокируем ТОЛЬКО при правильном ответе
+        options.forEach((o) => (o.onclick = null));
+        checkBtn.disabled = true;
+
+        if (discussionBlock) {
+          discussionBlock.classList.remove("hidden");
+        }
       } else {
-        result.textContent = "❌ Не совсем. Подумай ещё.";
+        result.textContent = ui.task.wrong;
         result.style.color = "red";
       }
-
-      // блокируем после проверки
-      options.forEach((o) => (o.onclick = null));
-      checkBtn.disabled = true;
-
-      if (discussionBlock) {
-        discussionBlock.classList.remove("hidden");
-      }
     };
-  }
+  } // ⬅️ закрывается else if (dialog.type === "task")
 
+  // ⬇️ ОДИН РАЗ, СНАРУЖИ ВСЕХ if
   list.appendChild(block);
   list.scrollTop = list.scrollHeight;
-}
+} // ⬅️ renderDialog

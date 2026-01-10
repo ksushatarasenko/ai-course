@@ -1,6 +1,7 @@
 // lessons/lesson1.js
 export const lesson = {
-  id: 3,
+  seriesId: 1,        // ← серия
+  lessonId: 3,        // ← номер урока в серии  id: 1,
   title: "ИИ не знает. Он угадывает",
   subtitle: "Почему ИИ может уверенно нести ерунду",
 

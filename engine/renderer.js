@@ -1,11 +1,32 @@
 // renderer.js
 
+import { i18n } from "./i18n.js";
+import { getLang } from "./lang.js";
+
+const lang = getLang();
+const ui = i18n[lang].ui;
+
+export function resolveText(text) {
+  if (typeof text === "string") return text;
+
+  if (Array.isArray(text)) return text;
+
+  if (typeof text === "object" && text[lang]) {
+    return text[lang];
+  }
+
+  return "⚠️ Текст недоступен";
+}
+
 // 🔹 утилита: текст = строка или массив строк
 function renderText(text) {
-  if (Array.isArray(text)) {
-    return text.map((line) => `<div>${line}</div>`).join("");
+  const resolved = resolveText(text);
+
+  if (Array.isArray(resolved)) {
+    return resolved.map((line) => `<div>${line}</div>`).join("");
   }
-  return `<div>${text}</div>`;
+
+  return `<div>${resolved}</div>`;
 }
 
 // 🔹 рендер сцены (картинка + автор + очистка диалогов)
@@ -25,12 +46,21 @@ export function renderScene(scene) {
   const authorBlock = document.getElementById("author-block");
   if (authorBlock) {
     authorBlock.innerHTML = "";
-    if (Array.isArray(scene.author)) {
-      scene.author.forEach((line) => {
+
+    if (scene.author) {
+      const content = resolveText(scene.author);
+
+      if (Array.isArray(content)) {
+        content.forEach((line) => {
+          const p = document.createElement("p");
+          p.textContent = line;
+          authorBlock.appendChild(p);
+        });
+      } else {
         const p = document.createElement("p");
-        p.textContent = line;
+        p.textContent = content;
         authorBlock.appendChild(p);
-      });
+      }
     }
   }
 
@@ -111,10 +141,10 @@ export function renderDialog(dialog) {
 
   // 🎮 МИНИ-ЗАДАНИЕ
   else if (dialog.type === "task") {
-  block.className = "task";
+    block.className = "task";
 
-  block.innerHTML = `
-    <p class="task-question">${dialog.question}</p>
+    block.innerHTML = `
+    <p class="task-question">${resolveText(dialog.question)}</p>
 
     <div class="options">
       ${dialog.options
@@ -122,13 +152,13 @@ export function renderDialog(dialog) {
           (opt, i) => `
             <div class="task-option" data-i="${i}">
               <span class="checkbox"></span>
-              <span class="option-text">${opt}</span>
+              <span class="option-text">${resolveText(opt.text ?? opt)}</span>
             </div>`
         )
         .join("")}
     </div>
 
-    <button class="task-check">Проверить</button>
+    <button class="task-check">${ui.check}</button>
 
     <div class="task-result"></div>
 
@@ -137,67 +167,66 @@ export function renderDialog(dialog) {
         ? `<div class="task-discussion hidden">
             <h4>${dialog.discussion.title}</h4>
             <ul>
-              ${dialog.discussion.points.map(p => `<li>${p}</li>`).join("")}
+              ${dialog.discussion.points.map((p) => `<li>${p}</li>`).join("")}
             </ul>
           </div>`
         : ""
     }
   `;
 
-  const options = block.querySelectorAll(".task-option");
-  const checkBtn = block.querySelector(".task-check");
-  const result = block.querySelector(".task-result");
-  const discussionBlock = block.querySelector(".task-discussion");
+    const options = block.querySelectorAll(".task-option");
+    const checkBtn = block.querySelector(".task-check");
+    const result = block.querySelector(".task-result");
+    const discussionBlock = block.querySelector(".task-discussion");
 
-  let selected = new Set();
-  const correct = new Set(dialog.correct);
+    let selected = new Set();
+    const correct = new Set(dialog.correct);
 
-  // выбор вариантов
-  options.forEach(opt => {
-    opt.onclick = () => {
-      const i = Number(opt.dataset.i);
+    // выбор вариантов
+    options.forEach((opt) => {
+      opt.onclick = () => {
+        const i = Number(opt.dataset.i);
 
-      if (selected.has(i)) {
-        selected.delete(i);
-        opt.classList.remove("selected");
+        if (selected.has(i)) {
+          selected.delete(i);
+          opt.classList.remove("selected");
+        } else {
+          selected.add(i);
+          opt.classList.add("selected");
+        }
+      };
+    });
+
+    // проверка
+    checkBtn.onclick = () => {
+      if (selected.size === 0) {
+        result.textContent = "❗ Выбери хотя бы один вариант.";
+        result.style.color = "orange";
+        return;
+      }
+
+      const correctChosen = [...selected].filter((i) => correct.has(i)).length;
+
+      if (correctChosen === correct.size && selected.size === correct.size) {
+        result.textContent = "✅ Верно! Ты выбрал все правильные варианты.";
+        result.style.color = "green";
+      } else if (correctChosen > 0) {
+        result.textContent = "⚠️ Почти! Ты выбрал не все правильные варианты.";
+        result.style.color = "#d97706";
       } else {
-        selected.add(i);
-        opt.classList.add("selected");
+        result.textContent = "❌ Не совсем. Подумай ещё.";
+        result.style.color = "red";
+      }
+
+      // блокируем после проверки
+      options.forEach((o) => (o.onclick = null));
+      checkBtn.disabled = true;
+
+      if (discussionBlock) {
+        discussionBlock.classList.remove("hidden");
       }
     };
-  });
-
-  // проверка
-  checkBtn.onclick = () => {
-    if (selected.size === 0) {
-      result.textContent = "❗ Выбери хотя бы один вариант.";
-      result.style.color = "orange";
-      return;
-    }
-
-    const correctChosen = [...selected].filter(i => correct.has(i)).length;
-
-    if (correctChosen === correct.size && selected.size === correct.size) {
-      result.textContent = "✅ Верно! Ты выбрал все правильные варианты.";
-      result.style.color = "green";
-    } else if (correctChosen > 0) {
-      result.textContent = "⚠️ Почти! Ты выбрал не все правильные варианты.";
-      result.style.color = "#d97706";
-    } else {
-      result.textContent = "❌ Не совсем. Подумай ещё.";
-      result.style.color = "red";
-    }
-
-    // блокируем после проверки
-    options.forEach(o => (o.onclick = null));
-    checkBtn.disabled = true;
-
-    if (discussionBlock) {
-      discussionBlock.classList.remove("hidden");
-    }
-  };
-}
-
+  }
 
   list.appendChild(block);
   list.scrollTop = list.scrollHeight;

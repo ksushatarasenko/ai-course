@@ -7,29 +7,29 @@
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/index.css" />
 </head>
+<div class="lang-switch">
+  <button data-lang="ru">RUS</button>
+  <button data-lang="pl">POL</button>
+</div>
 
 <body>
 
   <div id="map">
+    <h1 id="hero-title"></h1>
+    <p id="hero-subtitle"></p>
 
-    <header class="hero">
-      <h1>🌍 Планета ИИ</h1>
-      <p>
-        Ты попал на странную планету.
-        Здесь ИИ понимает всё буквально.
-      </p>
-    </header>
+    <div class="lang-switch">
+      <button data-lang="ru">RUS</button>
+      <button data-lang="pl">POL</button>
+    </div>
 
-    <h2>🌌 СЕРИЯ 1 - </h2>
-    <section class="lessons" id="lessons"></section>
-    <h2>🌌 СЕРИЯ 2 - Кирилл и тайны планеты ИИ</h2>
-    <section class="lessons" id="lessons2"></section>
-
+    <div id="series-list"></div>
   </div>
 
 
-  <!-- <script src="engine/progress.js"></script> -->
+  <!-- <script type="module" src="engine/lang.js"></script> -->
   <script type="module" src="engine/index.js"></script>
+
 </body>
 
 </html>

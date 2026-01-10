@@ -1,6 +1,7 @@
 // lessons/lesson1.js
 export const lesson = {
-  id: 6,
+  seriesId: 1,        // ← серия
+  lessonId: 6,        // ← номер урока
   title: "Что можно и что нельзя говорить ИИ",
   subtitle: "Безопасность без занудства",
 

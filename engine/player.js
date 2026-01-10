@@ -1,26 +1,52 @@
 // player.js
 import { renderScene, renderDialog } from "./renderer.js";
+import { getLang } from "./lang.js";
+import { i18n } from "./i18n.js";
 
+const lang = getLang();
+const ui = i18n[lang].ui;
+console.log("🎬 player.js запущен");
+
+
+
+// 1️⃣ читаем параметры URL
 const params = new URLSearchParams(window.location.search);
-const lessonId = params.get("lesson") || 1;
+const seriesId = Number(params.get("series"));
+const lessonId = Number(params.get("lesson"));
 
+// 2️⃣ проверка
+console.log("📘 Серия:", seriesId);
+console.log("📗 Урок:", lessonId);
+
+if (!seriesId || !lessonId) {
+  throw new Error("❌ Не переданы series или lesson");
+}
 let lessonData = null;
 let sceneIndex = 0;
 let dialogIndex = 0;
 
 window.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("next").onclick = next;
-  document.getElementById("prev").onclick = prev;
-  document.getElementById("back").onclick = () => {
-    window.location.href = "index.html";
+  const prevBtn = document.getElementById("prev");
+  const nextBtn = document.getElementById("next");
+  const backBtn = document.getElementById("back");
+
+  if (prevBtn) prevBtn.textContent = ui.back;
+  if (nextBtn) nextBtn.textContent = ui.next;
+  if (backBtn) backBtn.textContent = ui.seriesMap;
+
+  nextBtn.onclick = next;
+  prevBtn.onclick = prev;
+
+  backBtn.onclick = () => {
+    window.location.href = `series.html?series=${seriesId}`;
   };
 });
 
 import(`../lessons/lesson${lessonId}.js`).then(module => {
   lessonData = module.lesson;
 
-  document.getElementById("lesson-title").textContent = lessonData.title;
-  document.getElementById("lesson-subtitle").textContent = lessonData.subtitle;
+  document.getElementById("lesson-title").textContent = lessonData.title[lang];
+  document.getElementById("lesson-subtitle").textContent = lessonData.subtitle[lang];
 
   loadScene();
 });

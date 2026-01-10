@@ -1,6 +1,7 @@
 // lessons/lesson1.js
 export const lesson = {
-  id: 4,
+  seriesId: 1,        // ← серия
+  lessonId: 4,        // ← номер урока 
   title: "Как не вестись на ответы ИИ",
   subtitle: "Проверяем и перепроверяем",
 

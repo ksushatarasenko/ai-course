@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Серия</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <!-- <link rel="stylesheet" href="css/series.css" /> -->
+  <link rel="stylesheet" href="css/lesson.css" />
+  <link rel="stylesheet" href="css/index.css" />
+
+
+</head>
+<div class="lang-switch">
+  <button data-lang="ru">RUS</button>
+  <button data-lang="pl">POL</button>
+</div>
+
+<body>
+
+
+  <header class="hero">
+    <h1 id="series-title"></h1>
+    <p id="series-subtitle"></p>
+  </header>
+
+
+  <main id="map">
+    <div id="lessons" class="lessons"></div>
+  </main>
+
+  <footer class="nav">
+    <a href="index.html" class="btn secondary">← Карта уроков</a>
+  </footer>
+
+  <!-- ВАЖНО -->
+  <script type="module" src="engine/series.js"></script>
+  <!-- <script type="module" src="engine/lang.js"></script> -->
+
+</body>
+
+</html>

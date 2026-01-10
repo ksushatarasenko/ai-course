@@ -1,43 +1,32 @@
-console.log("🚀 index.js стартовал");
+// engine/index.js
+import { i18n } from "./i18n.js";
+import { initLang, getLang, setLang } from "./lang.js";
 
-const lessons = [
-  { id: 1, title: "Почему ИИ ведёт себя странно?" },
-  { id: 2, title: "Почему ИИ делает не то, что ты хотел?" },
-  { id: 3, title: "ИИ не знает. Он угадывает" },
-  { id: 4, title: "Как не вестись на ответы ИИ" },
-  { id: 5, title: "ИИ помогает, но не играет за тебя" },
-  { id: 6, title: "Что можно и что нельзя говорить ИИ" },
-  { id: 7, title: "ИИ и тексты: идеи, а не сочинения за тебя" },
-  { id: 8, title: "ИИ и картинки: фантазия рулит" },
-  { id: 9, title: "ИИ и игры: ты — разработчик" },
-  
-];
-const lessons2 = [
-  
-  { id: 2.1, title: "🌌 СЕРИЯ 2 - Кирилл и тайны планеты ИИ" },
-  { id: 2.10, title: "ИИ бывают разными" },
-  { id: 2.11, title: "Кто придумал ИИ и зачем" },
-  { id: 2.12, title: "Как ИИ учится на примерах" },
-  { id: 2.13, title: "Правила, по которым думает ИИ" },
-];
+initLang();
+const lang = getLang();
+const t = i18n[lang];
 
-const container = document.getElementById("lessons");
+// текст
+document.querySelector("h1").textContent = t.index.heroTitle;
+document.querySelector("p").textContent = t.index.heroSubtitle;
 
-if (!container) {
-  throw new Error("❌ Контейнер #lessons не найден");
-}
+// кнопки языка
+document.querySelectorAll(".lang-switch button").forEach(btn => {
+  if (btn.dataset.lang === lang) btn.classList.add("active");
 
-lessons.forEach(lesson => {
-  const card = document.createElement("a");
-  card.className = "lesson-card";
-  card.href = `lesson.html?lesson=${lesson.id}`;
-
-  card.innerHTML = `
-    <span class="lesson-num">${String(lesson.id).padStart(2, "0")}</span>
-    <h3>${lesson.title}</h3>
-  `;
-
-  container.appendChild(card);
+  btn.onclick = () => {
+    setLang(btn.dataset.lang);
+    location.reload();
+  };
 });
 
-console.log("✅ Карточки уроков созданы");
+// серии
+const container = document.getElementById("series-list");
+container.innerHTML = "";
+
+t.series.forEach(series => {
+  const a = document.createElement("a");
+  a.href = `series.html?series=${series.id}`;
+  a.innerHTML = `<h3>${series.title}</h3><p>${series.subtitle}</p>`;
+  container.appendChild(a);
+});

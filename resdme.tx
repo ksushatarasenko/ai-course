@@ -93,3 +93,10 @@ method — правила / способы / обучение
     ]
   }
 }
+
+
+if (lang === "ru") {
+  text = "Планета ИИ";
+} else {
+  text = "Planeta AI";
+}

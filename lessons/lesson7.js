@@ -1,7 +1,7 @@
 // lessons/lesson2-2.js
 export const lesson = {
   seriesId: 2,
-  lessonId: 2 - 2,
+  lessonId: 7,
 
   title: {
     ru: "Границы и безопасность",

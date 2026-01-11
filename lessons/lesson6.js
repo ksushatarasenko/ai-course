@@ -1,7 +1,7 @@
 // lessons/lesson2-1.js
 export const lesson = {
   seriesId: 2,
-  lessonId: 2 - 1,
+  lessonId: 6,
 
   title: {
     ru: "Говори пошагово",

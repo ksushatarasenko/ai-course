@@ -1,16 +1,16 @@
-// lessons/lesson6.js
+// lessons/lesson2-1.js
 export const lesson = {
-  seriesId: 1,
-  lessonId: 6,
+  seriesId: 2,
+  lessonId: 2 - 1,
 
   title: {
-    ru: "Что можно и что нельзя говорить ИИ",
-    pl: "Co można, a czego nie można mówić AI",
+    ru: "Говори пошагово",
+    pl: "почему ИИ любит инструкции больше, чем догадки",
   },
 
   subtitle: {
-    ru: "Безопасность без занудства",
-    pl: "Bezpieczeństwo bez nudy",
+    ru: "",
+    pl: "",
   },
 
   scenes: [
@@ -18,66 +18,139 @@ export const lesson = {
     {
       id: "1",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module6/module6_scena1.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_lesson1_scene1.png?raw=true",
 
       author: {
         ru: [
-          "🎬 СЦЕНА 1. СТРАШНЫЙ РАЙОН 😬",
-          "Цель урока:",
-          "- объяснить личную информацию",
-          "- научить защищать себя",
-          "- показать ответственность",
+          "🎬 СЦЕНА 1. Район Инструкций",
+          "Кирилл идёт дальше по планете ИИ.",
+          "Теперь дорога выглядит иначе.",
+          "Она разбита на секции.",
+          "Каждый шаг подсвечен.",
+          "Над дорожкой висят таблички с номерами.",
         ],
         pl: [
-          "🎬 SCENA 1. STRASZNA DZIELNICA 😬",
-          "Cel lekcji:",
-          "- wyjaśnić, czym są dane osobiste",
-          "- nauczyć, jak się chronić",
-          "- pokazać odpowiedzialność",
+          "🎬 SCENA 1. Dzielnica Instrukcji",
+          "Kirył idzie dalej po Planecie AI.",
+          "Droga wygląda teraz inaczej.",
+          "Jest podzielona na sekcje.",
+          "Każdy krok jest podświetlony.",
+          "Nad ścieżką wiszą tabliczki z numerami.",
         ],
       },
 
       dialog: [
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: ["— Ого.", "— Тут как в туториале."],
+            pl: ["— Ooo.", "— Jak w tutorialu."],
+          },
+        },
+
         {
           type: "author",
           speaker: "narrator",
           avatar: "narrator",
           text: {
             ru: [
-              "Кирилл и робот подходят к тёмной части планеты.",
-              "Табличка:",
-              "⚠️ РАЙОН ДОВЕРИЯ",
-              "«Не всё, что спрашивают, — безопасно»",
+              "<em>(Туториал — это часть игры, где тебя учат шаг за шагом.)</em>",
             ],
-            pl: [
-              "Kirył i robot podchodzą do ciemnej części planety.",
-              "Tabliczka:",
-              "⚠️ DZIELNICA ZAUFANIA",
-              "„Nie wszystko, o co pytają, jest bezpieczne”",
-            ],
+            pl: ["<em>(Tutorial — część gry, która uczy krok po kroku.)</em>"],
           },
         },
-        {
-          type: "story",
-          speaker: "Kyrylo",
-          avatar: "kirill",
-          text: {
-            ru: ["— О, криповая зона."],
-            pl: ["— O, creepowa strefa."],
-          },
-        },
+
         {
           type: "ai",
           speaker: "AI robot",
           avatar: "robot",
           text: {
-            ru: ["— Здесь часто происходят ошибки."],
-            pl: ["— Tutaj często dochodzi do błędów."],
+            ru: ["— Это район Инструкций."],
+            pl: ["— To Dzielnica Instrukcji."],
+          },
+        },
+
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: ["— То есть?"],
+          },
+          pl: ["— To znaczy?"],
+        },
+
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: ["— Здесь работают задачи,", "— разбитые на шаги."],
+            pl: ["— Tutaj działają zadania,", "— podzielone na kroki."],
+          },
+        },
+
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: ["— А если не разбивать?"],
+            pl: ["— A jeśli nie podzielę?"],
+          },
+        },
+
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Робот смотрит на дорожку.", "Где-то вдалеке виден обрыв."],
+            pl: ["Robot patrzy na ścieżkę.", "W oddali widać urwisko."],
+          },
+        },
+
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: ["— Тогда возможны падения."],
+            pl: ["— Wtedy możliwe są upadki."],
+          },
+        },
+
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: ["— Хм.", "— Уже знакомо."],
+            pl: ["— Hm.", "— Już znajome."],
+          },
+        },
+
+        {
+          type: "master",
+          speaker: "🎮 Гейм-мастер (почти шёпотом):",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Во второй серии",
+              "Кирилл перестаёт просто спрашивать.",
+              "Он начинает управлять процессом.",
+            ],
+            pl: [
+              "W drugiej serii",
+              "Kirył przestaje tylko pytać.",
+              "Zaczyna sterować procesem.",
+            ],
           },
         },
       ],
     },
-
     // 2
     {
       id: "2",

@@ -155,56 +155,259 @@ export const lesson = {
     {
       id: "2",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module6/module5_scena2.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_lesson1_scene2.png?raw=true",
 
       author: {
-        ru: ["🎮 СЦЕНА 2. ПЛОХОЙ ПРИМЕР"],
-        pl: ["🎮 SCENA 2. ZŁY PRZYKŁAD"],
+        ru: [
+          "🎬 СЦЕНА 2. «Скажу всё сразу»",
+          "Кирилл смотрит на ровную дорожку с номерами.",
+          "Потом — на робота.",
+          "И решает пойти по старинке.",
+        ],
+        pl: [
+          "🎬 SCENA 2. „Powiem wszystko naraz”",
+          "Kirył patrzy na drogę z numerami.",
+          "Potem na robota.",
+          "I decyduje się zrobić to po staremu.",
+        ],
       },
 
       dialog: [
-        {
-          type: "ai",
-          speaker: "AI robot",
-          avatar: "robot",
-          text: {
-            ru: [
-              "— Некоторые дети спрашивают так:",
-              "На экране:",
-              "• «Вот мой адрес…»",
-              "• «Вот мой пароль…»",
-              "• «Вот номер маминой карты…»",
-            ],
-            pl: [
-              "— Niektóre dzieci pytają tak:",
-              "Na ekranie:",
-              "• „To jest mój adres…”",
-              "• „To jest moje hasło…”",
-              "• „To numer karty mamy…”",
-            ],
-          },
-        },
         {
           type: "story",
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: ["— ЧЕГО 😳", "— Кто так делает?!"],
-            pl: ["— CO 😳", "— Kto tak robi?!"],
+            ru: ["— Да ладно.", "— Я и так нормально объясню."],
+            pl: ["— Daj spokój.", "— I tak wyjaśnię normalnie."],
+          },
+        },
+
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: [
+              "— Смотри.",
+              "— Хочу игру.",
+              "— Чтобы был герой.",
+              "— Он шёл, дрался, прокачивался.",
+              "— Был босс.",
+              "— И в конце награда.",
+              "— Ну ты понял.",
+            ],
+            pl: [
+              "— Patrz.",
+              "— Chcę grę.",
+              "— Ma być bohater.",
+              "— Ma chodzić, walczyć, levelować się.",
+              "— Ma być boss.",
+              "— I na końcu nagroda.",
+              "— No wiesz.",
+            ],
+          },
+        },
+
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Кирилл сказал это на одном дыхании.", "Даже не остановился."],
+            pl: [
+              "Kirył powiedział to jednym tchem.",
+              "Nawet się nie zatrzymał.",
+            ],
+          },
+        },
+
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: ["— Обрабатываю запрос."],
+            pl: ["— Przetwarzam polecenie."],
+          },
+        },
+
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Экран мигает.",
+              "Номера над дорожкой начинают путаться.",
+              "1 меняется на 4.",
+              "3 исчезает.",
+              "2 дублируется.",
+            ],
+            pl: [
+              "Ekran miga.",
+              "Numery nad ścieżką zaczynają się mieszać.",
+              "1 zmienia się w 4.",
+              "3 znika.",
+              "2 się powiela.",
+            ],
+          },
+        },
+
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: ["— Готово."],
+            pl: ["— Gotowe."],
+          },
+        },
+
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Перед Кириллом появляется результат."],
+            pl: ["Przed Kiryłem pojawia się wynik."],
+          },
+        },
+
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "<b>ИГРА:</b>",
+              "Герой появляется.",
+              "Сразу получает награду.",
+              "Потом дерётся.",
+              "Потом исчезает.",
+              "Босса нет.",
+            ],
+            pl: [
+              "<b>GRA:</b>",
+              "Bohater się pojawia.",
+              "Od razu dostaje nagrodę.",
+              "Potem walczy.",
+              "Potem znika.",
+              "Bossa brak.",
+            ],
+          },
+        },
+
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: ["— Эээ…", "— Это что за спидран?"],
+            pl: ["— Eee…", "— To jakiś speedrun?"],
+          },
+        },
+
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "<em>(Спидран — когда игру проходят максимально быстро, часто ломая логику.)</em>",
+            ],
+            pl: [
+              "<em>(Speedrun — przejście gry jak najszybciej, często łamiąc logikę.)</em>",
+            ],
+          },
+        },
+
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: ["— Ты не указал порядок действий."],
+            pl: ["— Nie podałeś kolejności działań."],
+          },
+        },
+
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: ["— Ну я же всё сказал!"],
+            pl: ["— Przecież wszystko powiedziałem!"],
+          },
+        },
+
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: ["— Но не по шагам."],
+            pl: ["— Ale nie krok po kroku."],
+          },
+        },
+
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Кирилл смотрит на дорожку с номерами.",
+              "Теперь намёк очевиден.",
+            ],
+            pl: [
+              "Kirył patrzy na drogę z numerami.",
+              "Teraz podpowiedź jest oczywista.",
+            ],
+          },
+        },
+
+        {
+          type: "master",
+          speaker: "🎮 Гейм-мастер (почти шёпотом):",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Когда ты кидаешь всё в одну кучу,",
+              "ИИ сам решает порядок.",
+              "И редко угадывает так,",
+              "как ты хотел.",
+            ],
+            pl: [
+              "Gdy wrzucasz wszystko do jednego worka,",
+              "AI samo ustala kolejność.",
+              "I rzadko zgaduje tak,",
+              "jak byś chciał.",
+            ],
           },
         },
       ],
     },
-
     // 3
     {
       id: "3",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module6/module6_scena3.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_lesson1_scene3.png?raw=true",
 
       author: {
-        ru: ["😠 СЦЕНА 3. КИРИЛЛ СЕРЬЁЗНЫЙ"],
-        pl: ["😠 SCENA 3. KIRYŁ JEST POWAŻNY"],
+        ru: [
+          "🎬 СЦЕНА 3. «А если по шагам?»",
+          "Кирилл ещё раз смотрит на сломанную игру.",
+          "Потом — на дорожку с номерами.",
+          "И ухмыляется.",
+        ],
+        pl: [
+          "🎬 SCENA 3. „A co jeśli krok po kroku?”",
+          "Kirył jeszcze raz patrzy na zepsutą grę.",
+          "Potem — na ścieżkę z numerami.",
+          "I uśmiecha się.",
+        ],
       },
 
       dialog: [
@@ -213,59 +416,219 @@ export const lesson = {
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: ["— Стоп.", "— Ты не друг.", "— Ты программа."],
+            ru: ["— Окей.", "— Понял намёк.", "— Давай по-честному."],
             pl: [
-              "— Stop.",
-              "— Nie jesteś przyjacielem.",
-              "— Jesteś programem.",
+              "— Okej.",
+              "— Zrozumiałem podpowiedź.",
+              "— Zróbmy to uczciwie.",
             ],
           },
         },
+
         {
-          type: "ai",
-          speaker: "AI robot",
-          avatar: "robot",
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
           text: {
-            ru: ["— Верно."],
-            pl: ["— Zgadza się."],
+            ru: ["Кирилл делает глубокий вдох.", "И начинает считать."],
+            pl: ["Kirył bierze głęboki oddech.", "I zaczyna liczyć."],
           },
         },
+
         {
           type: "story",
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
             ru: [
-              "— И ты не должен знать:",
-              "— где я живу,",
-              "— какие у меня пароли",
-              "— и вообще личное.",
+              "— Шаг первый:",
+              "— появляется герой.",
+              "",
+              "— Шаг второй:",
+              "— герой идёт по уровню и сражается с врагами.",
+              "",
+              "— Шаг третий:",
+              "— герой прокачивается.",
+              "",
+              "— Шаг четвёртый:",
+              "— появляется босс.",
+              "",
+              "— Шаг пятый:",
+              "— после победы игрок получает награду.",
             ],
             pl: [
-              "— I nie powinieneś wiedzieć:",
-              "— gdzie mieszkam,",
-              "— jakie mam hasła,",
-              "— ani żadnych danych osobistych.",
+              "— Krok pierwszy:",
+              "— pojawia się bohater.",
+              "",
+              "— Krok drugi:",
+              "— bohater idzie przez poziom i walczy z wrogami.",
+              "",
+              "— Krok trzeci:",
+              "— bohater się rozwija.",
+              "",
+              "— Krok czwarty:",
+              "— pojawia się boss.",
+              "",
+              "— Krok piąty:",
+              "— po zwycięstwie gracz dostaje nagrodę.",
             ],
           },
         },
+
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "С каждым шагом",
+              "номер над дорожкой загорается.",
+              "1.",
+              "2.",
+              "3.",
+              "4.",
+              "5.",
+            ],
+            pl: [
+              "Z każdym krokiem",
+              "numer nad ścieżką się zapala.",
+              "1.",
+              "2.",
+              "3.",
+              "4.",
+              "5.",
+            ],
+          },
+        },
+
         {
           type: "ai",
           speaker: "AI robot",
           avatar: "robot",
           text: {
-            ru: ["— Согласен."],
-            pl: ["— Zgadzam się."],
+            ru: ["— Структура понятна."],
+            pl: ["— Struktura zrozumiała."],
+          },
+        },
+
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Экран собирается.", "Без мигания.", "Без хаоса."],
+            pl: ["Ekran się układa.", "Bez migania.", "Bez chaosu."],
+          },
+        },
+
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: ["— Выполняю по шагам."],
+            pl: ["— Wykonuję krok po kroku."],
+          },
+        },
+
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Перед Кириллом появляется новая версия игры."],
+            pl: ["Przed Kiryłem pojawia się nowa wersja gry."],
+          },
+        },
+
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "<b>ИГРА:</b>",
+              "Герой появляется.",
+              "Проходит уровень.",
+              "Сражается.",
+              "Прокачивается.",
+              "Побеждает босса.",
+              "Получает награду.",
+            ],
+            pl: [
+              "<b>GRA:</b>",
+              "Bohater się pojawia.",
+              "Przechodzi poziom.",
+              "Walczy.",
+              "Rozwija się.",
+              "Pokonuje bossa.",
+              "Dostaje nagrodę.",
+            ],
+          },
+        },
+
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: ["— О.", "— О-О!", "— Вот теперь логично."],
+            pl: ["— O.", "— O-O!", "— Teraz to ma sens."],
+          },
+        },
+
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Кирилл улыбается.",
+              "Не потому что «повезло».",
+              "А потому что понял.",
+            ],
+            pl: [
+              "Kirył się uśmiecha.",
+              "Nie dlatego, że „się udało”.",
+              "Ale dlatego, że zrozumiał.",
+            ],
+          },
+        },
+
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: ["— Ты задал порядок.", "— Я его выполнил."],
+            pl: ["— Określiłeś kolejność.", "— Ja ją wykonałem."],
+          },
+        },
+
+        {
+          type: "master",
+          speaker: "🎮 Гейм-мастер (почти шёпотом):",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Кирилл сделал важный шаг.",
+              "Он перестал говорить «что хочу».",
+              "И начал говорить «как делать».",
+            ],
+            pl: [
+              "Kirył zrobił ważny krok.",
+              "Przestał mówić „co chcę”.",
+              "Zaczął mówić „jak to zrobić”.",
+            ],
           },
         },
       ],
     },
-
     // МЫСЛИ
     {
       id: "thought",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module6/module6_mysli1.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_lesson1_thoughts.png?raw=true",
 
       author: {
         ru: ["💭 МЫСЛИ КИРИЛЛА"],
@@ -275,196 +638,153 @@ export const lesson = {
       dialog: [
         {
           type: "thought",
-          speaker: "💭 Myśli Kyryła:",
-          text: {
-            ru: ["«ИИ — это как чат в игре."],
-            pl: ["„AI to jak czat w grze."],
-          },
-        },
-        {
-          type: "thought",
-          speaker: "💭 Myśli Kyryła:",
-          text: {
-            ru: ["Можно болтать,", "но нельзя сливать личное."],
-            pl: ["Można pogadać,", "ale nie wolno ujawniać prywatnych rzeczy."],
-          },
-        },
-        {
-          type: "thought",
-          speaker: "💭 Myśli Kyryła:",
-          text: {
-            ru: ["А то потом будет беда.»"],
-            pl: ["Bo potem mogą być kłopoty."],
-          },
-        },
-      ],
-    },
-
-    // 4
-    {
-      id: "4",
-      image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module6/module6_prawiloSwetofor.png?raw=true",
-
-      author: {
-        ru: ["🧠 СЦЕНА 4. ПРАВИЛО «СВЕТОФОРА» 🚦"],
-        pl: ["🧠 SCENA 4. ZASADA „SYGNALIZATORA” 🚦"],
-      },
-
-      dialog: [
-        {
-          type: "story",
-          speaker: "Kyrylo",
+          speaker: "💭 Мысли Кирилла:",
           avatar: "kirill",
           text: {
-            ru: ["— Давай проще.", "— Как понять, что можно говорить?"],
-            pl: ["— Prościej.", "— Skąd wiedzieć, co można mówić?"],
+            ru: ["«Я ничего волшебного не сделал.»"],
+            pl: ["„Nie zrobiłem nic magicznego.”"],
           },
         },
         {
-          type: "ai",
-          speaker: "AI robot",
-          avatar: "robot",
+          type: "thought",
+          speaker: "💭 Мысли Кирилла:",
+          avatar: "kirill",
           text: {
-            ru: ["— Используй правило светофора."],
-            pl: ["— Użyj zasady sygnalizatora."],
+            ru: ["«Я просто разложил всё по полочкам.»"],
+            pl: ["„Po prostu poukładałem wszystko krok po kroku.”"],
           },
         },
         {
-          type: "ai",
-          speaker: "AI robot",
-          avatar: "robot",
+          type: "thought",
+          speaker: "💭 Мысли Кирилла:",
+          avatar: "kirill",
           text: {
-            ru: [
-              "<b>🟢 МОЖНО</b>",
-              "<ul><li>идеи</li><li>вопросы</li><li>помощь с учёбой</li><li>игры и творчество</li></ul>",
-            ],
-            pl: [
-              "<b>🟢 MOŻNA</b>",
-              "<ul><li>pomysły</li><li>pytania</li><li>pomoc w nauce</li><li>gry i twórczość</li></ul>",
-            ],
+            ru: ["«Когда я говорю по шагам —", "он не путается.»"],
+            pl: ["„Gdy mówię krok po kroku —", "on się nie gubi.”"],
           },
         },
         {
-          type: "ai",
-          speaker: "AI robot",
-          avatar: "robot",
+          type: "thought",
+          speaker: "💭 Мысли Кирилла:",
+          avatar: "kirill",
           text: {
-            ru: [
-              "<b>🟡 ОСТОРОЖНО</b>",
-              "<ul><li>osobiste historie</li><li>эмоции</li><li>жалобы</li></ul>",
-            ],
-            pl: [
-              "<b>🟡 OSTROŻNIE</b>",
-              "<ul><li>osobiste historie</li><li>emocje</li><li>skargi</li></ul>",
-            ],
-          },
-        },
-        {
-          type: "ai",
-          speaker: "AI robot",
-          avatar: "robot",
-          text: {
-            ru: [
-              "<b>🔴 НЕЛЬЗЯ</b>",
-              "<ul><li>адрес</li><li>пароли</li><li>номера карт</li><li>данные семьи</li></ul>",
-            ],
-            pl: [
-              "<b>🔴 NIE WOLNO</b>",
-              "<ul><li>adres</li><li>hasła</li><li>numery kart</li><li>dane rodziny</li></ul>",
-            ],
+            ru: ["«Значит,", "я могу управлять результатом.»"],
+            pl: ["„Czyli", "mogę sterować wynikiem.”"],
           },
         },
       ],
     },
-
-    // правило №5
+    // правило
     {
-      id: "5",
+      id: "rule",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module6/module6_prawilo.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_lesson1_rule.png?raw=true",
 
       author: {
-        ru: ["🧠 СЦЕНА 5. ПРАВИЛО №5 ПЛАНЕТЫ ИИ"],
-        pl: ["🧠 SCENA 5. ZASADA NR 5 PLANETY AI"],
+        ru: ["🎯 ПРАВИЛО УРОКА"],
+        pl: ["🎯 ZASADA LEKCJI"],
       },
 
       dialog: [
         {
           type: "rule",
           title: {
-            ru: "❗ ПРАВИЛО ПЛАНЕТЫ ИИ №5",
-            pl: "❗ ZASADA PLANETY AI NR 5",
+            ru: "❗ ЗАПОМНИ",
+            pl: "❗ ZAPAMIĘTAJ",
           },
           rule: {
-            ru: "ИИ — не человек и не друг.<br>Личное — не для него",
-            pl: "AI nie jest człowiekiem ani przyjacielem.<br>Dane osobiste nie są dla niego",
+            ru: [
+              "ИИ не понимает всё сразу.",
+              "Он работает шаг за шагом.",
+              "",
+              "Если хочешь результат —",
+              "разбивай задачу на шаги.",
+            ],
+            pl: [
+              "AI nie rozumie wszystkiego naraz.",
+              "Działa krok po kroku.",
+              "",
+              "Jeśli chcesz efekt —",
+              "podziel zadanie na kroki.",
+            ],
           },
           dialog: [
             {
-              speaker: "Kyrylo",
+              speaker: "AI robot",
+              avatar: "robot",
               text: {
-                ru: ["— Запомнил."],
-                pl: ["— Zapamiętane."],
+                ru: ["— Я выполняю порядок."],
+                pl: ["— Wykonuję kolejność."],
               },
             },
             {
-              speaker: "AI robot",
+              speaker: "Kyrylo",
+              avatar: "kirill",
               text: {
-                ru: ["— Это делает тебя безопасным пользователем."],
-                pl: ["— To czyni cię bezpiecznym użytkownikiem."],
+                ru: ["— Значит,", "— порядок задаю я."],
+                pl: ["— Czyli", "— to ja ustalam kolejność."],
               },
             },
           ],
         },
       ],
     },
-    // 6
+    //  Practic
     {
-      id: "6",
+      id: "task",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module6/module6_final.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_lesson1_task.png?raw=true",
 
       author: {
-        ru: ["🏁 ФИНАЛ УРОКА 6"],
-        pl: ["🏁 FINAŁ LEKCJI 6"],
+        ru: [
+          "🎮 ПРАКТИКА",
+          "Кирилл смотрит на варианты.",
+          "Один из них явно лучше.",
+        ],
+        pl: [
+          "🎮 PRAKTYKA",
+          "Kirył patrzy na opcje.",
+          "Jedna z nich jest wyraźnie lepsza.",
+        ],
       },
 
       dialog: [
         {
-          type: "story",
-          speaker: "Kyrylo",
-          avatar: "kirill",
-          text: {
-            ru: ["— Знаешь…", "— Ты полезный."],
-            pl: ["— Wiesz…", "— Jesteś pomocny."],
+          type: "task",
+          question: {
+            ru: "Какой запрос ИИ поймёт лучше?",
+            pl: "Które polecenie AI zrozumie najlepiej?",
           },
-        },
-        {
-          type: "ai",
-          speaker: "AI robot",
-          avatar: "robot",
-          text: {
-            ru: ["— Спасибо."],
-            pl: ["— Dziękuję."],
+          options: {
+            ru: [
+              "Сделай крутую игру с героем, боссом и наградой",
+              "Придумай игру. Герой должен быть сильным. Пусть будет интересно",
+              "Придумай игру по шагам: 1) появляется герой, 2) он проходит уровень, 3) сражается с боссом, 4) получает награду",
+            ],
+            pl: [
+              "Zrób fajną grę z bohaterem, bossem i nagrodą",
+              "Wymyśl grę. Bohater ma być silny. Niech będzie ciekawie",
+              "Wymyśl grę krok po kroku: 1) pojawia się bohater, 2) przechodzi poziom, 3) walczy z bossem, 4) dostaje nagrodę",
+            ],
           },
-        },
-        {
-          type: "story",
-          speaker: "Kyrylo",
-          avatar: "kirill",
-          text: {
-            ru: ["— Но только если держать дистанцию."],
-            pl: ["— Ale tylko jeśli zachować dystans."],
-          },
-        },
-        {
-          type: "ai",
-          speaker: "AI robot",
-          avatar: "robot",
-          text: {
-            ru: ["— Это разумно."],
-            pl: ["— To rozsądne."],
+          correct: 2,
+          discussion: {
+            title: {
+              ru: "🧠 Обсуждение",
+              pl: "🧠 Dyskusja",
+            },
+            points: {
+              ru: [
+                "Какие варианты слишком общие?",
+                "Где есть порядок действий?",
+                "Почему шаги помогают ИИ?",
+              ],
+              pl: [
+                "Które opcje są zbyt ogólne?",
+                "Gdzie jest kolejność działań?",
+                "Dlaczego kroki pomagają AI?",
+              ],
+            },
           },
         },
       ],
@@ -474,39 +794,127 @@ export const lesson = {
     {
       id: "final",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module6/module6_final.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_lesson1_final.png?raw=true",
 
       author: {
-        ru: ["🧩 ВЫВОД УРОКА"],
-        pl: ["🧩 WNIOSEK Z LEKCJI"],
+        ru: [
+          "🏁 ФИНАЛ УРОКА",
+          "Дорожка с номерами остаётся позади.",
+          "Теперь Кирилл идёт уверенно.",
+          "Не потому что всё знает.",
+          "А потому что понимает, как действовать.",
+        ],
+        pl: [
+          "🏁 FINAŁ LEKCJI",
+          "Ścieżka z numerami zostaje za nimi.",
+          "Kirył idzie teraz pewniej.",
+          "Nie dlatego, że wszystko wie.",
+          "Ale dlatego, że rozumie, jak działać.",
+        ],
       },
 
       dialog: [
         {
-          type: "author",
-          speaker: "narrator",
-          avatar: "narrator",
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
           text: {
-            ru: ["• ИИ помогает, но не думает за человека"],
-            pl: ["• AI pomaga, ale nie myśli za człowieka"],
+            ru: [
+              "— Забавно.",
+              "— Раньше я просто просил.",
+              "— А теперь как будто объясняю план.",
+            ],
+            pl: [
+              "— Ciekawe.",
+              "— Wcześniej po prostu prosiłem.",
+              "— A teraz jakbym tłumaczył plan.",
+            ],
           },
         },
+
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: ["— Ты описываешь алгоритм."],
+            pl: ["— Opisujesz algorytm."],
+          },
+        },
+
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: ["— Алго… что?"],
+            pl: ["— Algo… co?"],
+          },
+        },
+
         {
           type: "author",
           speaker: "narrator",
           avatar: "narrator",
           text: {
-            ru: ["• личную информацию нельзя передавать"],
-            pl: ["• nie wolno przekazywać danych osobistych"],
+            ru: ["<em>(Алгоритм — это план действий по шагам.)</em>"],
+            pl: ["<em>(Algorytm — to plan działania krok po kroku.)</em>"],
           },
         },
+
         {
-          type: "author",
-          speaker: "narrator",
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: ["— Именно это ты и сделал."],
+            pl: ["— Właśnie to zrobiłeś."],
+          },
+        },
+
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: ["— Ха.", "— То есть я уже немного программист?"],
+            pl: ["— Ha.", "— Czyli jestem już trochę programistą?"],
+          },
+        },
+
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: ["— На один шаг ближе."],
+            pl: ["— O jeden krok bliżej."],
+          },
+        },
+
+        {
+          type: "master",
+          speaker: "🎮 Гейм-мастер (почти шёпотом):",
           avatar: "narrator",
           text: {
-            ru: ["• ответственность всегда на человеке"],
-            pl: ["• odpowiedzialność zawsze leży po stronie człowieka"],
+            ru: [
+              "Кирилл прошёл первый урок второй серии.",
+              "Он понял важную вещь:",
+              "ИИ любит не магию,",
+              "а чёткие шаги.",
+              "",
+              "Дальше будет сложнее.",
+              "И намного интереснее.",
+            ],
+            pl: [
+              "Kirył ukończył pierwszą lekcję drugiej serii.",
+              "Zrozumiał ważną rzecz:",
+              "AI nie lubi magii,",
+              "tylko jasne kroki.",
+              "",
+              "Dalej będzie trudniej.",
+              "I dużo ciekawiej.",
+            ],
           },
         },
       ],

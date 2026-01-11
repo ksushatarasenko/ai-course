@@ -26,11 +26,15 @@ export const lesson = {
           "🎬 СЦЕНА 1. Кирилл чувствует себя умнее 😏",
           "Кирилл идёт по планете ИИ вместе с роботом.",
           "Вокруг — странные постройки, окна чатов, висящие кнопки.",
+          "Кажется, он уже разобрался.",
+          "По крайней мере, ему так кажется.",
         ],
         pl: [
           "🎬 SCENA 1. Kirył czuje się mądrzejszy 😏",
           "Kirył idzie po planecie AI razem z robotem.",
           "Wokół — dziwne budowle, okna czatu, wiszące przyciski.",
+          "Wygląda na to, że już wszystko ogarnął.",
+          "A przynajmniej tak mu się wydaje.",
         ],
       },
 
@@ -41,13 +45,43 @@ export const lesson = {
           avatar: "kirill",
           text: {
             ru: [
-              "— Ладно, я понял",
+              "— Ладно.",
+              "— Кажется, я понял, как вы работаете.",
               "— Ты не человек, ты программа.",
+            ],
+            pl: [
+              "— Dobra.",
+              "— Chyba już rozumiem, jak działacie.",
+              "— Nie jesteś człowiekiem, jesteś programem.",
+            ],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Кирилл говорит спокойно.",
+              "Слишком спокойно для человека, который ещё ошибается.",
+            ],
+            pl: [
+              "Kirył mówi spokojnie.",
+              "Zbyt spokojnie jak na kogoś, kto jeszcze się myli.",
+            ],
+          },
+        },
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: [
+              "— Значит, с тобой просто нужно говорить правильно.",
               "— Сейчас я тебе нормально объясню.",
             ],
             pl: [
-              "— Dobra, zrozumiałem.",
-              "— Nie jesteś człowiekiem, jesteś programem.",
+              "— Czyli trzeba po prostu mówić do ciebie właściwie.",
               "— Teraz wyjaśnię ci to porządnie.",
             ],
           },
@@ -57,10 +91,27 @@ export const lesson = {
           speaker: "AI robot",
           avatar: "robot",
           text: {
-            ru: ["— Отлично.", "— Я готов выполнять задания."],
-            pl: ["— Świetnie.", "— Jestem gotowy wykonywać zadania."],
+            ru: ["— Я готов выполнять задания."],
+            pl: ["— Jestem gotowy wykonywać zadania."],
           },
         },
+
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Кирилл кивает сам себе.",
+              "Как будто только что поставил галочку.",
+            ],
+            pl: [
+              "Kirył kiwa głową.",
+              "Jakby właśnie odhaczył punkt na liście.",
+            ],
+          },
+        },
+
         {
           type: "story",
           speaker: "Kyrylo",
@@ -79,6 +130,36 @@ export const lesson = {
             pl: ["— Wykonuję."],
           },
         },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "В этот момент Кирилл даже не сомневается.",
+              "Он уверен: теперь-то он сказал всё правильно.",
+            ],
+            pl: [
+              "W tym momencie Kirył nawet nie ma wątpliwości.",
+              "Jest pewien, że tym razem powiedział wszystko właściwie.",
+            ],
+          },
+        },
+        {
+          type: "master",
+          speaker: "🎮 Гейм-мастер (почти шёпотом):",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Кирилл сейчас уверен, что всё понял.",
+              "А это самый опасный момент.",
+            ],
+            pl: [
+              "Kirył jest teraz pewien, że wszystko zrozumiał.",
+              "A to jest najbardziej niebezpieczny moment.",
+            ],
+          },
+        },
       ],
     },
 
@@ -89,8 +170,20 @@ export const lesson = {
         "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_scena2.png?raw=true",
 
       author: {
-        ru: ["🤦 СЦЕНА 2. СНОВА НЕ ТО"],
-        pl: ["🤦 SCENA 2. ZNOWU NIE TO"],
+        ru: [
+          "🤦 СЦЕНА 2. СНОВА НЕ ТО",
+          "Иногда самый неприятный момент — не первый провал.",
+          "А тот, который происходит после слов «я всё понял».",
+          "Кирилл ждёт чего-то крутого.",
+          "Но система ждёт только инструкцию.",
+        ],
+        pl: [
+          "🤦 SCENA 2. ZNOWU NIE TO",
+          "Najbardziej irytujący moment to nie pierwsza porażka.",
+          "Tylko ta, która przychodzi po słowach „już wszystko wiem”.",
+          "Kirył czeka na coś fajnego.",
+          "Ale system czeka tylko na instrukcję.",
+        ],
       },
 
       dialog: [
@@ -99,8 +192,31 @@ export const lesson = {
           speaker: "narrator",
           avatar: "narrator",
           text: {
-            ru: ["Появляется описание:"],
-            pl: ["Pojawia się opis:"],
+            ru: [
+              "Ответ появляется быстро.",
+              "Слишком быстро для чего-то по-настоящему сложного.",
+            ],
+            pl: [
+              "Odpowiedź pojawia się szybko.",
+              "Zbyt szybko jak na coś naprawdę złożonego.",
+            ],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Появляется описание.",
+              "На первый взгляд — всё выглядит логично.",
+              "Но только на первый взгляд.",
+            ],
+            pl: [
+              "Pojawia się opis.",
+              "Na pierwszy rzut oka wszystko wygląda logicznie.",
+              "Ale tylko na pierwszy rzut oka.",
+            ],
           },
         },
         {
@@ -114,6 +230,15 @@ export const lesson = {
             pl: [
               "— Quest: idź naprzód, pokonaj jednego słabego wroga i zdobądź 1 monetę.",
             ],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Кирилл читает.", "И не верит глазам."],
+            pl: ["Kirył czyta.", "I nie wierzy własnym oczom."],
           },
         },
         {
@@ -150,6 +275,37 @@ export const lesson = {
             ],
           },
         },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Кирилл сжимает губы.",
+              "Вот теперь злость возвращается.",
+              "Не потому что результат плохой.",
+              "А потому что он ожидал другого.",
+            ],
+            pl: [
+              "Kirył zaciska usta.",
+              "Złość wraca.",
+              "Nie dlatego, że wynik jest słaby.",
+              "Ale dlatego, że spodziewał się czegoś innego.",
+            ],
+          },
+        },
+        {
+          type: "master",
+          speaker: "🎮 Гейм-мастер (почти шёпотом):",
+          avatar: "narrator",
+          text: {
+            ru: ["ИИ не нарушил правил.", "Он просто выполнил инструкцию."],
+            pl: [
+              "AI nie złamało żadnych zasad.",
+              "Po prostu wykonało instrukcję.",
+            ],
+          },
+        },
       ],
     },
 
@@ -160,8 +316,16 @@ export const lesson = {
         "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_scena3.png?raw=true",
 
       author: {
-        ru: ["😤 СЦЕНА 3. Кирилл бесится"],
-        pl: ["😤 SCENA 3. Kirył się wścieka"],
+        ru: [
+          "😤 СЦЕНА 3. Кирилл бесится",
+          "Есть момент, когда злость уже не помогает.",
+          "Но ещё кажется, что проблема точно не в тебе.",
+        ],
+        pl: [
+          "😤 SCENA 3. Kirył się wścieka",
+          "Przychodzi moment, w którym złość już nie pomaga.",
+          "Ale wciąż wydaje się, że problem na pewno nie jest w tobie.",
+        ],
       },
 
       dialog: [
@@ -172,6 +336,21 @@ export const lesson = {
           text: {
             ru: ["— Да блин!", "— Любой нормальный человек понял бы!"],
             pl: ["— No kurczę!", "— Każdy normalny człowiek by to zrozumiał!"],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Кирилл говорит громче, чем нужно.",
+              "Как будто громкость может что-то изменить.",
+            ],
+            pl: [
+              "Kirył mówi głośniej, niż trzeba.",
+              "Jakby głośność mogła coś zmienić.",
+            ],
           },
         },
         {
@@ -198,6 +377,34 @@ export const lesson = {
             pl: ["— …", "— To wkurza."],
           },
         },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Кирилл замолкает.", "Иногда пауза злит сильнее, чем ответ."],
+            pl: [
+              "Kirył milknie.",
+              "Czasem cisza wkurza bardziej niż odpowiedź.",
+            ],
+          },
+        },
+
+        {
+          type: "master",
+          speaker: "🎮 Гейм-мастер (почти шёпотом):",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "ИИ не спорит.",
+              "Он просто не понимает, за что на него злятся.",
+            ],
+            pl: [
+              "AI się nie kłóci.",
+              "Po prostu nie rozumie, za co ktoś się na nie złości.",
+            ],
+          },
+        },
       ],
     },
 
@@ -208,8 +415,16 @@ export const lesson = {
         "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_mysliKyryla.png?raw=true",
 
       author: {
-        ru: ["💭 МЫСЛИ КИРИЛЛА (ключевой момент)"],
-        pl: ["💭 MYŚLI KIRYŁA (kluczowy moment)"],
+        ru: [
+          "💭 МЫСЛИ КИРИЛЛА (ключевой момент)",
+          "Злость постепенно уходит.",
+          "Остаётся странное чувство, будто пазл не сходится.",
+        ],
+        pl: [
+          "💭 MYŚLI KIRYŁA (kluczowy moment)",
+          "Złość powoli opada.",
+          "Zostaje dziwne uczucie, jakby układanka się nie zgadzała.",
+        ],
       },
 
       dialog: [
@@ -218,8 +433,18 @@ export const lesson = {
           speaker: "💭 Myśli Kyryła:",
           avatar: "kirill",
           text: {
-            ru: ["«Так… Он реально не прикалывается."],
-            pl: ["„Tak… On naprawdę nie żartuje."],
+            ru: [
+              "«Так…",
+              "Он правда не прикалывается.",
+              "Не троллит.",
+              "И не делает это назло.»",
+            ],
+            pl: [
+              "„Tak…",
+              "On naprawdę nie żartuje.",
+              "Nie trolluje.",
+              "I nie robi tego specjalnie.”",
+            ],
           },
         },
         {
@@ -230,12 +455,12 @@ export const lesson = {
             ru: [
               "Я говорю словами,",
               "которые понятны людям,",
-              "но не понятны ИИ.",
+              "Но для него они пустые.",
             ],
             pl: [
               "Mówię słowami,",
               "które są zrozumiałe dla ludzi,",
-              "ale nie dla AI.",
+              "Ale dla niego są puste.",
             ],
           },
         },
@@ -248,11 +473,13 @@ export const lesson = {
               "Я сказал “крутой”,",
               "а что это значит?",
               "Для меня — одно, для него — вообще ничего.»",
+              "Просто звук.»",
             ],
             pl: [
               "Powiedziałem „fajny”,",
               "ale co to właściwie znaczy?",
               "Dla mnie jedno, dla niego — nic.»",
+              "Tylko dźwięk.”",
             ],
           },
         },
@@ -261,8 +488,42 @@ export const lesson = {
           speaker: "narrator",
           avatar: "narrator",
           text: {
-            ru: ["Кирилл останавливается."],
-            pl: ["Kirył się zatrzymuje."],
+            ru: [
+              "Кирилл останавливается.",
+              "Иногда, чтобы понять, нужно перестать спорить.",
+            ],
+            pl: [
+              "Kirył się zatrzymuje.",
+              "Czasem, żeby zrozumieć, trzeba przestać się spierać.",
+            ],
+          },
+        },
+        {
+          type: "thought",
+          speaker: "💭 Мысли Кирилла:",
+          avatar: "kirill",
+          text: {
+            ru: [
+              "«Если бы я был ИИ…",
+              "Я бы тоже сделал самый простой вариант.»",
+            ],
+            pl: ["„Gdybym był AI…", "Też zrobiłbym najprostszy wariant.”"],
+          },
+        },
+
+        {
+          type: "master",
+          speaker: "🎮 Гейм-мастер (почти шёпотом):",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Вот здесь начинается мышление.",
+              "Не с ответа — с попытки посмотреть с другой стороны.",
+            ],
+            pl: [
+              "Właśnie tutaj zaczyna się myślenie.",
+              "Nie od odpowiedzi — lecz od spojrzenia z innej strony.",
+            ],
           },
         },
       ],
@@ -275,8 +536,18 @@ export const lesson = {
         "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_scena4.png?raw=true",
 
       author: {
-        ru: ["🧠 СЦЕНА 4. ВАЖНОЕ ОТКРЫТИЕ"],
-        pl: ["🧠 SCENA 4. WAŻNE ODKRYCIE"],
+        ru: [
+          "🧠 СЦЕНА 4. ВАЖНОЕ ОТКРЫТИЕ",
+          "Злость ушла.",
+          "На её месте появилось что-то другое.",
+          "Не ответ — догадка.",
+        ],
+        pl: [
+          "🧠 SCENA 4. WAŻNE ODKRYCIE",
+          "Złość minęła.",
+          "Na jej miejscu pojawiło się coś innego.",
+          "Nie odpowiedź — lecz domysł.",
+        ],
       },
 
       dialog: [
@@ -285,30 +556,20 @@ export const lesson = {
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: [
-              "— Подожди…",
-              "— Ты понимаешь только то, что можно представить как правила?",
-            ],
-            pl: [
-              "— Poczekaj…",
-              "— Rozumiesz tylko to, co da się opisać zasadami?",
-            ],
+            ru: ["— Значит…", "— Чем больше правил, тем понятнее?"],
+            pl: ["— Czyli…", "— Im więcej zasad, tym jaśniej?"],
           },
         },
+
         {
           type: "ai",
           speaker: "AI robot",
           avatar: "robot",
           text: {
-            ru: [
-              "— Да.",
-              "— Чем больше правил — тем лучше результат.",
-              "— Чем больше конкретных слов, тем лучше.",
-            ],
+            ru: ["— Верно.", "— Чем больше конкретики — тем точнее результат."],
             pl: [
-              "— Tak.",
-              "— Im więcej zasad, tym lepszy wynik.",
-              "— Im więcej konkretnych słów, tym lepiej.",
+              "— Zgadza się.",
+              "— Im więcej konkretów — tym dokładniejszy wynik.",
             ],
           },
         },
@@ -348,10 +609,22 @@ export const lesson = {
             pl: ["— Zgadzam się."],
           },
         },
+        {
+          type: "master",
+          speaker: "🎮 Гейм-мастер (почти шёпотом):",
+          avatar: "narrator",
+          text: {
+            ru: ["Кирилл только что нашёл ключ.", "Не к ИИ — к инструкции."],
+            pl: [
+              "Kirył właśnie znalazł klucz.",
+              "Nie do AI — lecz do instrukcji.",
+            ],
+          },
+        },
       ],
     },
 
-        // МИНИ-ЗАДАНИЕ 1
+    // МИНИ-ЗАДАНИЕ 1
     {
       id: "task",
       image:
@@ -411,8 +684,16 @@ export const lesson = {
         "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_scena5.png?raw=true",
 
       author: {
-        ru: ["🎬 СЦЕНА 5. Кирилл учится объяснять"],
-        pl: ["🎬 SCENA 5. Kirył uczy się tłumaczyć"],
+        ru: [
+          "🎬 СЦЕНА 5. Кирилл учится объяснять",
+          "Теперь Кирилл не злится.",
+          "Он пробует по-другому.",
+        ],
+        pl: [
+          "🎬 SCENA 5. Kirył uczy się tłumaczyć",
+          "Kirył już się nie złości.",
+          "Próbuje inaczej.",
+        ],
       },
 
       dialog: [
@@ -426,26 +707,88 @@ export const lesson = {
           },
         },
         {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Кирилл делает паузу.",
+              "Не торопится.",
+              "Как будто сначала формулирует мысль у себя в голове.",
+            ],
+            pl: [
+              "Kirył robi pauzę.",
+              "Nie spieszy się.",
+              "Jakby najpierw układał myśl w głowie.",
+            ],
+          },
+        },
+        {
           type: "story",
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
+            ru: ["— Придумай квест для игры.", "— Он должен быть сложным."],
+            pl: ["— Wymyśl quest do gry.", "— Ma być trudny."],
+          },
+        },
+
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
             ru: [
-              "— Придумай квест для игры.",
-              "— Он должен быть сложным.",
-              "— Там должен быть босс.",
-              "— Должны быть ловушки.",
-              "— И в конце — крутая награда.",
+              "Кирилл смотрит на робота.",
+              "Будто проверяет: понял ли он сам то, что сказал.",
             ],
             pl: [
-              "— Wymyśl quest do gry.",
-              "— Ma być trudny.",
-              "— Musi być boss.",
-              "— Muszą być pułapki.",
-              "— I na końcu — fajna nagroda.",
+              "Kirył patrzy na robota.",
+              "Jakby sprawdzał, czy sam rozumie to, co powiedział.",
             ],
           },
         },
+
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: ["— Там должен быть босс.", "— И ловушки."],
+            pl: ["— Musi być boss.", "— I pułapki."],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Он говорит медленнее, чем раньше.", "Словно ставит флажки."],
+            pl: [
+              "Mówi wolniej niż wcześniej.",
+              "Jakby stawiał kolejne znaczniki.",
+            ],
+          },
+        },
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: ["— И в конце игрок должен получить награду.", "— Редкую."],
+            pl: ["— A na końcu gracz ma dostać nagrodę.", "— Rzadką."],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Кирилл замолкает.", "На этот раз — специально."],
+            pl: ["Kirył milknie.", "Tym razem — celowo."],
+          },
+        },
+
         {
           type: "ai",
           speaker: "AI robot",
@@ -460,8 +803,14 @@ export const lesson = {
           speaker: "narrator",
           avatar: "narrator",
           text: {
-            ru: ["Появляется новый квест."],
-            pl: ["Pojawia się nowy quest."],
+            ru: [
+              "Ответ появляется не сразу.",
+              "Будто система действительно думает.",
+            ],
+            pl: [
+              "Odpowiedź nie pojawia się od razu.",
+              "Jakby system naprawdę myślał.",
+            ],
           },
         },
         {
@@ -484,12 +833,36 @@ export const lesson = {
           },
         },
         {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Кирилл читает описание.", "Медленно.", "И вдруг улыбается."],
+            pl: ["Kirył czyta opis.", "Powoli.", "I nagle się uśmiecha."],
+          },
+        },
+        {
           type: "story",
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
             ru: ["— О.", "— О-О!", "— Вот это уже похоже на игру."],
             pl: ["— O.", "— O-O!", "— To już wygląda jak gra."],
+          },
+        },
+        {
+          type: "master",
+          speaker: "🎮 Гейм-мастер (почти шёпотом):",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Ничего магического не произошло.",
+              "Кирилл просто начал объяснять.",
+            ],
+            pl: [
+              "Nie wydarzyło się nic magicznego.",
+              "Kirył po prostu zaczął tłumaczyć.",
+            ],
           },
         },
       ],
@@ -502,8 +875,16 @@ export const lesson = {
         "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_mysliKyryla.png?raw=true",
 
       author: {
-        ru: ["💭 МЫСЛИ КИРИЛЛА (ключевой момент)"],
-        pl: ["💭 MYŚLI KIRYŁA (kluczowy moment)"],
+        ru: [
+          "💭 МЫСЛИ КИРИЛЛА (ещё один шаг)",
+          "Иногда понимание приходит тихо.",
+          "Без вспышек и эффектов.",
+        ],
+        pl: [
+          "💭 MYŚLI KIRYŁA (kolejny krok)",
+          "Czasem zrozumienie przychodzi cicho.",
+          "Bez efektów specjalnych.",
+        ],
       },
 
       dialog: [
@@ -512,12 +893,14 @@ export const lesson = {
           speaker: "💭 Myśli Kyryła:",
           text: {
             ru: [
-              "«Я ничего магического не сделал.",
-              "Я просто объяснил нормально.",
+              "«Я ничего особенного не сделал.",
+              "Не стал умнее за пять минут.",
+              "Я просто объяснил нормально.»",
             ],
             pl: [
-              "„Nie zrobiłem nic magicznego.",
-              "Po prostu wyjaśniłem normalnie.",
+              "„Nie zrobiłem nic niezwykłego.",
+              "Nie stałem się nagle mądrzejszy.",
+              "Po prostu dobrze wytłumaczyłem.”",
             ],
           },
         },
@@ -525,8 +908,45 @@ export const lesson = {
           type: "thought",
           speaker: "💭 Myśli Kyryła:",
           text: {
-            ru: ["Типа как другу,", "который не в теме.»"],
-            pl: ["Tak jak przyjacielowi,", "który nie ogarnia.»"],
+            ru: [
+              "«Типа как другу,",
+              "который вообще не в теме.",
+              "Без намёков.»",
+            ],
+            pl: [
+              "„Tak jak koledze,",
+              "który kompletnie nie ogarnia.",
+              "Bez domyślania się.”",
+            ],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Кирилл вдруг понимает:", "дело было не в ИИ."],
+            pl: ["Kirył nagle rozumie:", "to nie był problem AI."],
+          },
+        },
+
+        {
+          type: "thought",
+          speaker: "💭 Мысли Кирилла:",
+          avatar: "kirill",
+          text: {
+            ru: ["«Дело было в том,", "как я формулировал.»"],
+            pl: ["„Chodziło o to,", "jak formułowałem polecenie.”"],
+          },
+        },
+
+        {
+          type: "master",
+          speaker: "🎮 Гейм-мастер (почти шёпотом):",
+          avatar: "narrator",
+          text: {
+            ru: ["Навык появился.", "Теперь его нужно закрепить."],
+            pl: ["Umiejętność się pojawiła.", "Teraz trzeba ją utrwalić."],
           },
         },
       ],
@@ -539,8 +959,8 @@ export const lesson = {
         "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_%20prawilo.png?raw=true",
 
       author: {
-        ru: ["🎯 СЦЕНА 6. ПРАВИЛО ПЛАНЕТЫ ИИ"],
-        pl: ["🎯 SCENA 6. ZASADA PLANETY AI"],
+        ru: ["🎯 ПРАВИЛО ПЛАНЕТЫ ИИ"],
+        pl: ["🎯 ZASADA PLANETY AI"],
       },
 
       dialog: [
@@ -559,24 +979,30 @@ export const lesson = {
               speaker: "AI robot",
               avatar: "robot",
               text: {
-                ru: ["— Это главное правило нашей планеты."],
-                pl: ["— To główna zasada naszej planety."],
+                ru: [
+                  "— Это главное правило нашей планеты.",
+                  "— Мы не догадываемся.",
+                ],
+                pl: [
+                  "— To główna zasada naszej planety.",
+                  "— Nie domyślamy się.",
+                ],
               },
             },
             {
               speaker: "Kyrylo",
               avatar: "kirill",
               text: {
-                ru: [
-                  "— Запомнил.",
-                  "— И вообще…",
-                  "— Это полезно не только для ИИ.",
-                ],
-                pl: [
-                  "— Zapamiętałem.",
-                  "— I w ogóle…",
-                  "— To przydaje się nie tylko AI.",
-                ],
+                ru: ["— Зато вы идеально выполняете инструкции."],
+                pl: ["— Za to idealnie wykonujecie instrukcje."],
+              },
+            },
+            {
+              speaker: "AI robot",
+              avatar: "robot",
+              text: {
+                ru: ["— Именно."],
+                pl: ["— Dokładnie."],
               },
             },
           ],
@@ -627,11 +1053,10 @@ export const lesson = {
       ],
     },
 
-    // 6 ФИНАЛ
     {
-      id: "6",
+      id: "final",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_%D0%A1%D0%A6%D0%95%D0%9D%D0%90%201..png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_final.png?raw=true",
 
       author: {
         ru: ["🏁 ФИНАЛ УРОКА"],
@@ -640,106 +1065,69 @@ export const lesson = {
 
       dialog: [
         {
-          type: "ai",
-          speaker: "AI robot",
-          avatar: "robot",
-          text: {
-            ru: ["— Ты начал понимать, как с нами разговаривать."],
-            pl: ["— Zaczynasz rozumieć, jak z nami rozmawiać."],
-          },
-        },
-        {
-          type: "story",
-          speaker: "Kyrylo",
-          avatar: "kirill",
-          text: {
-            ru: [
-              "— Ага.",
-              "— Вы не тупые.",
-              "— Вам просто нужны нормальные инструкции.",
-            ],
-            pl: [
-              "— Aha.",
-              "— Nie jesteście głupi.",
-              "— Po prostu potrzebujecie dobrych instrukcji.",
-            ],
-          },
-        },
-        {
-          type: "ai",
-          speaker: "AI robot",
-          avatar: "robot",
-          text: {
-            ru: ["— Верно."],
-            pl: ["— Dokładnie."],
-          },
-        },
-        {
-          type: "story",
-          speaker: "Kyrylo",
-          avatar: "kirill",
-          text: {
-            ru: [
-              "— Ладно.",
-              "— Пошли дальше.",
-              "— Мне кажется, я могу вас прокачать 😎",
-            ],
-            pl: [
-              "— Dobra.",
-              "— Idziemy dalej.",
-              "— Chyba mogę was trochę ulepszyć 😎",
-            ],
-          },
-        },
-      ],
-    },
-
-    // FINAL
-    {
-      id: "final",
-      image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_final.png?raw=true",
-
-      author: {
-        ru: ["🧩 ВЫВОД УРОКА"],
-        pl: ["🧩 WNIOSEK Z LEKCJI"],
-      },
-
-      dialog: [
-        {
           type: "author",
           speaker: "narrator",
           avatar: "narrator",
           text: {
-            ru: ["ИИ понимает <b>буквально</b>."],
-            pl: ["AI rozumie <b>dosłownie</b>."],
+            ru: ["ИИ понимает не «смысл».", "ИИ понимает <b>формулировку</b>."],
+            pl: ["AI nie rozumie „sensu”.", "AI rozumie <b>formułowanie</b>."],
           },
         },
+
         {
           type: "author",
           speaker: "narrator",
           avatar: "narrator",
           text: {
             ru: [
-              "Слова типа «круто», «нормально», «как обычно» — плохие инструкции.",
+              "Слова вроде «круто», «нормально», «как обычно»",
+              "для ИИ — пустые.",
             ],
             pl: [
-              "Słowa takie jak „fajnie”, „normalnie”, „jak zwykle” to złe instrukcje.",
+              "Słowa takie jak „fajnie”, „normalnie”, „jak zwykle”",
+              "dla AI są puste.",
             ],
           },
         },
+
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Чем больше деталей —", "тем меньше догадок."],
+            pl: ["Im więcej szczegółów —", "tym mniej zgadywania."],
+          },
+        },
+
+        {
+          type: "master",
+          speaker: "🎮 Гейм-мастер (почти шёпотом):",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Этот навык нужен не только для ИИ.",
+              "Он работает и с людьми.",
+            ],
+            pl: [
+              "Ta umiejętność nie jest tylko dla AI.",
+              "Działa również w relacjach z ludźmi.",
+            ],
+          },
+        },
+
         {
           type: "author",
           speaker: "narrator",
           avatar: "narrator",
           text: {
             ru: [
-              "Чем больше деталей — тем лучше результат.",
-              "Если задание плохое, ИИ начинает угадывать.",
+              "Кирилл это ещё не до конца осознал.",
+              "Но первый апгрейд уже произошёл.",
             ],
             pl: [
-              "Im więcej szczegółów — tym lepszy wynik.",
-              "Jeśli zadanie jest słabe, AI zaczyna zgadywać.",
+              "Kirył jeszcze nie do końca to uświadamia.",
+              "Ale pierwszy upgrade już się wydarzył.",
             ],
           },
         },
@@ -747,6 +1135,3 @@ export const lesson = {
     },
   ],
 };
-
-
-

@@ -40,17 +40,17 @@ export const lesson = {
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: ["- Ну давай… придумай мне нормальный квест.Он немного     подумал и добавил:",
+            ru: [
+              "- Ну давай… придумай мне нормальный квест.Он немного     подумал и добавил:",
               "- Типа сложный, с боссом! Чтобы было не скучно.",
-              
-             ],
+            ],
             pl: [
               "- No dobra… ",
               "— Wymyśl mi normalny quest.",
               "— Taki trudny.",
               "— Z bossem.",
               "— Żeby nie było nudno.",
-            ]
+            ],
           },
         },
         {
@@ -61,7 +61,8 @@ export const lesson = {
             ru: [
               "Кирилл нажал Enter и откинулся на спинку стула.",
               "Внутри было чувство: <em>«Ну сейчас-то ты обязан выдать что-то имбовое».</em>",
-              "На экране появился ответ.",],
+              "На экране появился ответ.",
+            ],
             pl: [
               "Nacisnął Enter i odchylił się na krześle.",
               "W głowie miał jedno: <em>„No teraz to musi być coś OP.</em>”",
@@ -83,11 +84,8 @@ export const lesson = {
           speaker: "narrator",
           avatar: "narrator",
           text: {
-            ru: [
-              "Кирилл замер.",],
-            pl: [
-              "Kirill zamarł.",
-            ],
+            ru: ["Кирилл замер."],
+            pl: ["Kirill zamarł."],
           },
         },
         {
@@ -95,13 +93,8 @@ export const lesson = {
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: [              
-              "- ЧЕГО 😐 Я же сказал нормальный квест!",            
-            ],
-            pl: [
-              "- CO 😐 Przecież prosiłem o normalne zadanie!",
-              
-            ],
+            ru: ["- ЧЕГО 😐 Я же сказал нормальный квест!"],
+            pl: ["- CO 😐 Przecież prosiłem o normalne zadanie!"],
           },
         },
         {
@@ -109,9 +102,7 @@ export const lesson = {
           speaker: "narrator",
           avatar: "narrator",
           text: {
-            ru: [
-                "Он наклонился ближе к экрану. Проверил, не залагал ли комп.",              
-            ],
+            ru: ["Он наклонился ближе к экрану. Проверил, не залагал ли комп."],
             pl: [
               "Pochylił się bliżej monitora.",
               "Sprawdził, czy komputer się nie zbugował.",
@@ -126,7 +117,6 @@ export const lesson = {
             ru: [
               "— Это что сейчас было?",
               "— Это даже не квест, это <b>туториал для младенцев.</b>",
-              
             ],
             pl: [
               "— Serio?",
@@ -141,8 +131,8 @@ export const lesson = {
           avatar: "narrator",
           text: {
             ru: [
-                "<em>(Туториал — это когда игра объясняет самые-самые базовые вещи.)</em>",
-              "Кирилл фыркнул.",             
+              "<em>(Туториал — это когда игра объясняет самые-самые базовые вещи.)</em>",
+              "Кирилл фыркнул.",
             ],
             pl: [
               "<em>(Tutorial — początek gry, gdzie wszystko jest super proste.)</em>",
@@ -168,10 +158,7 @@ export const lesson = {
               "- Ладно, окей. Попробуем ещё раз. ",
               "— Придумай <b>реально крутой</b> квест!",
             ],
-            pl: [
-              "— Dobra, jeszcze raz.",
-              "— Wymyśl mega fajny quest!",
-            ],
+            pl: ["— Dobra, jeszcze raz.", "— Wymyśl mega fajny quest!"],
           },
         },
         {
@@ -206,7 +193,7 @@ export const lesson = {
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: ["— …",  "— Ты сейчас серьёзно?", "— Да ты издеваешься?!"],
+            ru: ["— …", "— Ты сейчас серьёзно?", "— Да ты издеваешься?!"],
             pl: ["— …", "— Ty to mówisz serio?", "— Żartujesz sobie?!"],
           },
         },
@@ -215,8 +202,14 @@ export const lesson = {
           speaker: "narrator",
           avatar: "narrator",
           text: {
-            ru: ["<em>(NPC — персонаж в игре, которым управляет сама игра, а не человек. Обычно они стоят и говорят одно и то же.)</em>", "Кирилл откинулся назад."],
-            pl: ["<em>(NPC — postać w grze sterowana przez grę, a nie przez gracza.)</em>", "Kirill opadł na krzesło.",],
+            ru: [
+              "<em>(NPC — персонаж в игре, которым управляет сама игра, а не человек. Обычно они стоят и говорят одно и то же.)</em>",
+              "Кирилл откинулся назад.",
+            ],
+            pl: [
+              "<em>(NPC — postać w grze sterowana przez grę, a nie przez gracza.)</em>",
+              "Kirill opadł na krzesło.",
+            ],
           },
         },
         {
@@ -233,8 +226,14 @@ export const lesson = {
           speaker: "narrator",
           avatar: "narrator",
           text: {
-            ru: ["<em>(Кринж — это когда что-то настолько неловкое или странное, что хочется закрыть лицо рукой.)</em>", "Он резко хлопнул по столу."],
-            pl: ["<em>(Cringe — coś tak dziwnego lub żenującego, że aż boli.)</em>", "Uderzył dłonią w biurko.",],
+            ru: [
+              "<em>(Кринж — это когда что-то настолько неловкое или странное, что хочется закрыть лицо рукой.)</em>",
+              "Он резко хлопнул по столу.",
+            ],
+            pl: [
+              "<em>(Cringe — coś tak dziwnego lub żenującego, że aż boli.)</em>",
+              "Uderzył dłonią w biurko.",
+            ],
           },
         },
         {
@@ -255,7 +254,7 @@ export const lesson = {
           avatar: "narrator",
           text: {
             ru: ["Экран тихо светился.", "ИИ молчал."],
-            pl: ["Ekran świecił spokojnie.", "AI milczało.",],
+            pl: ["Ekran świecił spokojnie.", "AI milczało."],
           },
         },
         {
@@ -263,8 +262,14 @@ export const lesson = {
           speaker: "🎮 Гейм-мастер (почти шёпотом):",
           avatar: "narrator",
           text: {
-            ru: ["- Кирилл пока этого не знает, но он только что сделал первую классическую ошибку на планете ИИ.", "И сейчас будет баг.", ],
-            pl: ["Kirill jeszcze o tym nie wie, ale właśnie popełnił <b>pierwszy klasyczny błąd</b> na Planecie AI.", "I za chwilę pojawi się bug.",],
+            ru: [
+              "- Кирилл пока этого не знает, но он только что сделал первую классическую ошибку на планете ИИ.",
+              "И сейчас будет баг.",
+            ],
+            pl: [
+              "Kirill jeszcze o tym nie wie, ale właśnie popełnił <b>pierwszy klasyczny błąd</b> na Planecie AI.",
+              "I za chwilę pojawi się bug.",
+            ],
           },
         },
         {
@@ -273,10 +278,7 @@ export const lesson = {
           avatar: "narrator",
           text: {
             ru: ["Экран вдруг мигнул.", "Потом ещё раз.", "Комп завис."],
-            pl: [
-              "Ekran zamigał.",
-              "Komputer się zawiesił.",
-            ],
+            pl: ["Ekran zamigał.", "Komputer się zawiesił."],
           },
         },
         {
@@ -285,10 +287,7 @@ export const lesson = {
           avatar: "kirill",
           text: {
             ru: ["— Эй, эй, эй…", "— Только не сейчас!"],
-            pl: [
-              "— Ej, ej, ej…",
-              "— Tylko nie teraz!",
-            ],
+            pl: ["— Ej, ej, ej…", "— Tylko nie teraz!"],
           },
         },
         {
@@ -297,9 +296,7 @@ export const lesson = {
           avatar: "narrator",
           text: {
             ru: ["Экран ярко вспыхнул — и Кирилла словно потянуло внутрь."],
-            pl: [
-              "Światło rozbłysło — i Kirill wpadł prosto do środka."
-            ],
+            pl: ["Światło rozbłysło — i Kirill wpadł prosto do środka."],
           },
         },
       ],
@@ -353,14 +350,8 @@ export const lesson = {
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: [
-              "— Ай…",
-              "— Это что сейчас было?",
-            ],
-            pl: [
-              "— Au…",
-              "— Co to było?",
-            ],
+            ru: ["— Ай…", "— Это что сейчас было?"],
+            pl: ["— Au…", "— Co to było?"],
           },
         },
         {
@@ -426,7 +417,7 @@ export const lesson = {
             ru: [
               "Он осторожно сделал шаг.",
               "Под ногами что-то щёлкнуло, и в воздухе появилось сообщение:",
-              "<b>SYSTEM: Добро пожаловать.</b>"
+              "<b>SYSTEM: Добро пожаловать.</b>",
             ],
             pl: [
               "Zrobił krok do przodu.",
@@ -441,14 +432,8 @@ export const lesson = {
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: [
-              "— Эм…",
-              "— Куда именно?",
-            ],
-            pl: [
-              "— Eee…",
-              "— Gdzie dokładnie?",
-            ],
+            ru: ["— Эм…", "— Куда именно?"],
+            pl: ["— Eee…", "— Gdzie dokładnie?"],
           },
         },
         {
@@ -456,12 +441,8 @@ export const lesson = {
           speaker: "narrator",
           avatar: "narrator",
           text: {
-            ru: [
-              "Ответа не было.",
-            ],
-            pl: [
-              "Brak odpowiedzi.",
-            ],
+            ru: ["Ответа не было."],
+            pl: ["Brak odpowiedzi."],
           },
         },
         {
@@ -483,7 +464,7 @@ export const lesson = {
             ],
           },
         },
-      ]
+      ],
     },
     // 3
     {
@@ -524,7 +505,7 @@ export const lesson = {
             ],
           },
         },
-         {
+        {
           type: "ai",
           speaker: "AI robot",
           avatar: "robot",
@@ -538,12 +519,8 @@ export const lesson = {
           speaker: "narrator",
           avatar: "narrator",
           text: {
-            ru: [
-              "Кирилл вздрогнул.",
-            ],
-            pl: [
-              "Kirill podskoczył.",
-            ],
+            ru: ["Кирилл вздрогнул."],
+            pl: ["Kirill podskoczył."],
           },
         },
         {
@@ -551,8 +528,8 @@ export const lesson = {
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: ["— АА—", "— Ты кто?!",],
-            pl: ["— Aaa!", "— Kim ty jesteś?!",],
+            ru: ["— АА—", "— Ты кто?!"],
+            pl: ["— Aaa!", "— Kim ty jesteś?!"],
           },
         },
         {
@@ -560,12 +537,8 @@ export const lesson = {
           speaker: "narrator",
           avatar: "narrator",
           text: {
-            ru: [
-              "Робот наклонил голову.",
-            ],
-            pl: [
-              "Robot przechylił głowę.",
-            ],
+            ru: ["Робот наклонил голову."],
+            pl: ["Robot przechylił głowę."],
           },
         },
         {
@@ -573,10 +546,7 @@ export const lesson = {
           speaker: "AI robot",
           avatar: "robot",
           text: {
-            ru: [
-              "— Я ИИ-Робот Помощник версии 0.9.1.",
-              "— Рад знакомству.",
-            ],
+            ru: ["— Я ИИ-Робот Помощник версии 0.9.1.", "— Рад знакомству."],
             pl: [
               "— Jestem Robotem-Pomocnikiem AI w wersji 0.9.1.",
               "— Miło mi cię poznać, Kirill.",
@@ -589,13 +559,8 @@ export const lesson = {
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: [
-              "— Подожди.",
-              "— Откуда ты знаешь моё имя?",
-            ],
-            pl: [
-              "— Skąd znasz moje imię?",
-            ],
+            ru: ["— Подожди.", "— Откуда ты знаешь моё имя?"],
+            pl: ["— Skąd znasz moje imię?"],
           },
         },
         {
@@ -603,12 +568,8 @@ export const lesson = {
           speaker: "AI robot",
           avatar: "robot",
           text: {
-            ru: [
-              "— Оно было в запросе.",
-            ],
-            pl: [
-              "— Było w zapytaniu.",
-            ],
+            ru: ["— Оно было в запросе."],
+            pl: ["— Było w zapytaniu."],
           },
         },
         {
@@ -616,12 +577,8 @@ export const lesson = {
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: [
-              "— В каком ещё запросе?",
-            ],
-            pl: [
-              "— Jakim zapytaniu?",
-            ],
+            ru: ["— В каком ещё запросе?"],
+            pl: ["— Jakim zapytaniu?"],
           },
         },
         {
@@ -629,12 +586,8 @@ export const lesson = {
           speaker: "AI robot",
           avatar: "robot",
           text: {
-            ru: [
-              "— В том, где ты просил «нормальный квест».",
-            ],
-            pl: [
-              "— Tym, w którym prosiłeś o „normalny quest”.",
-            ],
+            ru: ["— В том, где ты просил «нормальный квест»."],
+            pl: ["— Tym, w którym prosiłeś o „normalny quest”."],
           },
         },
         {
@@ -642,27 +595,17 @@ export const lesson = {
           speaker: "narrator",
           avatar: "narrator",
           text: {
-            ru: [
-              "Кирилл замер.",
-            ],
-            pl: [
-              "Kirill zamarł.",
-            ],
+            ru: ["Кирилл замер."],
+            pl: ["Kirill zamarł."],
           },
         },
-         {
+        {
           type: "story",
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: [
-              "— …",
-              "— Так это ты был?",
-            ],
-            pl: [
-              "— …",
-              "— To ty?"
-            ],
+            ru: ["— …", "— Так это ты был?"],
+            pl: ["— …", "— To ty?"],
           },
         },
         {
@@ -670,27 +613,17 @@ export const lesson = {
           speaker: "AI robot",
           avatar: "robot",
           text: {
-            ru: [
-              "— Да.",
-            ],
-            pl: [
-              "— Tak.",
-            ],
+            ru: ["— Да."],
+            pl: ["— Tak."],
           },
         },
-         {
+        {
           type: "story",
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: [
-              "— А это…",
-              "— Это что вообще за место?",
-            ],
-            pl: [
-              "— A to miejsce…",
-              "— Co to w ogóle jest?",
-            ],
+            ru: ["— А это…", "— Это что вообще за место?"],
+            pl: ["— A to miejsce…", "— Co to w ogóle jest?"],
           },
         },
         {
@@ -721,27 +654,17 @@ export const lesson = {
           speaker: "AI robot",
           avatar: "robot",
           text: {
-            ru: [
-              "— Добро пожаловать на Планету ИИ.",
-            ],
-            pl: [
-              "— Witaj na Planecie AI.",
-            ],
+            ru: ["— Добро пожаловать на Планету ИИ."],
+            pl: ["— Witaj na Planecie AI."],
           },
         },
-         {
+        {
           type: "story",
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: [
-              "— То есть…",
-              "— Я внутри искусственного интеллекта?",
-            ],
-            pl: [
-              "— Czyli…",
-              "— Jestem w środku sztucznej inteligencji?",
-            ],
+            ru: ["— То есть…", "— Я внутри искусственного интеллекта?"],
+            pl: ["— Czyli…", "— Jestem w środku sztucznej inteligencji?"],
           },
         },
         {
@@ -749,12 +672,8 @@ export const lesson = {
           speaker: "AI robot",
           avatar: "robot",
           text: {
-            ru: [
-              "— Примерно.",
-            ],
-            pl: [
-              "— Mniej więcej.",
-            ],
+            ru: ["— Примерно."],
+            pl: ["— Mniej więcej."],
           },
         },
         {
@@ -762,12 +681,8 @@ export const lesson = {
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: [
-              "— Примерно?!",
-            ],
-            pl: [
-              "— „Mniej więcej”?!",
-            ],
+            ru: ["— Примерно?!"],
+            pl: ["— „Mniej więcej”?!"],
           },
         },
         {
@@ -775,12 +690,8 @@ export const lesson = {
           speaker: "AI robot",
           avatar: "robot",
           text: {
-            ru: [
-              "— Людям так проще понять.",
-            ],
-            pl: [
-              "— Ludziom łatwiej to tak przyjąć.",
-            ],
+            ru: ["— Людям так проще понять."],
+            pl: ["— Ludziom łatwiej to tak przyjąć."],
           },
         },
         {
@@ -788,12 +699,8 @@ export const lesson = {
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: [
-              "— Офигеть…",
-            ],
-            pl: [
-              "— Niezłe…"
-            ],
+            ru: ["— Офигеть…"],
+            pl: ["— Niezłe…"],
           },
         },
         {
@@ -801,12 +708,8 @@ export const lesson = {
           speaker: "narrator",
           avatar: "narrator",
           text: {
-            ru: [
-              "Он посмотрел на робота внимательнее.",
-            ],
-            pl: [
-              "Kirill spojrzał na robota uważniej.",
-            ],
+            ru: ["Он посмотрел на робота внимательнее."],
+            pl: ["Kirill spojrzał na robota uważniej."],
           },
         },
         {
@@ -829,12 +732,8 @@ export const lesson = {
           speaker: "narrator",
           avatar: "narrator",
           text: {
-            ru: [
-              "Робот моргнул.",
-            ],
-            pl: [
-              "Robot mrugnął.",
-            ],
+            ru: ["Робот моргнул."],
+            pl: ["Robot mrugnął."],
           },
         },
         {
@@ -842,12 +741,8 @@ export const lesson = {
           speaker: "AI robot",
           avatar: "robot",
           text: {
-            ru: [
-              "— Поясни.",
-            ],
-            pl: [
-              "— Wyjaśnij.",
-            ],
+            ru: ["— Поясни."],
+            pl: ["— Wyjaśnij."],
           },
         },
         {
@@ -867,7 +762,7 @@ export const lesson = {
               "— jabłka.",
               "— droga.",
               "— NPC.",
-              "— To nie quest, to totalne <b>dno</b>."
+              "— To nie quest, to totalne <b>dno</b>.",
             ],
           },
         },
@@ -880,9 +775,7 @@ export const lesson = {
               "<em>(«Дно» — так говорят, когда что-то совсем плохое и разочаровывающее.)</em>",
               "Робот спокойно ответил:",
             ],
-            pl: [
-              "Robot odpowiedział spokojnie:",
-            ],
+            pl: ["Robot odpowiedział spokojnie:"],
           },
         },
         {
@@ -890,12 +783,8 @@ export const lesson = {
           speaker: "AI robot",
           avatar: "robot",
           text: {
-            ru: [
-              "— Я сделал то, что ты написал.",
-            ],
-            pl: [
-              "— Zrobiłem dokładnie to, co napisałeś.",
-            ],
+            ru: ["— Я сделал то, что ты написал."],
+            pl: ["— Zrobiłem dokładnie to, co napisałeś."],
           },
         },
         {
@@ -903,12 +792,8 @@ export const lesson = {
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: [
-              "— В смысле?",
-            ],
-            pl: [
-              "— Jak to?",
-            ],
+            ru: ["— В смысле?"],
+            pl: ["— Jak to?"],
           },
         },
         {
@@ -916,14 +801,8 @@ export const lesson = {
           speaker: "AI robot",
           avatar: "robot",
           text: {
-            ru: [
-              "— Ты написал «квест».",
-              "— Я сделал квест.",
-            ],
-            pl: [
-              "— Napisałeś „quest”.",
-              "— Zrobiłem quest.",
-            ],
+            ru: ["— Ты написал «квест».", "— Я сделал квест."],
+            pl: ["— Napisałeś „quest”.", "— Zrobiłem quest."],
           },
         },
         {
@@ -931,12 +810,8 @@ export const lesson = {
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: [
-              "— Но любой нормальный человек понял бы, что я имел в виду!",
-            ],
-            pl: [
-              "— Każdy normalny człowiek by ogarnął, o co mi chodzi!",
-            ],
+            ru: ["— Но любой нормальный человек понял бы, что я имел в виду!"],
+            pl: ["— Każdy normalny człowiek by ogarnął, o co mi chodzi!"],
           },
         },
         {
@@ -944,12 +819,8 @@ export const lesson = {
           speaker: "AI robot",
           avatar: "robot",
           text: {
-            ru: [
-              "— Я не человек.",
-            ],
-            pl: [
-              "— Nie jestem człowiekiem.",
-            ],
+            ru: ["— Я не человек."],
+            pl: ["— Nie jestem człowiekiem."],
           },
         },
         {
@@ -957,14 +828,8 @@ export const lesson = {
           speaker: "narrator",
           avatar: "narrator",
           text: {
-            ru: [
-              "Он сказал это без обиды.",
-              "Без злости.",
-              "Как факт.",
-            ],
-            pl: [
-              "Powiedział to bez emocji.",
-            ],
+            ru: ["Он сказал это без обиды.", "Без злости.", "Как факт."],
+            pl: ["Powiedział to bez emocji."],
           },
         },
         {
@@ -974,11 +839,11 @@ export const lesson = {
           text: {
             ru: [
               "— Я не понимаю «нормально».",
-              "— Я понимаю только то, что написано."
+              "— Я понимаю только то, что написано.",
             ],
             pl: [
               "— Nie rozumiem słowa „normalnie”.",
-              "— Rozumiem tylko to, co jest napisane."
+              "— Rozumiem tylko to, co jest napisane.",
             ],
           },
         },
@@ -987,13 +852,8 @@ export const lesson = {
           speaker: "narrator",
           avatar: "narrator",
           text: {
-            ru: [
-              "Кирилл открыл рот…",
-              "и закрыл.",
-            ],
-            pl: [
-              "Kirill chciał coś powiedzieć… ale zamilkł.",
-            ],
+            ru: ["Кирилл открыл рот…", "и закрыл."],
+            pl: ["Kirill chciał coś powiedzieć… ale zamilkł."],
           },
         },
         {
@@ -1001,14 +861,8 @@ export const lesson = {
           speaker: "🎮 Гейм-мастер (почти шёпотом):",
           avatar: "narrator",
           text: {
-            ru: [
-              "Вот он.",
-              "Первый настоящий конфликт.",
-            ],
-            pl: [
-              "I oto on.",
-              "Pierwszy prawdziwy konflikt.",
-            ],
+            ru: ["Вот он.", "Первый настоящий конфликт."],
+            pl: ["I oto on.", "Pierwszy prawdziwy konflikt."],
           },
         },
         {
@@ -1019,14 +873,15 @@ export const lesson = {
             ru: [
               "Человек думает, что его <b>поняли</b>.",
               "ИИ думает, что всё сделал <b>правильно</b>.",
-              "И оба искренне удивлены.",            ],
+              "И оба искренне удивлены.",
+            ],
             pl: [
               "Człowiek myśli, że został <b>zrozumiany</b>.",
               "AI myśli, że zrobiło wszystko <b>poprawnie</b>.",
               "I obaj są szczerze zdziwieni.",
             ],
           },
-        },        
+        },
       ],
     },
     // 4
@@ -1041,20 +896,57 @@ export const lesson = {
       },
       dialog: [
         {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Кирилл резко сжал кулаки."],
+            pl: ["Kirill zacisnął pięści."],
+          },
+        },
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: ["— Да блин!", "— Я же <b>старался</b> нормально написать!"],
+            pl: ["— No nie…", "— Przecież napisałem normalnie!"],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Он начал ходить туда-сюда."],
+            pl: ["Chodził w kółko."],
+          },
+        },
+        {
           type: "story",
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
             ru: [
-              "— Я нормально написал!",
               "— Любой человек понял бы!",
               "— Даже мой младший брат понял бы!",
             ],
             pl: [
-              "— Napisałem to normalnie!",
               "— Każdy człowiek by to zrozumiał!",
               "— Nawet mój młodszy brat by to zrozumiał!",
             ],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Робот смотрел спокойно.",
+              "Слишком спокойно — и это бесило ещё сильнее.",
+            ],
+            pl: ["Robot patrzył spokojnie.", "Za spokojnie.,"],
           },
         },
         {
@@ -1062,15 +954,10 @@ export const lesson = {
           speaker: "AI robot",
           avatar: "robot",
           text: {
-            ru: [
-              "— Я не человек.",
-              "— Я не понимаю «нормально».",
-              "— Я понимаю только то, что написано.",
-            ],
+            ru: ["— Я не человек.", "— Я не понимаю «нормально»."],
             pl: [
               "— Nie jestem człowiekiem.",
               "— Nie rozumiem, co znaczy „normalnie”.",
-              "— Rozumiem tylko to, co jest napisane.",
             ],
           },
         },
@@ -1081,6 +968,15 @@ export const lesson = {
           text: {
             ru: ["— Ну супер.", "— Значит, ты тупой."],
             pl: ["— No super.", "— Czyli jesteś głupi."],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Робот моргнул."],
+            pl: ["Robot mrugnął."],
           },
         },
         {
@@ -1100,6 +996,27 @@ export const lesson = {
             ],
           },
         },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Кирилл остановился."],
+            pl: ["Kirill zatrzymał się."],
+          },
+        },
+        {
+          type: "master",
+          speaker: "🎮 Гейм-мастер (почти шёпотом):",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Иногда правда звучит особенно раздражающе.",
+              "Особенно когда она спокойная.",
+            ],
+            pl: ["Prawda bywa najbardziej wkurzająca,", "kiedy jest spokojna."],
+          },
+        },
       ],
     },
     {
@@ -1113,12 +1030,23 @@ export const lesson = {
       },
       dialog: [
         {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Кирилл глубоко выдохнул."],
+            pl: ["Kirill głęboko odetchnął."],
+          },
+        },
+        {
           type: "thought",
           speaker: "💭 Myśli Kyryla:",
           text: {
             ru: [
               "Стоп…",
               "Он реально не прикалывается.",
+              "Он не троллит.",
+              "Не издевается.",
               "Он просто делает то, что я написал…",
             ],
             pl: [
@@ -1134,7 +1062,7 @@ export const lesson = {
           avatar: "kirill",
           text: {
             ru: [
-              "Я же написал “квест”.",
+              "Я написал “квест”.",
               "Но не написал:",
               "— какой,",
               "— зачем,",
@@ -1166,35 +1094,17 @@ export const lesson = {
           speaker: "narrator",
           avatar: "narrator",
           text: {
-            ru: [
-              "Кирилл перестаёт злиться.",
-              "Смотрит на робота уже по-другому.",
-            ],
-            pl: [
-              "Kirył przestaje się złościć.",
-              "Patrzy na robota już inaczej.",
-            ],
+            ru: ["Кирилл посмотрел на робота уже по-другому."],
+            pl: ["Kirill spojrzał na robota w inny sposób."],
           },
         },
-      ],
-    },
-    {
-      id: "6",
-      image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module1/%D0%A6%D0%95%D0%9D%D0%90%205.%20%D0%9F%D0%B5%D1%80%D0%B2%D0%BE%D0%B5%20%D0%BF%D0%BE%D0%BD%D0%B8%D0%BC%D0%B0%D0%BD%D0%B8%D0%B5.png?raw=true",
-
-      author: {
-        ru: ["🧠 СЦЕНА 5. Первое понимание"],
-        pl: ["🧠 SCENA 5. Pierwsze zrozumienie"],
-      },
-      dialog: [
         {
           type: "story",
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
             ru: ["— Подожди.", "— Ты не специально сделал скучно?"],
-            pl: ["— Poczekaj.", "— Nie zrobiłeś tego nudno specjalnie?"],
+            pl: ["Gdybym był AI……", "też zrobiłbym najprostszy wariant.”"],
           },
         },
         {
@@ -1219,11 +1129,8 @@ export const lesson = {
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: ["— Хм…", "— То есть если я напишу криво — ты сделаешь криво?"],
-            pl: [
-              "— Hm…",
-              "— Czyli jeśli napiszę byle jak — ty zrobisz byle jak?",
-            ],
+            ru: ["—— То есть…", "— если я пишу криво — ты делаешь криво?"],
+            pl: ["— Czyli jak piszę byle jak…”"],
           },
         },
         {
@@ -1231,8 +1138,8 @@ export const lesson = {
           speaker: "AI robot",
           avatar: "robot",
           text: {
-            ru: ["— Верно"],
-            pl: ["— Dokładnie"],
+            ru: ["— Верно."],
+            pl: ["— Wynik też jest byle jaki."],
           },
         },
         {
@@ -1241,7 +1148,7 @@ export const lesson = {
           avatar: "kirill",
           text: {
             ru: ["— А если нормально?"],
-            pl: ["— A jeśli normalnie?"],
+            pl: ["— A jak dokładnie?”"],
           },
         },
         {
@@ -1250,7 +1157,25 @@ export const lesson = {
           avatar: "robot",
           text: {
             ru: ["— Тогда у нас есть шанс 😐"],
-            pl: ["— Wtedy mamy szansę 😐"],
+            pl: ["— Wtedy ma to sens 😐"],
+          },
+        },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Кирилл хмыкнул."],
+            pl: ["Kirill parsknął."],
+          },
+        },
+        {
+          type: "master",
+          speaker: "🎮 Гейм-мастер (почти шёпотом):",
+          avatar: "narrator",
+          text: {
+            ru: ["Вот он.", "Момент апгрейда мышления."],
+            pl: ["Level up.", "Nowa umiejętność odblokowana."],
           },
         },
       ],
@@ -1282,11 +1207,21 @@ export const lesson = {
             ],
           },
           correct: 1,
+          discussion: {
+            title: {
+              ru: "🧠 Обсуждение",
+              pl: "🧠 Dyskusja",
+            },
+            points: {
+              ru: ["что добавили?", "почему второе понятнее?"],
+              pl: ["które zadanie jest jaśniejsze?", "dlaczego?"],
+            },
+          },
         },
       ],
     },
     {
-      id: "7",
+      id: "6",
       image:
         "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module1/%D0%A1%D0%A6%D0%95%D0%9D%D0%90%206.%20%D0%9D%D0%B0%D0%BC%D0%B5%CC%88%D0%BA%20%D0%BD%D0%B0%20%D0%BC%D0%B8%D1%81%D1%81%D0%B8%D1%8E%20%D0%BA%D1%83%D1%80%D1%81%D0%B0.png?raw=true",
 
@@ -1295,6 +1230,15 @@ export const lesson = {
         pl: ["🎯 SCENA 6. Wskazówka dotycząca misji kursu"],
       },
       dialog: [
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Робот развернулся и показал на планету вокруг."],
+            pl: ["Robot odwrócił się i wskazał na planetę dookoła."],
+          },
+        },
         {
           type: "ai",
           speaker: "AI robot",
@@ -1305,11 +1249,7 @@ export const lesson = {
               "— Люди обленились и дают задания кое-как.",
               "— А потом злятся, что ИИ делает ерунду.",
             ],
-            pl: [
-              "— Na naszej planecie jest teraz problem.",
-              "— Ludzie rozleniwili się i dają zadania byle jak.",
-              "— A potem złoszczą się, że AI robi bzdury.",
-            ],
+            pl: ["— Na Planecie AI mamy problem.", "— Ludzie źle tłumaczą."],
           },
         },
         {
@@ -1349,6 +1289,15 @@ export const lesson = {
           },
         },
         {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Кирилл усмехнулся."],
+            pl: ["Kirill uśmiechnął się z lekką ironią."],
+          },
+        },
+        {
           type: "story",
           speaker: "Kyrylo",
           avatar: "kirill",
@@ -1367,6 +1316,15 @@ export const lesson = {
             ],
           },
         },
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Экран вокруг мягко потемнел."],
+            pl: ["Światło przygasło."],
+          },
+        },
       ],
     },
     {
@@ -1380,6 +1338,21 @@ export const lesson = {
       },
 
       dialog: [
+        {
+          type: "master",
+          speaker: "🎮 Гейм-мастер (почти шёпотом):",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Если коротко — ИИ не странный.",
+              "Он просто <b>не человек.</b>",
+            ],
+            pl: [
+              "Krótko mówiąc — AI nie jest dziwne.",
+              "Ono po prostu <b>nie jest człowiekiem.</b>",
+            ],
+          },
+        },
         {
           type: "author",
           speaker: "narrator",
@@ -1400,7 +1373,11 @@ export const lesson = {
           speaker: "narrator",
           avatar: "narrator",
           text: {
-            ru: ["Чем точнее и понятнее запрос —", "тем лучше результат."],
+            ru: [
+              "ИИ делает ровно то, что написано",
+              "Чем точнее и понятнее запрос —",
+              "тем лучше результат.",
+            ],
             pl: [
               "Im dokładniejsze i jaśniejsze zapytanie —",
               "tym lepszy wynik.",

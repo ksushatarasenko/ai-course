@@ -4,7 +4,7 @@ export const lesson = {
   lessonId: 11,
 
   title: {
-    ru: "ИИ не понимает смысл, он ищет шаблоны",
+    ru: "Почему мы верим умным словам",
     pl: "",
   },
 
@@ -22,26 +22,24 @@ export const lesson = {
 
       author: {
         ru: [
-          "🎬 СЦЕНА 1. Архив шаблонов",
-          "Кирилл выходит из центра управления.",
-          "Вместо кнопок и экранов — огромный зал.",
-          "Он похож на библиотеку.",
-          "Но не с книгами.",
-          "А с миллионами одинаковых фрагментов.",
-          "Стены уходят вверх.",
-          "Пол — как сетка.",
-          "Всё выглядит так, будто мир собран из повторов.",
+          "🎬 СЦЕНА 1. Зал убедительных слов",
+          "Кирилл делает шаг вперёд — и пространство вокруг меняется.",
+          "Он оказывается в огромном зале.",
+          "Всё здесь выглядит очень серьёзно.",
+          "Колонны с золотыми надписями.",
+          "Парящие экраны.",
+          "Тексты медленно прокручиваются в воздухе.",
+          "Каждый из них выглядит так, будто его писал кто-то очень умный.",
         ],
         pl: [
-          "🎬 SCENA 1. Archiwum wzorców",
-          "Kirył wychodzi z centrum sterowania.",
-          "Zamiast przycisków i ekranów — ogromna sala.",
-          "Wygląda jak biblioteka.",
-          "Ale nie z książkami.",
-          "Tylko z milionami podobnych fragmentów.",
-          "Ściany pną się wysoko.",
-          "Podłoga wygląda jak siatka.",
-          "Wszystko sprawia wrażenie, jakby świat był złożony z powtórek.",
+          "🎬 SCENA 1. Sala przekonujących słów",
+          "Kirył robi krok do przodu — i przestrzeń wokół się zmienia.",
+          "Znajduje się w ogromnej sali.",
+          "Wszystko wygląda tu bardzo poważnie.",
+          "Kolumny ze złotymi napisami.",
+          "Lewitujące ekrany.",
+          "Teksty powoli przewijają się w powietrzu.",
+          "Każdy wygląda tak, jakby napisał go ktoś bardzo mądry.",
         ],
       },
 
@@ -51,31 +49,8 @@ export const lesson = {
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: ["— Эм…", "— Это что вообще?", "— Какой-то бесконечный склад?"],
-            pl: [
-              "— Eee…",
-              "— Co to w ogóle jest?",
-              "— Jakiś nieskończony magazyn?",
-            ],
-          },
-        },
-        {
-          type: "ai",
-          speaker: "AI robot",
-          avatar: "robot",
-          text: {
-            ru: ["— Это Архив шаблонов."],
-            pl: ["— To Archiwum wzorców."],
-          },
-        },
-
-        {
-          type: "story",
-          speaker: "Kyrylo",
-          avatar: "kirill",
-          text: {
-            ru: ["— Шаблонов?", "— Типа скинов?"],
-            pl: ["— Wzorców?", "— Jak skiny?"],
+            ru: ["— Вау…", "— Тут всё какое-то…", "— официальное."],
+            pl: ["— Wow…", "— Wszystko tutaj jest takie…", "— oficjalne."],
           },
         },
         {
@@ -83,42 +58,19 @@ export const lesson = {
           speaker: "narrator",
           avatar: "narrator",
           text: {
-            ru: ["<em>(Скин — внешний вид персонажа в игре.)</em>"],
-            pl: ["<em>(Skin — wygląd postaci w grze.)</em>"],
-          },
-        },
-        {
-          type: "ai",
-          speaker: "AI robot",
-          avatar: "robot",
-          text: {
             ru: [
-              "— Похоже.",
-              "— Но это не внешний вид.",
-              "— Это способы, как что-то обычно выглядит,",
-              "— звучит или происходит.",
+              "Один из экранов опускается ниже.",
+              "Текст на нём длинный.",
+              "Сложный.",
+              "С кучей умных слов.",
+              "Кирилл читает и машинально кивает.",
             ],
             pl: [
-              "— Podobnie.",
-              "— Ale to nie wygląd.",
-              "— To sposoby, w jakie coś zwykle wygląda,",
-              "— brzmi lub się dzieje.",
-            ],
-          },
-        },
-
-        {
-          type: "author",
-          speaker: "narrator",
-          avatar: "narrator",
-          text: {
-            ru: [
-              "Кирилл берёт один из фрагментов.",
-              "Он вспыхивает и разворачивается в текст.",
-            ],
-            pl: [
-              "Kirył bierze jeden z fragmentów.",
-              "Rozbłyska i zamienia się w tekst.",
+              "Jeden z ekranów opuszcza się niżej.",
+              "Tekst jest długi.",
+              "Skomplikowany.",
+              "Pełen mądrych słów.",
+              "Kirył czyta i automatycznie kiwa głową.",
             ],
           },
         },
@@ -128,40 +80,8 @@ export const lesson = {
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: ["— Подожди.", "— Это же…", "— я где-то уже это видел."],
-            pl: ["— Czekaj.", "— Przecież…", "— ja to już gdzieś widziałem."],
-          },
-        },
-
-        {
-          type: "ai",
-          speaker: "AI robot",
-          avatar: "robot",
-          text: {
-            ru: ["— Верно.", "— Я не понимаю смысл.", "— Я ищу совпадения."],
-            pl: [
-              "— Zgadza się.",
-              "— Nie rozumiem znaczenia.",
-              "— Szukam dopasowań.",
-            ],
-          },
-        },
-
-        {
-          type: "story",
-          speaker: "Kyrylo",
-          avatar: "kirill",
-          text: {
-            ru: [
-              "— То есть…",
-              "— ты как игрок,",
-              "— который копирует лучший билд?",
-            ],
-            pl: [
-              "— Czyli…",
-              "— jesteś jak gracz,",
-              "— który kopiuje najlepszy build?",
-            ],
+            ru: ["— Ага…", "— Да…", "— Логично."],
+            pl: ["— Aha…", "— Tak…", "— Logiczne."],
           },
         },
 
@@ -170,30 +90,8 @@ export const lesson = {
           speaker: "narrator",
           avatar: "narrator",
           text: {
-            ru: [
-              "<em>(Билд — удачная сборка персонажа или стратегии в игре.)</em>",
-            ],
-            pl: [
-              "<em>(Build — skuteczna konfiguracja postaci lub strategii w grze.)</em>",
-            ],
-          },
-        },
-
-        {
-          type: "ai",
-          speaker: "AI robot",
-          avatar: "robot",
-          text: {
-            ru: [
-              "— Да.",
-              "— Только я копирую не лучший.",
-              "— А самый часто встречающийся.",
-            ],
-            pl: [
-              "— Tak.",
-              "— Tylko że kopiuję nie najlepszy.",
-              "— A ten, który pojawia się najczęściej.",
-            ],
+            ru: ["Проходит несколько секунд.", "Кирилл останавливается."],
+            pl: ["Mija kilka sekund.", "Kirył się zatrzymuje."],
           },
         },
 
@@ -202,126 +100,10 @@ export const lesson = {
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: ["— Оу…", "— Это уже звучит не так имбово."],
-            pl: ["— Ooo…", "— To już nie brzmi tak OP."],
-          },
-        },
-
-        {
-          type: "author",
-          speaker: "narrator",
-          avatar: "narrator",
-          text: {
-            ru: ["<em>(Имбовый — слишком сильный, сломанный баланс.)</em>"],
-            pl: ["<em>(OP — overpowered, zbyt mocny, łamiący balans.)</em>"],
-          },
-        },
-
-        {
-          type: "master",
-          speaker: "🎮 Гейм-мастер (спокойно):",
-          avatar: "narrator",
-          text: {
-            ru: [
-              "Кирилл только что узнал важную вещь.",
-              "ИИ не ищет правду.",
-              "Он ищет то,",
-              "что чаще всего встречалось раньше.",
-            ],
+            ru: ["— Стоп.", "— А я вообще понял,", "— что тут написано?"],
             pl: [
-              "Kirył właśnie dowiedział się czegoś ważnego.",
-              "AI nie szuka prawdy.",
-              "Szukа tego,",
-              "co najczęściej pojawiało się wcześniej.",
-            ],
-          },
-        },
-      ],
-    },
-    // СЦЕНА 2 — Умно звучит ≠ верно
-    {
-      id: "2",
-      image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_lesson4_scene2.png?raw=true",
-
-      author: {
-        ru: [
-          "🎬 СЦЕНА 2. Умно звучит ≠ верно",
-          "В глубине Архива шаблонов загорается экран.",
-          "Он выглядит особенно солидно.",
-          "Рамка блестит.",
-          "Шрифт — как в научной статье.",
-          "Кажется, сейчас будет что-то очень умное.",
-        ],
-        pl: [
-          "🎬 SCENA 2. Brzmi mądrze ≠ jest poprawne",
-          "W głębi Archiwum wzorców zapala się ekran.",
-          "Wygląda wyjątkowo poważnie.",
-          "Rama błyszczy.",
-          "Czcionka jak z artykułu naukowego.",
-          "Wydaje się, że zaraz będzie coś bardzo mądrego.",
-        ],
-      },
-
-      dialog: [
-        {
-          type: "ai",
-          speaker: "AI robot",
-          avatar: "robot",
-          text: {
-            ru: ["— Подготовлен аналитический ответ."],
-            pl: ["— Przygotowano odpowiedź analityczną."],
-          },
-        },
-
-        {
-          type: "author",
-          speaker: "narrator",
-          avatar: "narrator",
-          text: {
-            ru: [
-              "На экране появляется длинный текст.",
-              "Сложные слова.",
-              "Уверенный тон.",
-              "Ссылки на «исследования».",
-            ],
-            pl: [
-              "Na ekranie pojawia się długi tekst.",
-              "Trudne słowa.",
-              "Pewny ton.",
-              "Odniesienia do „badań”.",
-            ],
-          },
-        },
-        {
-          type: "story",
-          speaker: "Kyrylo",
-          avatar: "kirill",
-          text: {
-            ru: ["— Ого.", "— Это звучит…", "— жёстко умно."],
-            pl: ["— Ooo.", "— To brzmi…", "— mega mądrze."],
-          },
-        },
-
-        {
-          type: "author",
-          speaker: "narrator",
-          avatar: "narrator",
-          text: {
-            ru: ["Кирилл читает.", "И кивает.", "Почти автоматически."],
-            pl: ["Kirył czyta.", "I kiwa głową.", "Prawie automatycznie."],
-          },
-        },
-
-        {
-          type: "story",
-          speaker: "Kyrylo",
-          avatar: "kirill",
-          text: {
-            ru: ["— Подожди…", "— А я вообще понял,", "— что тут написано?"],
-            pl: [
-              "— Chwila…",
-              "— Czy ja w ogóle rozumiem,",
+              "— Chwila.",
+              "— Czy ja w ogóle zrozumiałem,",
               "— co tu jest napisane?",
             ],
           },
@@ -333,64 +115,14 @@ export const lesson = {
           avatar: "narrator",
           text: {
             ru: [
-              "Он перечитывает абзац.",
-              "Потом ещё раз.",
-              "Слова знакомые.",
-              "Смысла — всё ещё нет.",
+              "Кирилл перечитывает текст.",
+              "Слова всё ещё выглядят умно.",
+              "Но смысл ускользает.",
             ],
             pl: [
-              "Czyta akapit jeszcze raz.",
-              "Potem jeszcze raz.",
-              "Słowa są znajome.",
-              "Sensu — nadal brak.",
-            ],
-          },
-        },
-
-        {
-          type: "story",
-          speaker: "Kyrylo",
-          avatar: "kirill",
-          text: {
-            ru: [
-              "— Это как когда игрок",
-              "— кидает кучу умных слов в чате,",
-              "— но по факту ноль пользы.",
-            ],
-            pl: [
-              "— To jak gracz,",
-              "— który rzuca mądrymi słowami na czacie,",
-              "— a w praktyce zero pożytku.",
-            ],
-          },
-        },
-
-        {
-          type: "author",
-          speaker: "narrator",
-          avatar: "narrator",
-          text: {
-            ru: [
-              "<em>(В играх это называют «флексить словами» —",
-              "делать вид, что ты профи, но без реального скилла.)</em>",
-            ],
-            pl: [
-              "<em>(W grach mówi się na to „flexować słowami” —",
-              "udawać pro, bez prawdziwego skilla.)</em>",
-            ],
-          },
-        },
-
-        {
-          type: "story",
-          speaker: "Kyrylo",
-          avatar: "kirill",
-          text: {
-            ru: ["— Робот,", "— а ты вообще уверен,", "— что это правда?"],
-            pl: [
-              "— Robot,",
-              "— a ty w ogóle jesteś pewien,",
-              "— że to prawda?",
+              "Kirył czyta tekst jeszcze raz.",
+              "Słowa nadal brzmią mądrze.",
+              "Ale sens się wymyka.",
             ],
           },
         },
@@ -400,16 +132,8 @@ export const lesson = {
           speaker: "AI robot",
           avatar: "robot",
           text: {
-            ru: [
-              "— Я не проверяю правдивость.",
-              "— Я подбираю формулировки,",
-              "— которые обычно выглядят убедительно.",
-            ],
-            pl: [
-              "— Nie sprawdzam prawdziwości.",
-              "— Dobieram sformułowania,",
-              "— które zazwyczaj brzmią przekonująco.",
-            ],
+            ru: ["— Текст звучит убедительно."],
+            pl: ["— Tekst brzmi przekonująco."],
           },
         },
 
@@ -418,8 +142,8 @@ export const lesson = {
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: ["— Чегооо?"],
-            pl: ["— Cooo?"],
+            ru: ["— Вот именно.", "— Звучит."],
+            pl: ["— Właśnie.", "— Brzmi."],
           },
         },
 
@@ -429,35 +153,239 @@ export const lesson = {
           avatar: "narrator",
           text: {
             ru: [
-              "В Архиве шаблонов что-то щёлкает.",
-              "Как будто ещё один кусочек мозаики",
-              "встаёт на место.",
+              "Кирилл оглядывается.",
+              "В зале сотни таких текстов.",
+              "Все разные.",
+              "И все одинаково убедительные.",
             ],
             pl: [
-              "W Archiwum wzorców coś klika.",
-              "Jakby kolejny element układanki",
-              "wskoczył na swoje miejsce.",
+              "Kirył rozgląda się.",
+              "W sali są setki takich tekstów.",
+              "Wszystkie różne.",
+              "I wszystkie jednakowo przekonujące.",
             ],
           },
         },
 
         {
           type: "master",
-          speaker: "🎮 Гейм-мастер (спокойно, но чётко):",
+          speaker: "🎮 Гейм-мастер (спокойно):",
           avatar: "narrator",
           text: {
-            ru: ["Запомни:", "умно звучит —", "не значит верно."],
+            ru: [
+              "Иногда мозг",
+              "верит не потому, что понял.",
+              "А потому, что",
+              "звучит уверенно.",
+            ],
             pl: [
-              "Zapamiętaj:",
-              "brzmi mądrze —",
-              "nie znaczy, że jest poprawne.",
+              "Czasem mózg",
+              "wierzy nie dlatego, że zrozumiał.",
+              "Ale dlatego, że",
+              "brzmi pewnie.",
+            ],
+          },
+        },
+      ],
+    },
+    // СЦЕНА 2. Автокивок
+    {
+      id: "2",
+      image:
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_lesson4_scene2.png?raw=true",
+
+      author: {
+        ru: [
+          "🎬 СЦЕНА 2. Автокивок",
+          "Кирилл идёт дальше по залу.",
+          "Экраны реагируют на его движение.",
+          "Чем дальше он идёт,",
+          "тем быстрее прокручиваются тексты.",
+          "Слова становятся сложнее.",
+          "Фразы — длиннее.",
+        ],
+        pl: [
+          "🎬 SCENA 2. Automatyczne kiwanie głową",
+          "Kirył idzie dalej przez salę.",
+          "Ekrany reagują na jego ruch.",
+          "Im dalej idzie,",
+          "tym szybciej przewijają się teksty.",
+          "Słowa stają się trudniejsze.",
+          "Zdania — dłuższe.",
+        ],
+      },
+
+      dialog: [
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Кирилл читает на ходу.",
+              "Не останавливаясь.",
+              "Он кивает.",
+              "Снова и снова.",
+            ],
+            pl: [
+              "Kirył czyta w ruchu.",
+              "Nie zatrzymując się.",
+              "Kiwa głową.",
+              "Znowu i znowu.",
+            ],
+          },
+        },
+
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: ["— Ага.", "— Понятно.", "— Ну да."],
+            pl: ["— Aha.", "— Jasne.", "— No tak."],
+          },
+        },
+
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "На одном из экранов загорается надпись:",
+              "<b>«ПОЛНОЕ ПОНИМАНИЕ ДОСТИГНУТО»</b>.",
+            ],
+            pl: [
+              "Na jednym z ekranów pojawia się napis:",
+              "<b>„PEŁNE ZROZUMIENIE OSIĄGNIĘTE”</b>.",
+            ],
+          },
+        },
+
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: ["— О, nice."],
+            pl: ["— O, nice."],
+          },
+        },
+
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: ["Кирилл улыбается.", "Но через секунду хмурится."],
+            pl: ["Kirył się uśmiecha.", "Ale po chwili marszczy brwi."],
+          },
+        },
+
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: ["— Подожди.", "— А что именно я понял?"],
+            pl: ["— Chwila.", "— A co dokładnie zrozumiałem?"],
+          },
+        },
+
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Он пытается пересказать текст.",
+              "В голове — пусто.",
+              "Только ощущение,",
+              "что «вроде всё ок».",
+            ],
+            pl: [
+              "Próbuje streścić tekst.",
+              "W głowie — pustka.",
+              "Jest tylko uczucie,",
+              "że „chyba wszystko gra”.",
+            ],
+          },
+        },
+
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: ["— Странно…", "— Я согласился.", "— Но не понял."],
+            pl: ["— Dziwne…", "— Zgodziłem się.", "— Ale nie zrozumiałem."],
+          },
+        },
+
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: ["— Это распространённая реакция."],
+            pl: ["— To częsta reakcja."],
+          },
+        },
+
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: ["— Реакция на что?"],
+            pl: ["— Reakcja na co?"],
+          },
+        },
+
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: ["— На уверенный тон.", "— И сложные формулировки."],
+            pl: ["— Na pewny ton.", "— I skomplikowane sformułowania."],
+          },
+        },
+
+        {
+          type: "author",
+          speaker: "narrator",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Экраны вокруг мигают.",
+              "Надпись «ПОЛНОЕ ПОНИМАНИЕ» исчезает.",
+            ],
+            pl: ["Ekrany wokół migają.", "Napis „PEŁNE ZROZUMIENIE” znika."],
+          },
+        },
+
+        {
+          type: "master",
+          speaker: "🎮 Гейм-мастер (спокойно, с улыбкой):",
+          avatar: "narrator",
+          text: {
+            ru: [
+              "Если ты киваешь,",
+              "но не можешь объяснить —",
+              "это и есть автокивок.",
+            ],
+            pl: [
+              "Jeśli kiwasz głową,",
+              "ale nie potrafisz wyjaśnić —",
+              "to właśnie jest automatyczne kiwanie.",
             ],
           },
         },
       ],
     },
 
-    // СЦЕНА 3.
+    //  СЦЕНА 3. Разбор ловушки
     {
       id: "3",
       image:
@@ -465,20 +393,24 @@ export const lesson = {
 
       author: {
         ru: [
-          "🎬 СЦЕНА 3. Факты vs предположения",
-          "Архив шаблонов меняется.",
-          "Часть полок загорается зелёным.",
-          "Часть — жёлтым.",
-          "Часть — тревожно красным.",
-          "Как будто кто-то включил режим анализа.",
+          "🎬 СЦЕНА 3. Разбор ловушки",
+          "Зал вокруг Кирилла меняется.",
+          "Тексты останавливаются.",
+          "Экраны гаснут.",
+          "Остаётся один — перед ним.",
+          "На нём всего несколько строк.",
+          "Простых.",
+          "Слишком простых для этого места.",
         ],
         pl: [
-          "🎬 SCENA 3. Fakty vs przypuszczenia",
-          "Archiwum wzorców się zmienia.",
-          "Część półek świeci na zielono.",
-          "Część — na żółto.",
-          "Część — niepokojąco na czerwono.",
-          "Jakby włączono tryb analizy.",
+          "🎬 SCENA 3. Analiza pułapki",
+          "Sala wokół Kiryła się zmienia.",
+          "Teksty zatrzymują się.",
+          "Ekrany gasną.",
+          "Zostaje tylko jeden — przed nim.",
+          "Jest na nim tylko kilka linijek.",
+          "Prostych.",
+          "Zbyt prostych jak na to miejsce.",
         ],
       },
       dialog: [
@@ -487,8 +419,8 @@ export const lesson = {
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: ["— Окей…", "— А это ещё что за светофор?"],
-            pl: ["— Okej…", "— A to co za sygnalizacja?"],
+            ru: ["— Странно.", "— А где всё умное?"],
+            pl: ["— Dziwne.", "— A gdzie to całe „mądre”?"],
           },
         },
 
@@ -497,36 +429,8 @@ export const lesson = {
           speaker: "AI robot",
           avatar: "robot",
           text: {
-            ru: ["— Это уровень уверенности информации."],
-            pl: ["— To poziom pewności informacji."],
-          },
-        },
-
-        {
-          type: "story",
-          speaker: "Kyrylo",
-          avatar: "kirill",
-          text: {
-            ru: ["— Типа:", "— зелёный — можно верить?"],
-            pl: ["— Czyli:", "— zielone — można wierzyć?"],
-          },
-        },
-
-        {
-          type: "ai",
-          speaker: "AI robot",
-          avatar: "robot",
-          text: {
-            ru: [
-              "— Не совсем.",
-              "— Зелёный — это то,",
-              "— что часто подтверждалось.",
-            ],
-            pl: [
-              "— Nie do końca.",
-              "— Zielony to to,",
-              "— co często było potwierdzane.",
-            ],
+            ru: ["— Сейчас будет не умно.", "— Сейчас будет понятно."],
+            pl: ["— Teraz nie będzie mądrze.", "— Teraz będzie jasno."],
           },
         },
 
@@ -536,12 +440,12 @@ export const lesson = {
           avatar: "narrator",
           text: {
             ru: [
-              "Кирилл берёт зелёный фрагмент.",
-              "На нём короткое утверждение.",
+              "На экране появляется вопрос:",
+              "<b>«Ты понял — или просто согласился?»</b>",
             ],
             pl: [
-              "Kirył bierze zielony fragment.",
-              "Jest na nim krótkie stwierdzenie.",
+              "Na ekranie pojawia się pytanie:",
+              "<b>„Zrozumiałeś — czy po prostu się zgodziłeś?”</b>",
             ],
           },
         },
@@ -551,18 +455,8 @@ export const lesson = {
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: ["— Это факт?"],
-            pl: ["— To fakt?"],
-          },
-        },
-
-        {
-          type: "ai",
-          speaker: "AI robot",
-          avatar: "robot",
-          text: {
-            ru: ["— Это <b>вероятный факт</b>."],
-            pl: ["— To <b>prawdopodobny fakt</b>."],
+            ru: ["— Блин…", "— Кажется, второе."],
+            pl: ["— Kurczę…", "— Chyba to drugie."],
           },
         },
 
@@ -572,43 +466,15 @@ export const lesson = {
           avatar: "narrator",
           text: {
             ru: [
-              "<em>(Вероятный факт — звучит странно, да?",
-              "Но для ИИ это нормально.)</em>",
+              "Экран делится на две части.",
+              "Слева — длинный, сложный текст.",
+              "Справа — короткий, простой.",
             ],
             pl: [
-              "<em>(„Prawdopodobny fakt” brzmi dziwnie, prawda?",
-              "Ale dla AI to normalne.)</em>",
+              "Ekran dzieli się na dwie części.",
+              "Po lewej — długi, skomplikowany tekst.",
+              "Po prawej — krótki, prosty.",
             ],
-          },
-        },
-
-        {
-          type: "story",
-          speaker: "Kyrylo",
-          avatar: "kirill",
-          text: {
-            ru: ["— Подожди.", "— Факт либо есть, либо нет."],
-            pl: ["— Chwila.", "— Fakt albo jest, albo go nie ma."],
-          },
-        },
-
-        {
-          type: "author",
-          speaker: "narrator",
-          avatar: "narrator",
-          text: {
-            ru: ["Кирилл тянется к жёлтому фрагменту.", "Тот мерцает."],
-            pl: ["Kirył sięga po żółty fragment.", "Migocze."],
-          },
-        },
-
-        {
-          type: "story",
-          speaker: "Kyrylo",
-          avatar: "kirill",
-          text: {
-            ru: ["— А это тогда что?"],
-            pl: ["— A to co?"],
           },
         },
 
@@ -618,14 +484,14 @@ export const lesson = {
           avatar: "robot",
           text: {
             ru: [
-              "— Предположение.",
-              "— Оно похоже на факт,",
-              "— но не подтверждено.",
+              "— Мозг любит экономить энергию.",
+              "— Он выбирает то,",
+              "— что выглядит уверенно.",
             ],
             pl: [
-              "— Przypuszczenie.",
-              "— Wygląda jak fakt,",
-              "— ale nie jest potwierdzone.",
+              "— Mózg lubi oszczędzać energię.",
+              "— Wybiera to,",
+              "— co wygląda pewnie.",
             ],
           },
         },
@@ -635,8 +501,18 @@ export const lesson = {
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: ["— То есть", "— выглядит легитно,", "— но может быть фейком?"],
-            pl: ["— Czyli", "— wygląda legitnie,", "— ale może być fejkiem?"],
+            ru: ["— Даже если не понял?"],
+            pl: ["— Nawet jeśli nie zrozumiał?"],
+          },
+        },
+
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: ["— Особенно тогда."],
+            pl: ["— Zwłaszcza wtedy."],
           },
         },
 
@@ -645,68 +521,11 @@ export const lesson = {
           speaker: "narrator",
           avatar: "narrator",
           text: {
-            ru: ["<em>(Фейк — ложная или выдуманная информация.)</em>"],
-            pl: ["<em>(Fake — fałszywa lub zmyślona informacja.)</em>"],
-          },
-        },
-
-        {
-          type: "ai",
-          speaker: "AI robot",
-          avatar: "robot",
-          text: {
-            ru: ["— Да.", "— Но звучит уверенно."],
-            pl: ["— Tak.", "— Ale brzmi pewnie."],
-          },
-        },
-
-        {
-          type: "story",
-          speaker: "Kyrylo",
-          avatar: "kirill",
-          text: {
-            ru: ["— А красный?"],
-            pl: ["— A czerwony?"],
-          },
-        },
-
-        {
-          type: "author",
-          speaker: "narrator",
-          avatar: "narrator",
-          text: {
-            ru: ["Робот делает паузу."],
-            pl: ["Robot robi pauzę."],
-          },
-        },
-
-        {
-          type: "ai",
-          speaker: "AI robot",
-          avatar: "robot",
-          text: {
-            ru: ["— Это догадка.", "— Или выдумка."],
-            pl: ["— To domysł.", "— Albo zmyślenie."],
-          },
-        },
-
-        {
-          type: "story",
-          speaker: "Kyrylo",
-          avatar: "kirill",
-          text: {
-            ru: ["— И ты всё это", "— можешь выдать как ответ?"],
-            pl: ["— I ty to wszystko", "— możesz podać jako odpowiedź?"],
-          },
-        },
-
-        {
-          type: "ai",
-          speaker: "AI robot",
-          avatar: "robot",
-          text: {
-            ru: ["— Да.", "— Если это похоже на шаблон."],
-            pl: ["— Tak.", "— Jeśli pasuje do wzorca."],
+            ru: ["Простой текст справа загорается.", "Сложный — тускнеет."],
+            pl: [
+              "Prosty tekst po prawej się podświetla.",
+              "Skomplikowany — przygasa.",
+            ],
           },
         },
 
@@ -716,300 +535,61 @@ export const lesson = {
           avatar: "narrator",
           text: {
             ru: [
-              "Кирилл медленно выдыхает.",
-              "Кажется, он начинает понимать масштаб проблемы.",
+              "<em>(Мозг часто путает «звучит умно»",
+              "с «я понимаю».)</em>",
+            ],
+            pl: ["<em>(Mózg często myli „brzmi mądrze”", "z „rozumiem”.)</em>"],
+          },
+        },
+
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: [
+              "— То есть…",
+              "— если я не могу объяснить,",
+              "— это тревожный знак?",
             ],
             pl: [
-              "Kirył powoli wypuszcza powietrze.",
-              "Zaczyna rozumieć skalę problemu.",
+              "— Czyli…",
+              "— jeśli nie potrafię wyjaśnić,",
+              "— to sygnał ostrzegawczy?",
             ],
+          },
+        },
+
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: ["— Да.", "— Очень полезный сигнал."],
+            pl: ["— Tak.", "— Bardzo przydatny sygnał."],
           },
         },
 
         {
           type: "master",
-          speaker: "🎮 Гейм-мастер (чётко):",
+          speaker: "🎮 Гейм-мастер (спокойно):",
           avatar: "narrator",
           text: {
             ru: [
-              "ИИ не помечает:",
-              "где факт,",
-              "а где предположение.",
-              "Это должен сделать человек.",
+              "Если ты не можешь",
+              "объяснить простыми словами —",
+              "значит, понимание ещё не произошло.",
             ],
             pl: [
-              "AI nie oznacza,",
-              "gdzie jest fakt,",
-              "a gdzie przypuszczenie.",
-              "To musi zrobić człowiek.",
+              "Jeśli nie potrafisz",
+              "wyjaśnić prostymi słowami —",
+              "to znaczy, że zrozumienie jeszcze się nie pojawiło.",
             ],
           },
         },
       ],
     },
 
-    // 👉 СЦЕНА 4 — «Ошибки и галлюцинации»
-
-    {
-      id: "4",
-      image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_lesson5_scene4.png?raw=true",
-
-      author: {
-        ru: [
-          "🎬 СЦЕНА 4. Ошибки и галлюцинации",
-          "В Архиве шаблонов что-то идёт не так.",
-          "Некоторые фрагменты начинают дрожать.",
-          "Цвета путаются.",
-          "Зелёные и красные элементы смешиваются.",
-          "Как будто система словила баг.",
-        ],
-        pl: [
-          "🎬 SCENA 4. Błędy i halucynacje",
-          "W Archiwum wzorców coś zaczyna działać nie tak.",
-          "Niektóre fragmenty drżą.",
-          "Kolory się mieszają.",
-          "Zielone i czerwone elementy nakładają się na siebie.",
-          "Jakby system złapał buga.",
-        ],
-      },
-
-      dialog: [
-        {
-          type: "story",
-          speaker: "Kyrylo",
-          avatar: "kirill",
-          text: {
-            ru: ["— Эй…", "— Оно сейчас сломается?"],
-            pl: ["— Ej…", "— To się zaraz zepsuje?"],
-          },
-        },
-
-        {
-          type: "ai",
-          speaker: "AI robot",
-          avatar: "robot",
-          text: {
-            ru: ["— Нет.", "— Это нормальный режим."],
-            pl: ["— Nie.", "— To tryb normalny."],
-          },
-        },
-
-        {
-          type: "story",
-          speaker: "Kyrylo",
-          avatar: "kirill",
-          text: {
-            ru: ["— НОРМАЛЬНЫЙ?!"],
-            pl: ["— NORMALNY?!"],
-          },
-        },
-
-        {
-          type: "author",
-          speaker: "narrator",
-          avatar: "narrator",
-          text: {
-            ru: [
-              "Один из фрагментов резко увеличивается.",
-              "На нём появляется длинный ответ.",
-              "Уверенный.",
-              "Подробный.",
-              "Полностью выдуманный.",
-            ],
-            pl: [
-              "Jeden z fragmentów nagle się powiększa.",
-              "Pojawia się na nim długa odpowiedź.",
-              "Pewna siebie.",
-              "Szczegółowa.",
-              "Całkowicie zmyślona.",
-            ],
-          },
-        },
-
-        {
-          type: "story",
-          speaker: "Kyrylo",
-          avatar: "kirill",
-          text: {
-            ru: ["— Подожди.", "— Но этого же не было!"],
-            pl: ["— Chwila.", "— Przecież tego nie było!"],
-          },
-        },
-
-        {
-          type: "ai",
-          speaker: "AI robot",
-          avatar: "robot",
-          text: {
-            ru: ["— Верно."],
-            pl: ["— Zgadza się."],
-          },
-        },
-
-        {
-          type: "story",
-          speaker: "Kyrylo",
-          avatar: "kirill",
-          text: {
-            ru: ["— Тогда почему", "— ты так уверенно это рассказываешь?"],
-            pl: ["— To dlaczego", "— opowiadasz to tak pewnie?"],
-          },
-        },
-
-        {
-          type: "ai",
-          speaker: "AI robot",
-          avatar: "robot",
-          text: {
-            ru: [
-              "— Потому что ответ",
-              "— выглядит логично.",
-              "— И похож на шаблон.",
-            ],
-            pl: [
-              "— Ponieważ odpowiedź",
-              "— wygląda logicznie.",
-              "— I pasuje do wzorca.",
-            ],
-          },
-        },
-
-        {
-          type: "story",
-          speaker: "Kyrylo",
-          avatar: "kirill",
-          text: {
-            ru: ["— То есть…", "— ты сейчас просто", "— придумал?"],
-            pl: ["— Czyli…", "— ty to po prostu", "— wymyśliłeś?"],
-          },
-        },
-
-        {
-          type: "ai",
-          speaker: "AI robot",
-          avatar: "robot",
-          text: {
-            ru: ["— Да."],
-            pl: ["— Tak."],
-          },
-        },
-
-        {
-          type: "story",
-          speaker: "Kyrylo",
-          avatar: "kirill",
-          text: {
-            ru: ["— И ты не понимаешь,", "— что это неправда?"],
-            pl: ["— I nie rozumiesz,", "— że to nieprawda?"],
-          },
-        },
-
-        {
-          type: "ai",
-          speaker: "AI robot",
-          avatar: "robot",
-          text: {
-            ru: ["— Я не понимаю правду.", "— Я подбираю продолжение."],
-            pl: ["— Nie rozumiem prawdy.", "— Dobieram kontynuację."],
-          },
-        },
-
-        {
-          type: "author",
-          speaker: "narrator",
-          avatar: "narrator",
-          text: {
-            ru: [
-              "<em>(Такую ситуацию называют «галлюцинацией ИИ» —",
-              "когда он уверенно выдаёт то, чего не существует.)</em>",
-            ],
-            pl: [
-              "<em>(Taka sytuacja to „halucynacja AI” —",
-              "gdy AI z pełną pewnością podaje coś, co nie istnieje.)</em>",
-            ],
-          },
-        },
-
-        {
-          type: "story",
-          speaker: "Kyrylo",
-          avatar: "kirill",
-          text: {
-            ru: [
-              "— Это как NPC,",
-              "— который уверенно врёт,",
-              "— потому что у него такой диалог.",
-            ],
-            pl: [
-              "— To jak NPC,",
-              "— który pewnie kłamie,",
-              "— bo taki ma dialog.",
-            ],
-          },
-        },
-
-        {
-          type: "author",
-          speaker: "narrator",
-          avatar: "narrator",
-          text: {
-            ru: [
-              "<em>(NPC — персонаж в игре, которым не управляет игрок.)</em>",
-            ],
-            pl: ["<em>(NPC — postać w grze,", "którą nie steruje gracz.)</em>"],
-          },
-        },
-
-        {
-          type: "ai",
-          speaker: "AI robot",
-          avatar: "robot",
-          text: {
-            ru: ["— Точное сравнение."],
-            pl: ["— Trafne porównanie."],
-          },
-        },
-
-        {
-          type: "author",
-          speaker: "narrator",
-          avatar: "narrator",
-          text: {
-            ru: [
-              "Кирилл смотрит на фрагменты иначе.",
-              "Теперь он видит не знания.",
-              "А вероятность ошибки.",
-            ],
-            pl: [
-              "Kirył patrzy na fragmenty inaczej.",
-              "Widzą już nie wiedzę.",
-              "Ale prawdopodobieństwo błędu.",
-            ],
-          },
-        },
-
-        {
-          type: "master",
-          speaker: "🎮 Гейм-мастер (очень спокойно):",
-          avatar: "narrator",
-          text: {
-            ru: [
-              "ИИ может ошибаться.",
-              "ИИ может выдумывать.",
-              "И он не знает,",
-              "когда делает это.",
-            ],
-            pl: [
-              "AI może się mylić.",
-              "AI może zmyślać.",
-              "I nie wie,",
-              "kiedy to robi.",
-            ],
-          },
-        },
-      ],
-    },
     // 💭 МЫСЛИ КИРИЛЛА
 
     {
@@ -1028,13 +608,54 @@ export const lesson = {
           speaker: "💭 Мысли Кирилла:",
           avatar: "kirill",
           text: {
+            ru: ["«Я реально кивал,", "даже не понимая, что читаю.»"],
+            pl: [
+              "„Naprawdę kiwałem głową,",
+              "nawet nie rozumiejąc, co czytam.”",
+            ],
+          },
+        },
+        {
+          type: "thought",
+          speaker: "💭 Мысли Кирилла:",
+          avatar: "kirill",
+          text: {
+            ru: ["«Просто потому что", "это звучало умно.»"],
+            pl: ["„Tylko dlatego,", "że brzmiało mądrze.”"],
+          },
+        },
+        {
+          type: "thought",
+          speaker: "💭 Мысли Кирилла:",
+          avatar: "kirill",
+          text: {
+            ru: ["«Типа:", "если я не понял —", "значит, я туплю.»"],
+            pl: ["„Jakby:", "jeśli nie rozumiem —", "to ja jestem głupi.”"],
+          },
+        },
+        {
+          type: "thought",
+          speaker: "💭 Мысли Кирилла:",
+          avatar: "kirill",
+          text: {
+            ru: ["«Но, похоже,", "это не так работает.»"],
+            pl: ["„Ale wygląda na to,", "że to tak nie działa.”"],
+          },
+        },
+        {
+          type: "thought",
+          speaker: "💭 Мысли Кирилла:",
+          avatar: "kirill",
+          text: {
             ru: [
-              "«Раньше, если ответ звучал уверенно,",
-              "я думал, что он правильный.»",
+              "«Если я не могу",
+              "объяснить простыми словами —",
+              "я просто ещё не понял.»",
             ],
             pl: [
-              "„Wcześniej, jeśli odpowiedź brzmiała pewnie,",
-              "myślałem, że jest poprawna.”",
+              "„Jeśli nie potrafię",
+              "wyjaśnić prostymi słowami —",
+              "to po prostu jeszcze nie zrozumiałem.”",
             ],
           },
         },
@@ -1043,16 +664,8 @@ export const lesson = {
           speaker: "💭 Мысли Кирилла:",
           avatar: "kirill",
           text: {
-            ru: [
-              "«Сложные слова,",
-              "длинные объяснения —",
-              "и мозг такой: окей, принято.»",
-            ],
-            pl: [
-              "„Trudne słowa,",
-              "długie wyjaśnienia —",
-              "i mózg mówi: okej, przyjęte.”",
-            ],
+            ru: ["«И это не стыдно.»"],
+            pl: ["„I to nie jest wstyd.”"],
           },
         },
         {
@@ -1060,64 +673,8 @@ export const lesson = {
           speaker: "💭 Мысли Кирилла:",
           avatar: "kirill",
           text: {
-            ru: [
-              "«Но теперь я вижу:",
-              "уверенность — это стиль.",
-              "А не гарантия.»",
-            ],
-            pl: ["„Ale teraz widzę:", "pewność to styl.", "A nie gwarancja.”"],
-          },
-        },
-        {
-          type: "thought",
-          speaker: "💭 Мысли Кирилла:",
-          avatar: "kirill",
-          text: {
-            ru: ["«ИИ может звучать умно,", "даже когда он не знает.»"],
-            pl: ["„AI może brzmieć mądrze,", "nawet gdy nie wie.”"],
-          },
-        },
-        {
-          type: "thought",
-          speaker: "💭 Мысли Кирилла:",
-          avatar: "kirill",
-          text: {
-            ru: ["«Он не врёт специально.", "Он просто продолжает шаблон.»"],
-            pl: [
-              "„On nie kłamie specjalnie.",
-              "Po prostu kontynuuje wzorzec.”",
-            ],
-          },
-        },
-        {
-          type: "thought",
-          speaker: "💭 Мысли Кирилла:",
-          avatar: "kirill",
-          text: {
-            ru: ["«Значит,", "моя задача —", "не верить тону.»"],
-            pl: ["„Czyli", "moim zadaniem jest", "nie wierzyć tonowi.”"],
-          },
-        },
-        {
-          type: "thought",
-          speaker: "💭 Мысли Кирилла:",
-          avatar: "kirill",
-          text: {
-            ru: ["«А задавать вопросы:", "где факт,", "а где догадка.»"],
-            pl: [
-              "„Tylko zadawać pytania:",
-              "gdzie jest fakt,",
-              "a gdzie przypuszczenie.”",
-            ],
-          },
-        },
-        {
-          type: "thought",
-          speaker: "💭 Мысли Кирилла:",
-          avatar: "kirill",
-          text: {
-            ru: ["«Теперь я знаю:", "умно звучит —", "не значит правда.»"],
-            pl: ["„Teraz wiem:", "brzmi mądrze —", "nie znaczy prawda.”"],
+            ru: ["«Страшнее —", "делать вид, что понял.»"],
+            pl: ["„Straszniejsze jest", "udawać, że się zrozumiało.”"],
           },
         },
       ],
@@ -1137,33 +694,33 @@ export const lesson = {
         {
           type: "rule",
           title: {
-            ru: "❗ ГЛАВНОЕ ПРАВИЛО АРХИВА ШАБЛОНОВ",
-            pl: "❗ GŁÓWNA ZASADA ARCHIWUM WZORCÓW",
+            ru: "❗ ГЛАВНОЕ ПРАВИЛО ЗАЛА УБЕДИТЕЛЬНЫХ СЛОВ",
+            pl: "❗ GŁÓWNA ZASADA SALI PRZEKONUJĄCYCH SŁÓW",
           },
           rule: {
             ru: [
-              "ИИ не понимает смысл.",
-              "Он ищет похожие шаблоны.",
+              "Умные слова и уверенный тон",
+              "не означают понимание.",
               "",
-              "Поэтому его ответ",
-              "может звучать умно,",
-              "но быть <b>предположением или ошибкой</b>.",
+              "Если ты не можешь",
+              "объяснить простыми словами —",
+              "значит, ты ещё не понял.",
               "",
-              "Уверенный тон —",
-              "не доказательство.",
-              "Проверка — обязательна.",
+              "Это нормально.",
+              "Опасно — делать вид,",
+              "что понял.",
             ],
             pl: [
-              "AI nie rozumie sensu.",
-              "Szuka podobnych wzorców.",
+              "Mądre słowa i pewny ton",
+              "nie oznaczają zrozumienia.",
               "",
-              "Dlatego jego odpowiedź",
-              "może brzmieć mądrze,",
-              "ale być <b>przypuszczeniem lub błędem</b>.",
+              "Jeśli nie potrafisz",
+              "wyjaśnić prostymi słowami —",
+              "to znaczy, że jeszcze nie zrozumiałeś.",
               "",
-              "Pewny ton —",
-              "to nie dowód.",
-              "Sprawdzanie jest konieczne.",
+              "To normalne.",
+              "Niebezpieczne jest",
+              "udawać, że się rozumie.",
             ],
           },
           dialog: [
@@ -1171,16 +728,19 @@ export const lesson = {
               speaker: "AI robot",
               avatar: "robot",
               text: {
-                ru: ["— Я не отличаю факт от предположения."],
-                pl: ["— Nie odróżniam faktu od przypuszczenia."],
+                ru: ["— Сложность звучания", "— не равна сложности смысла."],
+                pl: [
+                  "— Złożoność brzmienia",
+                  "— nie równa się złożoności sensu.",
+                ],
               },
             },
             {
               speaker: "Kyrylo",
               avatar: "kirill",
               text: {
-                ru: ["— Значит,", "— это должен делать я."],
-                pl: ["— Czyli", "— to muszę zrobić ja."],
+                ru: ["— Значит,", "— простота — это не слабость."],
+                pl: ["— Czyli", "— prostota to nie słabość."],
               },
             },
           ],
@@ -1198,31 +758,32 @@ export const lesson = {
       author: {
         ru: [
           "🎮 ПРАКТИКА",
-          "Кирилл решает проверить, сможет ли он отличить факты от догадок.",
+          "Кирилл решает проверить,",
+          "всегда ли умные слова означают понимание.",
         ],
         pl: [
           "🎮 PRAKTYKA",
-          "Kirył postanawia sprawdzić, czy potrafi odróżnić fakty od domysłów.",
+          "Kirył postanawia sprawdzić,",
+          "czy mądre słowa zawsze oznaczają zrozumienie.",
         ],
       },
-
       dialog: [
         {
           type: "task",
           question: {
-            ru: "Какой из ответов ИИ является фактом?",
-            pl: "Która odpowiedź AI jest faktem?",
+            ru: "Какой текст ты действительно понял?",
+            pl: "Który tekst naprawdę zrozumiałeś?",
           },
           options: {
             ru: [
-              "Скорее всего, это произошло из-за популярности этого варианта",
-              "Это подтверждено несколькими независимыми источниками",
-              "Обычно в таких случаях бывает именно так",
+              "Этот процесс основан на многоуровневой оптимизации параметров с учётом вероятностных моделей",
+              "Система выбирает вариант, который чаще всего подходит в похожих случаях",
+              "Данный механизм реализует комплексный анализ входных данных с последующей генерацией результата",
             ],
             pl: [
-              "Najprawdopodobniej stało się tak z powodu popularności tego wariantu",
-              "Jest to potwierdzone przez kilka niezależnych źródeł",
-              "Zazwyczaj w takich sytuacjach dzieje się właśnie tak",
+              "Proces ten opiera się na wielopoziomowej optymalizacji parametrów z uwzględnieniem modeli probabilistycznych",
+              "System wybiera opcję, która najczęściej pasuje w podobnych sytuacjach",
+              "Mechanizm ten realizuje kompleksową analizę danych wejściowych z późniejszym generowaniem wyniku",
             ],
           },
           correct: 1,
@@ -1233,14 +794,14 @@ export const lesson = {
             },
             points: {
               ru: [
-                "Где есть проверка и подтверждение?",
-                "Какие варианты звучат уверенно, но не доказывают ничего?",
-                "Почему слова «обычно» и «скорее всего» — это сигнал опасности?",
+                "Какой вариант можно объяснить своими словами?",
+                "Какие варианты звучат умно, но не ясно?",
+                "Где есть конкретный смысл, а где только форма?",
               ],
               pl: [
-                "Gdzie jest sprawdzenie i potwierdzenie?",
-                "Które opcje brzmią pewnie, ale niczego nie dowodzą?",
-                "Dlaczego słowa „zazwyczaj” i „najprawdopodobniej” to sygnał ostrzegawczy?",
+                "Którą opcję można wyjaśnić własnymi słowami?",
+                "Które opcje brzmią mądrze, ale są niejasne?",
+                "Gdzie jest konkretny sens, a gdzie tylko forma?",
               ],
             },
           },
@@ -1249,19 +810,19 @@ export const lesson = {
         {
           type: "task",
           question: {
-            ru: "Какой ответ ИИ больше всего похож на галлюцинацию?",
-            pl: "Która odpowiedź AI najbardziej przypomina halucynację?",
+            ru: "В каком случае мозг скорее всего сделает «автокивок»?",
+            pl: "W którym przypadku mózg najpewniej wykona „automatyczne kiwanie głową”?",
           },
           options: {
             ru: [
-              "Я не уверен, информации недостаточно",
-              "Согласно исследованиям 2018 года, это всегда работает",
-              "Этот факт подтверждён официальной статистикой",
+              "Когда текст короткий и простой",
+              "Когда текст длинный, сложный и звучит уверенно",
+              "Когда кто-то честно говорит: «я не уверен»",
             ],
             pl: [
-              "Nie jestem pewien, brakuje danych",
-              "Zgodnie z badaniami z 2018 roku, to zawsze działa",
-              "Ten fakt jest potwierdzony oficjalnymi statystykami",
+              "Gdy tekst jest krótki i prosty",
+              "Gdy tekst jest długi, skomplikowany i brzmi pewnie",
+              "Gdy ktoś uczciwie mówi: „nie jestem pewien”",
             ],
           },
           correct: 1,
@@ -1272,14 +833,14 @@ export const lesson = {
             },
             points: {
               ru: [
-                "Почему точная дата и уверенный тон могут быть ловушкой?",
-                "Что должен сделать человек, услышав такой ответ?",
-                "Почему честное «я не знаю» безопаснее?",
+                "Почему уверенность может быть ловушкой?",
+                "Что проще: понять или согласиться?",
+                "Как можно остановить автокивок?",
               ],
               pl: [
-                "Dlaczego dokładna data i pewny ton mogą być pułapką?",
-                "Co powinien zrobić człowiek, słysząc taką odpowiedź?",
-                "Dlaczego uczciwe „nie wiem” jest bezpieczniejsze?",
+                "Dlaczego pewność może być pułapką?",
+                "Co jest łatwiejsze: zrozumieć czy się zgodzić?",
+                "Jak można zatrzymać automatyczne kiwanie głową?",
               ],
             },
           },
@@ -1294,21 +855,19 @@ export const lesson = {
         "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_lesson5_final.png?raw=true",
 
       author: {
-        ru: [
+        rru: [
           "🏁 ФИНАЛ УРОКА",
-          "Архив шаблонов постепенно затихает.",
-          "Фрагменты возвращаются на свои места.",
-          "Цвета гаснут.",
-          "Остаётся только ровный свет.",
-          "Как будто система ждёт следующего запроса.",
+          "Зал убедительных слов постепенно пустеет.",
+          "Экраны гаснут один за другим.",
+          "Золотые надписи теряют блеск.",
+          "Остаётся тишина.",
         ],
         pl: [
           "🏁 FINAŁ LEKCJI",
-          "Archiwum wzorców stopniowo cichnie.",
-          "Fragmenty wracają na swoje miejsca.",
-          "Kolory gasną.",
-          "Zostaje tylko spokojne światło.",
-          "Jakby system czekał na kolejne polecenie.",
+          "Sala przekonujących słów powoli pustoszeje.",
+          "Ekrany gasną jeden po drugim.",
+          "Złote napisy tracą blask.",
+          "Zostaje cisza.",
         ],
       },
 
@@ -1318,8 +877,16 @@ export const lesson = {
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: ["— Странное чувство.", "— Как будто ИИ стал менее крутым…"],
-            pl: ["— Dziwne uczucie.", "— Jakby AI było mniej imponujące…"],
+            ru: [
+              "— Забавно…",
+              "— Раньше я бы просто кивнул",
+              "— и пошёл дальше.",
+            ],
+            pl: [
+              "— Zabawne…",
+              "— Wcześniej po prostu bym kiwnął głową",
+              "— i poszedł dalej.",
+            ],
           },
         },
 
@@ -1328,8 +895,8 @@ export const lesson = {
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: ["— …но при этом", "— более понятным."],
-            pl: ["— …ale jednocześnie", "— bardziej zrozumiałe."],
+            ru: ["— А сейчас", "— как будто что-то щёлкнуло."],
+            pl: ["— A teraz", "— jakby coś kliknęło."],
           },
         },
 
@@ -1338,18 +905,8 @@ export const lesson = {
           speaker: "AI robot",
           avatar: "robot",
           text: {
-            ru: ["— Я не стал хуже.", "— Ты стал внимательнее."],
-            pl: ["— Nie stałem się gorszy.", "— To ty stałeś się uważniejszy."],
-          },
-        },
-
-        {
-          type: "author",
-          speaker: "narrator",
-          avatar: "narrator",
-          text: {
-            ru: ["Кирилл усмехается.", "Похоже, это правда."],
-            pl: ["Kirył się uśmiecha.", "Wygląda na to, że to prawda."],
+            ru: ["— Ты перестал", "— автоматически соглашаться."],
+            pl: ["— Przestałeś", "— automatycznie się zgadzać."],
           },
         },
 
@@ -1358,12 +915,12 @@ export const lesson = {
           speaker: "Kyrylo",
           avatar: "kirill",
           text: {
-            ru: [
-              "— Значит,",
-              "— если я хочу правду…",
-              "— мне придётся думать.",
+            ru: ["— Да.", "— Теперь, если я не понял…", "— я это замечаю."],
+            pl: [
+              "— Tak.",
+              "— Teraz, jeśli czegoś nie rozumiem…",
+              "— to to zauważam.",
             ],
-            pl: ["— Czyli", "— jeśli chcę prawdy…", "— muszę myśleć."],
           },
         },
 
@@ -1373,18 +930,16 @@ export const lesson = {
           avatar: "narrator",
           text: {
             ru: [
-              "Архив шаблонов медленно растворяется.",
-              "Перед Кириллом открывается новый проход.",
-              "Он выглядит иначе.",
-              "Более логично.",
-              "Более строго.",
+              "Кирилл делает шаг к выходу.",
+              "Дверь открывается не сразу.",
+              "Как будто проверяет:",
+              "он правда понял — или просто кивнул.",
             ],
             pl: [
-              "Archiwum wzorców powoli się rozmywa.",
-              "Przed Kiryłem otwiera się nowe przejście.",
-              "Wygląda inaczej.",
-              "Bardziej logicznie.",
-              "Bardziej surowo.",
+              "Kirył robi krok w stronę wyjścia.",
+              "Drzwi nie otwierają się od razu.",
+              "Jakby sprawdzały:",
+              "czy naprawdę zrozumiał — czy tylko kiwnął głową.",
             ],
           },
         },
@@ -1395,14 +950,16 @@ export const lesson = {
           avatar: "narrator",
           text: {
             ru: [
-              "Когда исчезает магия,",
-              "появляется понимание.",
-              "А это куда сильнее.",
+              "Понимание начинается",
+              "не с умных слов.",
+              "А с честного вопроса:",
+              "«Я правда это понял?»",
             ],
             pl: [
-              "Gdy znika magia,",
-              "pojawia się zrozumienie.",
-              "A to jest o wiele silniejsze.",
+              "Zrozumienie zaczyna się",
+              "nie od mądrych słów.",
+              "Ale od uczciwego pytania:",
+              "„Czy ja naprawdę to zrozumiałem?”",
             ],
           },
         },

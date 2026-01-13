@@ -15,13 +15,10 @@ export const lesson = {
 
   scenes: [
     // 1
-    // 🟩 СЕРИЯ 2 — УРОК 2
-    // «Границы и безопасность»
-
     {
       id: "1",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_lesson2_scene1.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson7/lesson7_1.png?raw=true",
 
       author: {
         ru: [
@@ -228,14 +225,12 @@ export const lesson = {
         },
       ],
     },
-    // 2
-    // 🟩 СЕРИЯ 2 — УРОК 2
-    // СЦЕНА 2. Три уровня информации
 
+    // 2
     {
       id: "2",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_lesson2_scene2.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson7/lesson7_2.png?raw=true",
 
       author: {
         ru: [
@@ -490,14 +485,12 @@ export const lesson = {
         },
       ],
     },
+    
     // 3
-    // 🟩 СЕРИЯ 2 — УРОК 2
-    // СЦЕНА 3. Игровая ловушка
-
     {
       id: "3",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_lesson2_scene3.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson7/lesson7_3.png?raw=true",
 
       author: {
         ru: [
@@ -754,14 +747,12 @@ export const lesson = {
         },
       ],
     },
-    // 4
-    // 🟩 СЕРИЯ 2 — УРОК 2
-    // СЦЕНА 4. Нажал «да»
 
+    // 4
     {
       id: "4",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_lesson2_scene4.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson7/lesson7_4.png?raw=truee",
 
       author: {
         ru: [
@@ -954,14 +945,12 @@ export const lesson = {
         },
       ],
     },
-    // МЫСЛИ
-    // 🟩 СЕРИЯ 2 — УРОК 2
-    // МЫСЛИ КИРИЛЛА
 
+    // mysli
     {
       id: "thought",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_lesson2_thoughts.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson7/lesson7_mysli.png?raw=true",
 
       author: {
         ru: ["💭 МЫСЛИ КИРИЛЛА"],
@@ -1049,13 +1038,13 @@ export const lesson = {
       ],
     },
     // правило
-    // 🟩 СЕРИЯ 2 — УРОК 2
-    // ПРАВИЛО УРОКА
-
     {
       id: "rule",
-      image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_lesson2_rule.png?raw=true",
+      image: {
+        ru: "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%BE.png?raw=true",
+        pl: "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/prawilo.png?raw=true",
+      },
+
 
       author: {
         ru: ["🎯 ПРАВИЛО УРОКА"],
@@ -1085,24 +1074,26 @@ export const lesson = {
               "czy jesteś gotowy na to, co może wydarzyć się dalej.",
             ],
           },
-          dialog: [
-            {
-              speaker: "AI robot",
-              avatar: "robot",
-              text: {
-                ru: ["— Это правило не про страх.", "— Оно про выбор."],
-                pl: ["— Ta zasada nie jest o strachu.", "— Jest o wyborze."],
-              },
-            },
-            {
-              speaker: "Kyrylo",
-              avatar: "kirill",
-              text: {
-                ru: ["— Значит,", "— я могу остановиться и подумать."],
-                pl: ["— Czyli", "— mogę się zatrzymać i pomyśleć."],
-              },
-            },
-          ],
+        },
+
+        {
+          type: "ai",
+          speaker: "AI robot",
+          avatar: "robot",
+          text: {
+            ru: ["— Это правило не про страх.", "— Оно про выбор."],
+            pl: ["— Ta zasada nie jest o strachu.", "— Jest o wyborze."],
+          },
+        },
+
+        {
+          type: "story",
+          speaker: "Kyrylo",
+          avatar: "kirill",
+          text: {
+            ru: ["— Значит,", "— я могу остановиться и подумать."],
+            pl: ["— Czyli", "— mogę się zatrzymać i pomyśleć."],
+          },
         },
       ],
     },
@@ -1110,9 +1101,10 @@ export const lesson = {
 
     {
       id: "task",
-      image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_lesson2_task.png?raw=true",
-
+      image:{
+        ru: "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/%D0%9C%D0%B8%D0%BD%D0%B8%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%D0%A0%D1%83.png?raw=true",
+        pl: "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/%D0%BCiniZadaniePol.png?raw=true",
+      },
       author: {
         ru: [
           "🎮 ПРАКТИКА",
@@ -1168,13 +1160,11 @@ export const lesson = {
       ],
     },
     // финал
-    // 🟩 СЕРИЯ 2 — УРОК 2
-    // 🏁 ФИНАЛ УРОКА
-
+   
     {
       id: "final",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_lesson2_final.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson7/lesson7_final.png?raw=true",
 
       author: {
         ru: [

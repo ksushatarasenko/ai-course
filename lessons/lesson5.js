@@ -793,10 +793,11 @@ export const lesson = {
     // ПРАВИЛО ПЛАНЕТЫ
     {
       id: "rule",
-      image:{
-        ru: ["https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/prawilo.png?raw=true"],
-        pl: ["🎯 GŁÓWNA ZASADA PLANETY AI"],
+      image: {
+        ru: "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%BE.png?raw=true",
+        pl: "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/prawilo.png?raw=true",
       },
+
       author: {
         ru: ["🎯 ГЛАВНОЕ ПРАВИЛО ПЛАНЕТЫ ИИ"],
         pl: ["🎯 GŁÓWNA ZASADA PLANETY AI"],

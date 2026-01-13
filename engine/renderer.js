@@ -31,11 +31,24 @@ function renderText(text) {
 
 // 🔹 рендер сцены (картинка + автор + очистка диалогов)
 export function renderScene(scene) {
-  // картинка
+  // картинка (с поддержкой мультиязыка)
   const img = document.getElementById("scene-image");
-  if (img) {
-    if (scene.image) {
-      img.src = scene.image;
+
+  if (img && scene.image) {
+    let imageSrc = null;
+
+    // старый формат — строка
+    if (typeof scene.image === "string") {
+      imageSrc = scene.image;
+    }
+
+    // новый формат — объект { ru, pl }
+    if (typeof scene.image === "object") {
+      imageSrc = scene.image[lang];
+    }
+
+    if (imageSrc) {
+      img.src = imageSrc;
       img.style.display = "block";
     } else {
       img.style.display = "none";

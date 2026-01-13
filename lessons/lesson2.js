@@ -19,7 +19,7 @@ export const lesson = {
     {
       id: "1",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_%D0%A1%D0%A6%D0%95%D0%9D%D0%90%201..png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson2/lesson02_1.png?raw=true",
 
       author: {
         ru: [
@@ -167,7 +167,7 @@ export const lesson = {
     {
       id: "2",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_scena2.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson2/lesson02_2.png?raw=true",
 
       author: {
         ru: [
@@ -313,7 +313,7 @@ export const lesson = {
     {
       id: "3",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_scena3.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson2/lesson02_3.png?raw=true",
 
       author: {
         ru: [
@@ -412,7 +412,7 @@ export const lesson = {
     {
       id: "thought",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_mysliKyryla.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson2/lesson02_%D0%BC%D1%8B%D1%81%D0%BB%D0%B8.png?raw=true",
 
       author: {
         ru: [
@@ -533,7 +533,7 @@ export const lesson = {
     {
       id: "4",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_scena4.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson2/lesson02_4.png?raw=true",
 
       author: {
         ru: [
@@ -627,9 +627,10 @@ export const lesson = {
     // МИНИ-ЗАДАНИЕ 1
     {
       id: "task",
-      image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_task.png?raw=true",
-
+      image:{
+        ru: ["https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/%D0%9C%D0%B8%D0%BD%D0%B8%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%D0%A0%D1%83.png?raw=true"],
+        pl: ["https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/%D0%BCiniZadaniePol.png?raw=true",],
+      },
       author: {
         ru: ["🎮 МИНИ-ЗАДАНИЕ"],
         pl: ["🎮 MINI-ZADANIE"],
@@ -681,7 +682,7 @@ export const lesson = {
     {
       id: "5",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_scena5.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson2/lesson02_5.png?raw=true",
 
       author: {
         ru: [
@@ -872,7 +873,7 @@ export const lesson = {
     {
       id: "thought",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_mysliKyryla.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson2/lesson02_%D0%BC%D1%8B%D1%81%D0%BB%D0%B8.png?raw=true",
 
       author: {
         ru: [
@@ -955,8 +956,11 @@ export const lesson = {
     // ПРАВИЛО
     {
       id: "rule",
-      image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_%20prawilo.png?raw=true",
+      image:{
+        ru: ["https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/%D0%9F%D1%80%D0%B0%D0%B2%D0%B8%D0%BB%D0%BE1.png?raw=true",],
+        pl: ["https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/prawilo.png?raw=true",],
+      },
+        
 
       author: {
         ru: ["🎯 ПРАВИЛО ПЛАНЕТЫ ИИ"],
@@ -1013,8 +1017,10 @@ export const lesson = {
     // МИНИ-ЗАДАНИЕ 2
     {
       id: "task",
-      image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_zadanie2.png?raw=true",
+      image:{
+        ru: "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/%D0%9C%D0%B8%D0%BD%D0%B8%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%D0%A0%D1%83.png?raw=true",
+        pl: "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/%D0%BCiniZadaniePol.png?raw=true",
+      },
 
       author: {
         ru: ["🎮 МИНИ-ЗАДАНИЕ"],
@@ -1052,11 +1058,13 @@ export const lesson = {
         },
       ],
     },
-
+// Финал
     {
       id: "final",
-      image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_final.png?raw=true",
+      image:{
+        ru: "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson2/lesson2_finalRu.png?raw=true",
+        pl: "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson2/lesson2_finalPol.png?raw=true",
+      },
 
       author: {
         ru: ["🏁 ФИНАЛ УРОКА"],

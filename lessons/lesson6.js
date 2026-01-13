@@ -5,7 +5,7 @@ export const lesson = {
 
   title: {
     ru: "Говори пошагово",
-    pl: "почему ИИ любит инструкции больше, чем догадки",
+    pl: "",
   },
 
   subtitle: {
@@ -18,7 +18,7 @@ export const lesson = {
     {
       id: "1",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_lesson1_scene1.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson6/lesson6_1.png?raw=true",
 
       author: {
         ru: [
@@ -155,7 +155,7 @@ export const lesson = {
     {
       id: "2",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_lesson1_scene2.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson6/lesson6_2.png?raw=true",
 
       author: {
         ru: [
@@ -393,7 +393,7 @@ export const lesson = {
     {
       id: "3",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_lesson1_scene3.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson6/lesson6_3.png?raw=true",
 
       author: {
         ru: [
@@ -628,7 +628,7 @@ export const lesson = {
     {
       id: "thought",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_lesson1_thoughts.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson6/lesson6_mysli.png?raw=true",
 
       author: {
         ru: ["💭 МЫСЛИ КИРИЛЛА"],
@@ -677,8 +677,10 @@ export const lesson = {
     // правило
     {
       id: "rule",
-      image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_lesson1_rule.png?raw=true",
+      image:{
+        ru: ["https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/prawilo.png?raw=true"],
+        pl: ["🎯 GŁÓWNA ZASADA PLANETY AI"],
+      },
 
       author: {
         ru: ["🎯 ПРАВИЛО УРОКА"],
@@ -732,8 +734,10 @@ export const lesson = {
     //  Practic
     {
       id: "task",
-      image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_lesson1_task.png?raw=true",
+      image:{
+        ru: "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/%D0%9C%D0%B8%D0%BD%D0%B8%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%D0%A0%D1%83.png?raw=true",
+        pl: "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/%D0%BCiniZadaniePol.png?raw=true",
+      },
 
       author: {
         ru: [
@@ -794,7 +798,7 @@ export const lesson = {
     {
       id: "final",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module2/module2_lesson1_final.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson6/lesson6_final.png?raw=true",
 
       author: {
         ru: [

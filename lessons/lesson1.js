@@ -15,7 +15,7 @@ export const lesson = {
     {
       id: "1",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module1/scena1.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson1/lesson01_1.png?raw=true",
 
       author: {
         ru: [
@@ -305,7 +305,7 @@ export const lesson = {
     {
       id: "2",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module1/%D0%A1%D0%A6%D0%95%D0%9D%D0%90%202.%20%D0%91%D0%90%D0%93%20%D0%92%D0%A1%D0%95%D0%9B%D0%95%D0%9D%D0%9D%D0%9E%D0%98%CC%86.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson1/lesson01_2.png?raw=true",
 
       author: {
         ru: [
@@ -470,7 +470,7 @@ export const lesson = {
     {
       id: "3",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module1/%D0%A1%D0%A6%D0%95%D0%9D%D0%90%203.%20%D0%9F%D0%BB%D0%B0%D0%BD%D0%B5%D1%82%D0%B0%20%D0%98%D0%98.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson1/lesson01_3.png?raw=true",
 
       author: {
         ru: [
@@ -888,7 +888,7 @@ export const lesson = {
     {
       id: "4",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module1/%D0%A1%D0%A6%D0%95%D0%9D%D0%90%204.%20%D0%9A%D0%B8%D1%80%D0%B8%D0%BB%D0%BB%20%D0%B7%D0%BB%D0%B8%D1%82%D1%81%D1%8F.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson1/lesson01_4.png?raw=true",
 
       author: {
         ru: ["😡 СЦЕНА 4. Кирилл злится"],
@@ -1019,10 +1019,11 @@ export const lesson = {
         },
       ],
     },
+    // 5
     {
       id: "5",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module1/%D0%9C%D0%AB%D0%A1%D0%9B%D0%98%20%D0%9A%D0%98%D0%A0%D0%98%D0%9B%D0%9B%D0%90.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson1/lesson01_5.png?raw=true",
 
       author: {
         ru: ["💭 МЫСЛИ КИРИЛЛА (ключевой момент)"],
@@ -1180,10 +1181,11 @@ export const lesson = {
         },
       ],
     },
+    // 6
     {
       id: "task",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module1/%D0%9C%D0%98%D0%9D%D0%98-%D0%97%D0%90%D0%94%D0%90%D0%9D%D0%98%D0%95.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson1/lesson01_6ru.png?raw=true",
       author: {
         ru: ["🎮 МИНИ-ЗАДАНИЕ"],
         pl: ["🎮 MINI-ZADANIE"],
@@ -1220,10 +1222,11 @@ export const lesson = {
         },
       ],
     },
+    // 7
     {
       id: "6",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module1/%D0%A1%D0%A6%D0%95%D0%9D%D0%90%206.%20%D0%9D%D0%B0%D0%BC%D0%B5%CC%88%D0%BA%20%D0%BD%D0%B0%20%D0%BC%D0%B8%D1%81%D1%81%D0%B8%D1%8E%20%D0%BA%D1%83%D1%80%D1%81%D0%B0.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson1/lesson01_7.png?raw=true",
 
       author: {
         ru: ["🎯 СЦЕНА 6. Намёк на миссию курса"],
@@ -1327,10 +1330,11 @@ export const lesson = {
         },
       ],
     },
+    // 8
     {
       id: "final",
       image:
-        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/module1/final_module1.png?raw=true",
+        "https://github.com/ksushatarasenko/curseAI-course-assets/blob/main/imageCurs/lesson1/lesson01_8.png?raw=true",
 
       author: {
         ru: ["🧩 ВЫВОД УРОКА"],
